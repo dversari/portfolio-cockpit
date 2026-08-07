@@ -1,9 +1,9 @@
 {
-  "asOf": "2026-08-07T12:14:42Z",
+  "asOf": "2026-08-07T12:22:04Z",
   "baselineValue": 497174.3972618726,
   "totalCost": 486892.4304092216,
   "liveValue": null,
-  "verifiedValue": 436597.13,
+  "verifiedValue": 487669.25,
   "unverifiedValue": null,
   "positions": [
     {
@@ -14,13 +14,14 @@
       "cat": "Semicore",
       "currency": "EUR",
       "bond": false,
-      "price": 355.899994,
-      "valueEUR": 3559.0,
+      "price": 356.149994,
+      "valueEUR": 3561.5,
       "verified": true,
       "error": null,
-      "dayChangePct": 0.000562,
+      "dayChangePct": 0.001265,
       "feedCurrency": "EUR",
-      "fxToEUR": 1.0
+      "fxToEUR": 1.0,
+      "source": "Yahoo Finance"
     },
     {
       "name": "UBER TECH",
@@ -31,12 +32,13 @@
       "currency": "USD",
       "bond": false,
       "price": 70.470001,
-      "valueEUR": 3053.47,
+      "valueEUR": 3054.17,
       "verified": true,
       "error": null,
       "dayChangePct": 0.033588,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86659998
+      "fxToEUR": 0.86680001,
+      "source": "Yahoo Finance"
     },
     {
       "name": "AST SPACEMOBILE RG-A",
@@ -47,12 +49,13 @@
       "currency": "USD",
       "bond": false,
       "price": 67.360001,
-      "valueEUR": 4669.93,
+      "valueEUR": 4671.01,
       "verified": true,
       "error": null,
       "dayChangePct": -0.014917,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86659998
+      "fxToEUR": 0.86680001,
+      "source": "Yahoo Finance"
     },
     {
       "name": "UNITY SOFTWARE",
@@ -63,12 +66,13 @@
       "currency": "USD",
       "bond": false,
       "price": 40.810001,
-      "valueEUR": 3536.59,
+      "valueEUR": 3537.41,
       "verified": true,
       "error": null,
       "dayChangePct": 0.15055,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86659998
+      "fxToEUR": 0.86680001,
+      "source": "Yahoo Finance"
     },
     {
       "name": "ERREDUE",
@@ -84,7 +88,8 @@
       "error": null,
       "dayChangePct": 0.0,
       "feedCurrency": "EUR",
-      "fxToEUR": 1.0
+      "fxToEUR": 1.0,
+      "source": "Yahoo Finance"
     },
     {
       "name": "VOLKSWAGEN",
@@ -94,13 +99,14 @@
       "cat": "Semicore",
       "currency": "EUR",
       "bond": false,
-      "price": 75.519997,
-      "valueEUR": 3776.0,
+      "price": 75.5,
+      "valueEUR": 3775.0,
       "verified": true,
       "error": null,
-      "dayChangePct": -0.000529,
+      "dayChangePct": -0.000794,
       "feedCurrency": "EUR",
-      "fxToEUR": 1.0
+      "fxToEUR": 1.0,
+      "source": "Yahoo Finance"
     },
     {
       "name": "SEVERFIELD",
@@ -111,12 +117,13 @@
       "currency": "GBP",
       "bond": false,
       "price": 0.37835,
-      "valueEUR": 1763.56,
+      "valueEUR": 1763.87,
       "verified": true,
       "error": null,
       "dayChangePct": 0.01028,
       "feedCurrency": "GBP",
-      "fxToEUR": 1.16530001
+      "fxToEUR": 1.16550004,
+      "source": "Yahoo Finance"
     },
     {
       "name": "WINGSTOP",
@@ -127,12 +134,13 @@
       "currency": "USD",
       "bond": false,
       "price": 116.620003,
-      "valueEUR": 707.44,
+      "valueEUR": 707.6,
       "verified": true,
       "error": null,
       "dayChangePct": -0.058453,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86659998
+      "fxToEUR": 0.86680001,
+      "source": "Yahoo Finance"
     },
     {
       "name": "ROCKET LAB",
@@ -143,12 +151,13 @@
       "currency": "USD",
       "bond": false,
       "price": 75.669998,
-      "valueEUR": 3803.39,
+      "valueEUR": 3804.26,
       "verified": true,
       "error": null,
       "dayChangePct": 0.011361,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86659998
+      "fxToEUR": 0.86680001,
+      "source": "Yahoo Finance"
     },
     {
       "name": "SPACEX RG-A",
@@ -159,12 +168,13 @@
       "currency": "USD",
       "bond": false,
       "price": 114.919998,
-      "valueEUR": 2987.69,
+      "valueEUR": 2988.38,
       "verified": true,
       "error": null,
       "dayChangePct": 0.061421,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86659998
+      "fxToEUR": 0.86680001,
+      "source": "Yahoo Finance"
     },
     {
       "name": "FIREFLY",
@@ -175,12 +185,13 @@
       "currency": "USD",
       "bond": false,
       "price": 24.059999,
-      "valueEUR": 5212.6,
+      "valueEUR": 5213.8,
       "verified": true,
       "error": null,
       "dayChangePct": 0.053415,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86659998
+      "fxToEUR": 0.86680001,
+      "source": "Yahoo Finance"
     },
     {
       "name": "ENPHASE ENERGY",
@@ -191,12 +202,13 @@
       "currency": "USD",
       "bond": false,
       "price": 39.669998,
-      "valueEUR": 1031.34,
+      "valueEUR": 1031.58,
       "verified": true,
       "error": null,
       "dayChangePct": 0.018485,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86659998
+      "fxToEUR": 0.86680001,
+      "source": "Yahoo Finance"
     },
     {
       "name": "ASML HOLD NY REG",
@@ -207,12 +219,13 @@
       "currency": "USD",
       "bond": false,
       "price": 1704.369995,
-      "valueEUR": 2954.01,
+      "valueEUR": 2954.7,
       "verified": true,
       "error": null,
       "dayChangePct": 0.015582,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86659998
+      "fxToEUR": 0.86680001,
+      "source": "Yahoo Finance"
     },
     {
       "name": "OKLO INC",
@@ -223,12 +236,13 @@
       "currency": "USD",
       "bond": false,
       "price": 42.189999,
-      "valueEUR": 4387.42,
+      "valueEUR": 4388.43,
       "verified": true,
       "error": null,
       "dayChangePct": -0.018609,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86659998
+      "fxToEUR": 0.86680001,
+      "source": "Yahoo Finance"
     },
     {
       "name": "KLARNA GRP",
@@ -239,12 +253,13 @@
       "currency": "USD",
       "bond": false,
       "price": 20.26,
-      "valueEUR": 877.87,
+      "valueEUR": 878.07,
       "verified": true,
       "error": null,
       "dayChangePct": -0.0054,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86659998
+      "fxToEUR": 0.86680001,
+      "source": "Yahoo Finance"
     },
     {
       "name": "3x Long SK Hynix ETP",
@@ -260,7 +275,8 @@
       "error": null,
       "dayChangePct": -0.140827,
       "feedCurrency": "EUR",
-      "fxToEUR": 1.0
+      "fxToEUR": 1.0,
+      "source": "Yahoo Finance"
     },
     {
       "name": "Xtrackers Physical Gold ETC",
@@ -276,7 +292,8 @@
       "error": null,
       "dayChangePct": 0.017786,
       "feedCurrency": "EUR",
-      "fxToEUR": 1.0
+      "fxToEUR": 1.0,
+      "source": "Yahoo Finance"
     },
     {
       "name": "iShares Automation & Robotics",
@@ -292,7 +309,8 @@
       "error": null,
       "dayChangePct": 0.003562,
       "feedCurrency": "EUR",
-      "fxToEUR": 1.0
+      "fxToEUR": 1.0,
+      "source": "Yahoo Finance"
     },
     {
       "name": "Invesco Bloomberg Commodity",
@@ -302,13 +320,14 @@
       "cat": "Commodities",
       "currency": "EUR",
       "bond": false,
-      "price": 28.040001,
-      "valueEUR": 3084.4,
+      "price": 28.09,
+      "valueEUR": 3089.9,
       "verified": true,
       "error": null,
-      "dayChangePct": 0.002861,
+      "dayChangePct": 0.00465,
       "feedCurrency": "EUR",
-      "fxToEUR": 1.0
+      "fxToEUR": 1.0,
+      "source": "Yahoo Finance"
     },
     {
       "name": "Xtrackers MSCI Emerging Markets",
@@ -318,13 +337,14 @@
       "cat": "Core",
       "currency": "EUR",
       "bond": false,
-      "price": 79.052002,
-      "valueEUR": 55968.82,
+      "price": 79.015999,
+      "valueEUR": 55943.33,
       "verified": true,
       "error": null,
-      "dayChangePct": 0.000506,
+      "dayChangePct": 5.1e-05,
       "feedCurrency": "EUR",
-      "fxToEUR": 1.0
+      "fxToEUR": 1.0,
+      "source": "Yahoo Finance"
     },
     {
       "name": "iShares Global Aggregate Bond EUR Hedged",
@@ -334,13 +354,14 @@
       "cat": "Obbligazioni",
       "currency": "EUR",
       "bond": false,
-      "price": 4.903,
-      "valueEUR": 22063.5,
+      "price": 4.9025,
+      "valueEUR": 22061.25,
       "verified": true,
       "error": null,
-      "dayChangePct": -0.000408,
+      "dayChangePct": -0.00051,
       "feedCurrency": "EUR",
-      "fxToEUR": 1.0
+      "fxToEUR": 1.0,
+      "source": "Yahoo Finance"
     },
     {
       "name": "WisdomTree Uranium & Nuclear Energy",
@@ -356,7 +377,8 @@
       "error": null,
       "dayChangePct": 0.005719,
       "feedCurrency": "EUR",
-      "fxToEUR": 1.0
+      "fxToEUR": 1.0,
+      "source": "Yahoo Finance"
     },
     {
       "name": "HANetf AI & Power Infrastructure",
@@ -372,7 +394,8 @@
       "error": null,
       "dayChangePct": -0.00961,
       "feedCurrency": "EUR",
-      "fxToEUR": 1.0
+      "fxToEUR": 1.0,
+      "source": "Yahoo Finance"
     },
     {
       "name": "iShares Core MSCI World",
@@ -382,13 +405,14 @@
       "cat": "Core",
       "currency": "EUR",
       "bond": false,
-      "price": 128.449997,
-      "valueEUR": 181114.5,
+      "price": 128.490005,
+      "valueEUR": 181170.91,
       "verified": true,
       "error": null,
-      "dayChangePct": 0.002811,
+      "dayChangePct": 0.003123,
       "feedCurrency": "EUR",
-      "fxToEUR": 1.0
+      "fxToEUR": 1.0,
+      "source": "Yahoo Finance"
     },
     {
       "name": "iShares EUR Corp Bond Large Cap",
@@ -404,7 +428,8 @@
       "error": null,
       "dayChangePct": -0.000565,
       "feedCurrency": "EUR",
-      "fxToEUR": 1.0
+      "fxToEUR": 1.0,
+      "source": "Yahoo Finance"
     },
     {
       "name": "iShares Core EUR Govt Bond",
@@ -414,13 +439,14 @@
       "cat": "Obbligazioni",
       "currency": "EUR",
       "bond": false,
-      "price": 107.709999,
-      "valueEUR": 21542.0,
+      "price": 107.699997,
+      "valueEUR": 21540.0,
       "verified": true,
       "error": null,
-      "dayChangePct": -0.000557,
+      "dayChangePct": -0.00065,
       "feedCurrency": "EUR",
-      "fxToEUR": 1.0
+      "fxToEUR": 1.0,
+      "source": "Yahoo Finance"
     },
     {
       "name": "iShares MSCI World Value Factor",
@@ -430,13 +456,14 @@
       "cat": "Semicore",
       "currency": "EUR",
       "bond": false,
-      "price": 69.739998,
-      "valueEUR": 5927.9,
+      "price": 69.760002,
+      "valueEUR": 5929.6,
       "verified": true,
       "error": null,
-      "dayChangePct": 0.001148,
+      "dayChangePct": 0.001436,
       "feedCurrency": "EUR",
-      "fxToEUR": 1.0
+      "fxToEUR": 1.0,
+      "source": "Yahoo Finance"
     },
     {
       "name": "iShares MSCI World Momentum Factor",
@@ -446,13 +473,14 @@
       "cat": "Semicore",
       "currency": "EUR",
       "bond": false,
-      "price": 100.730003,
-      "valueEUR": 5237.96,
+      "price": 100.669998,
+      "valueEUR": 5234.84,
       "verified": true,
       "error": null,
-      "dayChangePct": 0.001292,
+      "dayChangePct": 0.000696,
       "feedCurrency": "EUR",
-      "fxToEUR": 1.0
+      "fxToEUR": 1.0,
+      "source": "Yahoo Finance"
     },
     {
       "name": "Xtrackers II EUR Overnight Rate Swap",
@@ -468,7 +496,8 @@
       "error": null,
       "dayChangePct": 5.4e-05,
       "feedCurrency": "EUR",
-      "fxToEUR": 1.0
+      "fxToEUR": 1.0,
+      "source": "Yahoo Finance"
     },
     {
       "name": "SPDR MSCI World Small Cap",
@@ -484,7 +513,8 @@
       "error": null,
       "dayChangePct": -0.000326,
       "feedCurrency": "EUR",
-      "fxToEUR": 1.0
+      "fxToEUR": 1.0,
+      "source": "Yahoo Finance"
     },
     {
       "name": "BTP-23GN31 IT SI CUM",
@@ -494,13 +524,15 @@
       "cat": "Obbligazioni",
       "currency": "EUR",
       "bond": true,
-      "price": null,
-      "valueEUR": null,
-      "verified": false,
-      "error": "quotazione automatica non configurata",
-      "dayChangePct": null,
-      "feedCurrency": null,
-      "fxToEUR": null
+      "price": 100.97,
+      "valueEUR": 10097.0,
+      "verified": true,
+      "error": null,
+      "dayChangePct": 0.0004,
+      "feedCurrency": "EUR",
+      "fxToEUR": 1.0,
+      "source": "Borsa Italiana MOT",
+      "isin": "IT0005713547"
     },
     {
       "name": "BTP-1ST38 2.95",
@@ -510,13 +542,15 @@
       "cat": "Obbligazioni",
       "currency": "EUR",
       "bond": true,
-      "price": null,
-      "valueEUR": null,
-      "verified": false,
-      "error": "quotazione automatica non configurata",
-      "dayChangePct": null,
-      "feedCurrency": null,
-      "fxToEUR": null
+      "price": 89.79,
+      "valueEUR": 14366.4,
+      "verified": true,
+      "error": null,
+      "dayChangePct": -0.0008,
+      "feedCurrency": "EUR",
+      "fxToEUR": 1.0,
+      "source": "Borsa Italiana MOT",
+      "isin": "IT0005321325"
     },
     {
       "name": "BTP-1AP28 3.4",
@@ -526,13 +560,15 @@
       "cat": "Obbligazioni",
       "currency": "EUR",
       "bond": true,
-      "price": null,
-      "valueEUR": null,
-      "verified": false,
-      "error": "quotazione automatica non configurata",
-      "dayChangePct": null,
-      "feedCurrency": null,
-      "fxToEUR": null
+      "price": 100.84,
+      "valueEUR": 5042.0,
+      "verified": true,
+      "error": null,
+      "dayChangePct": -0.0001,
+      "feedCurrency": "EUR",
+      "fxToEUR": 1.0,
+      "source": "Borsa Italiana MOT",
+      "isin": "IT0005521981"
     },
     {
       "name": "BTP-1AP31 0.9",
@@ -542,13 +578,15 @@
       "cat": "Obbligazioni",
       "currency": "EUR",
       "bond": true,
-      "price": null,
-      "valueEUR": null,
-      "verified": false,
-      "error": "quotazione automatica non configurata",
-      "dayChangePct": null,
-      "feedCurrency": null,
-      "fxToEUR": null
+      "price": 90.05,
+      "valueEUR": 9005.0,
+      "verified": true,
+      "error": null,
+      "dayChangePct": -0.0006,
+      "feedCurrency": "EUR",
+      "fxToEUR": 1.0,
+      "source": "Borsa Italiana MOT",
+      "isin": "IT0005422891"
     },
     {
       "name": "BTP-1ST49 3.85",
@@ -558,13 +596,15 @@
       "cat": "Obbligazioni",
       "currency": "EUR",
       "bond": true,
-      "price": null,
-      "valueEUR": null,
-      "verified": false,
-      "error": "quotazione automatica non configurata",
-      "dayChangePct": null,
-      "feedCurrency": null,
-      "fxToEUR": null
+      "price": 90.77,
+      "valueEUR": 9984.7,
+      "verified": true,
+      "error": null,
+      "dayChangePct": -0.0022,
+      "feedCurrency": "EUR",
+      "fxToEUR": 1.0,
+      "source": "Borsa Italiana MOT",
+      "isin": "IT0005363111"
     },
     {
       "name": "BTP-10MZ32 VAL CUM",
@@ -577,10 +617,11 @@
       "price": null,
       "valueEUR": null,
       "verified": false,
-      "error": "quotazione automatica non configurata",
+      "error": "Borsa Italiana: prezzo non trovato",
       "dayChangePct": null,
       "feedCurrency": null,
-      "fxToEUR": null
+      "fxToEUR": null,
+      "source": null
     },
     {
       "name": "BTP-1ST52 2.15",
@@ -590,13 +631,15 @@
       "cat": "Obbligazioni",
       "currency": "EUR",
       "bond": true,
-      "price": null,
-      "valueEUR": null,
-      "verified": false,
-      "error": "quotazione automatica non configurata",
-      "dayChangePct": null,
-      "feedCurrency": null,
-      "fxToEUR": null
+      "price": 63.42,
+      "valueEUR": 2536.8,
+      "verified": true,
+      "error": null,
+      "dayChangePct": -0.003,
+      "feedCurrency": "EUR",
+      "fxToEUR": 1.0,
+      "source": "Borsa Italiana MOT",
+      "isin": "IT0005480980"
     },
     {
       "name": "LEVA FISSA SPACEX LONG 3X",
@@ -609,20 +652,21 @@
       "price": null,
       "valueEUR": null,
       "verified": false,
-      "error": "quotazione automatica non configurata",
+      "error": "Vorvel: bid/ask non interpretabili",
       "dayChangePct": null,
       "feedCurrency": null,
-      "fxToEUR": null
+      "fxToEUR": null,
+      "source": null
     }
   ],
-  "verifiedCost": 425048.89,
-  "verifiedCount": 30,
-  "unverifiedCount": 8,
+  "verifiedCost": 476643.25,
+  "verifiedCount": 36,
+  "unverifiedCount": 2,
   "history": [
     {
       "date": "2026-08-07",
-      "verifiedValue": 436597.13,
-      "verifiedCount": 30
+      "verifiedValue": 487669.25,
+      "verifiedCount": 36
     }
   ]
 }
