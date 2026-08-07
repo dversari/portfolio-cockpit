@@ -1,9 +1,9 @@
 {
-  "asOf": "2026-08-07T10:56:34Z",
+  "asOf": "2026-08-07T12:12:17Z",
   "baselineValue": 497174.3972618726,
   "totalCost": 486892.4304092216,
   "liveValue": null,
-  "verifiedValue": 610240.3,
+  "verifiedValue": 611271.28,
   "unverifiedValue": null,
   "positions": [
     {
@@ -14,11 +14,11 @@
       "cat": "Semicore",
       "currency": "EUR",
       "bond": false,
-      "price": 355.549988,
-      "valueEUR": 3555.5,
+      "price": 355.899994,
+      "valueEUR": 3559.0,
       "verified": true,
       "error": null,
-      "dayChangePct": -0.000422,
+      "dayChangePct": 0.000562,
       "feedCurrency": "EUR",
       "fxToEUR": 1.0
     },
@@ -31,12 +31,12 @@
       "currency": "USD",
       "bond": false,
       "price": 70.470001,
-      "valueEUR": 3055.58,
+      "valueEUR": 3053.11,
       "verified": true,
       "error": null,
       "dayChangePct": 0.033588,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86720002
+      "fxToEUR": 0.86650002
     },
     {
       "name": "AST SPACEMOBILE RG-A",
@@ -47,12 +47,12 @@
       "currency": "USD",
       "bond": false,
       "price": 67.360001,
-      "valueEUR": 4673.17,
+      "valueEUR": 4669.4,
       "verified": true,
       "error": null,
       "dayChangePct": -0.014917,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86720002
+      "fxToEUR": 0.86650002
     },
     {
       "name": "UNITY SOFTWARE",
@@ -63,12 +63,12 @@
       "currency": "USD",
       "bond": false,
       "price": 40.810001,
-      "valueEUR": 3539.04,
+      "valueEUR": 3536.19,
       "verified": true,
       "error": null,
       "dayChangePct": 0.15055,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86720002
+      "fxToEUR": 0.86650002
     },
     {
       "name": "ERREDUE",
@@ -94,11 +94,11 @@
       "cat": "Semicore",
       "currency": "EUR",
       "bond": false,
-      "price": 75.300003,
-      "valueEUR": 3765.0,
+      "price": 75.519997,
+      "valueEUR": 3776.0,
       "verified": true,
       "error": null,
-      "dayChangePct": -0.003441,
+      "dayChangePct": -0.000529,
       "feedCurrency": "EUR",
       "fxToEUR": 1.0
     },
@@ -110,13 +110,13 @@
       "cat": "Speculativo",
       "currency": "GBP",
       "bond": false,
-      "price": 37.672901,
-      "valueEUR": 175585.86,
+      "price": 37.834999,
+      "valueEUR": 176356.5,
       "verified": true,
       "error": null,
-      "dayChangePct": 0.005952,
+      "dayChangePct": 0.01028,
       "feedCurrency": "GBP",
-      "fxToEUR": 1.1652
+      "fxToEUR": 1.16530001
     },
     {
       "name": "WINGSTOP",
@@ -127,12 +127,12 @@
       "currency": "USD",
       "bond": false,
       "price": 116.620003,
-      "valueEUR": 707.93,
+      "valueEUR": 707.36,
       "verified": true,
       "error": null,
       "dayChangePct": -0.058453,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86720002
+      "fxToEUR": 0.86650002
     },
     {
       "name": "ROCKET LAB",
@@ -143,12 +143,12 @@
       "currency": "USD",
       "bond": false,
       "price": 75.669998,
-      "valueEUR": 3806.02,
+      "valueEUR": 3802.95,
       "verified": true,
       "error": null,
       "dayChangePct": 0.011361,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86720002
+      "fxToEUR": 0.86650002
     },
     {
       "name": "SPACEX RG-A",
@@ -159,12 +159,12 @@
       "currency": "USD",
       "bond": false,
       "price": 114.919998,
-      "valueEUR": 2989.76,
+      "valueEUR": 2987.35,
       "verified": true,
       "error": null,
       "dayChangePct": 0.061421,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86720002
+      "fxToEUR": 0.86650002
     },
     {
       "name": "FIREFLY",
@@ -175,12 +175,12 @@
       "currency": "USD",
       "bond": false,
       "price": 24.059999,
-      "valueEUR": 5216.21,
+      "valueEUR": 5212.0,
       "verified": true,
       "error": null,
       "dayChangePct": 0.053415,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86720002
+      "fxToEUR": 0.86650002
     },
     {
       "name": "ENPHASE ENERGY",
@@ -191,12 +191,12 @@
       "currency": "USD",
       "bond": false,
       "price": 39.669998,
-      "valueEUR": 1032.05,
+      "valueEUR": 1031.22,
       "verified": true,
       "error": null,
       "dayChangePct": 0.018485,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86720002
+      "fxToEUR": 0.86650002
     },
     {
       "name": "ASML HOLD NY REG",
@@ -207,12 +207,12 @@
       "currency": "USD",
       "bond": false,
       "price": 1704.369995,
-      "valueEUR": 2956.06,
+      "valueEUR": 2953.67,
       "verified": true,
       "error": null,
       "dayChangePct": 0.015582,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86720002
+      "fxToEUR": 0.86650002
     },
     {
       "name": "OKLO INC",
@@ -223,12 +223,12 @@
       "currency": "USD",
       "bond": false,
       "price": 42.189999,
-      "valueEUR": 4390.46,
+      "valueEUR": 4386.92,
       "verified": true,
       "error": null,
       "dayChangePct": -0.018609,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86720002
+      "fxToEUR": 0.86650002
     },
     {
       "name": "KLARNA GRP",
@@ -239,12 +239,12 @@
       "currency": "USD",
       "bond": false,
       "price": 20.26,
-      "valueEUR": 878.47,
+      "valueEUR": 877.76,
       "verified": true,
       "error": null,
       "dayChangePct": -0.0054,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86720002
+      "fxToEUR": 0.86650002
     },
     {
       "name": "3x Long SK Hynix ETP",
@@ -254,11 +254,11 @@
       "cat": "Speculativo",
       "currency": "EUR",
       "bond": false,
-      "price": 0.6784,
-      "valueEUR": 339.2,
+      "price": 0.6691,
+      "valueEUR": 334.55,
       "verified": true,
       "error": null,
-      "dayChangePct": -0.123514,
+      "dayChangePct": -0.13553,
       "feedCurrency": "EUR",
       "fxToEUR": 1.0
     },
@@ -270,11 +270,11 @@
       "cat": "Commodities",
       "currency": "EUR",
       "bond": false,
-      "price": 358.540009,
-      "valueEUR": 8963.5,
+      "price": 359.359985,
+      "valueEUR": 8984.0,
       "verified": true,
       "error": null,
-      "dayChangePct": 0.015464,
+      "dayChangePct": 0.017786,
       "feedCurrency": "EUR",
       "fxToEUR": 1.0
     },
@@ -286,11 +286,11 @@
       "cat": "Semicore",
       "currency": "EUR",
       "bond": false,
-      "price": 18.610001,
-      "valueEUR": 14888.0,
+      "price": 18.628,
+      "valueEUR": 14902.4,
       "verified": true,
       "error": null,
-      "dayChangePct": 0.004317,
+      "dayChangePct": 0.005289,
       "feedCurrency": "EUR",
       "fxToEUR": 1.0
     },
@@ -302,11 +302,11 @@
       "cat": "Commodities",
       "currency": "EUR",
       "bond": false,
-      "price": 28.129999,
-      "valueEUR": 3094.3,
+      "price": 28.040001,
+      "valueEUR": 3084.4,
       "verified": true,
       "error": null,
-      "dayChangePct": 0.00608,
+      "dayChangePct": 0.002861,
       "feedCurrency": "EUR",
       "fxToEUR": 1.0
     },
@@ -318,11 +318,11 @@
       "cat": "Core",
       "currency": "EUR",
       "bond": false,
-      "price": 78.947998,
-      "valueEUR": 55895.18,
+      "price": 79.052002,
+      "valueEUR": 55968.82,
       "verified": true,
       "error": null,
-      "dayChangePct": -0.00081,
+      "dayChangePct": 0.000506,
       "feedCurrency": "EUR",
       "fxToEUR": 1.0
     },
@@ -334,11 +334,11 @@
       "cat": "Obbligazioni",
       "currency": "EUR",
       "bond": false,
-      "price": 4.902,
-      "valueEUR": 22059.0,
+      "price": 4.903,
+      "valueEUR": 22063.5,
       "verified": true,
       "error": null,
-      "dayChangePct": -0.000612,
+      "dayChangePct": -0.000408,
       "feedCurrency": "EUR",
       "fxToEUR": 1.0
     },
@@ -382,11 +382,11 @@
       "cat": "Core",
       "currency": "EUR",
       "bond": false,
-      "price": 128.460007,
-      "valueEUR": 181128.61,
+      "price": 128.490005,
+      "valueEUR": 181170.91,
       "verified": true,
       "error": null,
-      "dayChangePct": 0.002889,
+      "dayChangePct": 0.003123,
       "feedCurrency": "EUR",
       "fxToEUR": 1.0
     },
@@ -414,11 +414,11 @@
       "cat": "Obbligazioni",
       "currency": "EUR",
       "bond": false,
-      "price": 107.699997,
-      "valueEUR": 21540.0,
+      "price": 107.709999,
+      "valueEUR": 21542.0,
       "verified": true,
       "error": null,
-      "dayChangePct": -0.00065,
+      "dayChangePct": -0.000557,
       "feedCurrency": "EUR",
       "fxToEUR": 1.0
     },
@@ -430,11 +430,11 @@
       "cat": "Semicore",
       "currency": "EUR",
       "bond": false,
-      "price": 69.699997,
-      "valueEUR": 5924.5,
+      "price": 69.769997,
+      "valueEUR": 5930.45,
       "verified": true,
       "error": null,
-      "dayChangePct": 0.000574,
+      "dayChangePct": 0.001579,
       "feedCurrency": "EUR",
       "fxToEUR": 1.0
     },
@@ -446,11 +446,11 @@
       "cat": "Semicore",
       "currency": "EUR",
       "bond": false,
-      "price": 100.550003,
-      "valueEUR": 5228.6,
+      "price": 100.699997,
+      "valueEUR": 5236.4,
       "verified": true,
       "error": null,
-      "dayChangePct": -0.000497,
+      "dayChangePct": 0.000994,
       "feedCurrency": "EUR",
       "fxToEUR": 1.0
     },
@@ -462,11 +462,11 @@
       "cat": "Liquidità",
       "currency": "EUR",
       "bond": false,
-      "price": 149.863907,
-      "valueEUR": 20980.95,
+      "price": 149.8535,
+      "valueEUR": 20979.49,
       "verified": true,
       "error": null,
-      "dayChangePct": 0.000124,
+      "dayChangePct": 5.4e-05,
       "feedCurrency": "EUR",
       "fxToEUR": 1.0
     },
@@ -478,11 +478,11 @@
       "cat": "Semicore",
       "currency": "EUR",
       "bond": false,
-      "price": 12.19,
-      "valueEUR": 17066.0,
+      "price": 12.274,
+      "valueEUR": 17183.6,
       "verified": true,
       "error": null,
-      "dayChangePct": -0.007167,
+      "dayChangePct": -0.000326,
       "feedCurrency": "EUR",
       "fxToEUR": 1.0
     },
@@ -605,7 +605,7 @@
   "history": [
     {
       "date": "2026-08-07",
-      "verifiedValue": 610240.3,
+      "verifiedValue": 611271.28,
       "verifiedCount": 30
     }
   ]
