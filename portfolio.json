@@ -1,9 +1,9 @@
 {
-  "asOf": "2026-08-07T12:12:17Z",
+  "asOf": "2026-08-07T12:14:42Z",
   "baselineValue": 497174.3972618726,
   "totalCost": 486892.4304092216,
   "liveValue": null,
-  "verifiedValue": 611271.28,
+  "verifiedValue": 436597.13,
   "unverifiedValue": null,
   "positions": [
     {
@@ -31,12 +31,12 @@
       "currency": "USD",
       "bond": false,
       "price": 70.470001,
-      "valueEUR": 3053.11,
+      "valueEUR": 3053.47,
       "verified": true,
       "error": null,
       "dayChangePct": 0.033588,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86650002
+      "fxToEUR": 0.86659998
     },
     {
       "name": "AST SPACEMOBILE RG-A",
@@ -47,12 +47,12 @@
       "currency": "USD",
       "bond": false,
       "price": 67.360001,
-      "valueEUR": 4669.4,
+      "valueEUR": 4669.93,
       "verified": true,
       "error": null,
       "dayChangePct": -0.014917,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86650002
+      "fxToEUR": 0.86659998
     },
     {
       "name": "UNITY SOFTWARE",
@@ -63,12 +63,12 @@
       "currency": "USD",
       "bond": false,
       "price": 40.810001,
-      "valueEUR": 3536.19,
+      "valueEUR": 3536.59,
       "verified": true,
       "error": null,
       "dayChangePct": 0.15055,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86650002
+      "fxToEUR": 0.86659998
     },
     {
       "name": "ERREDUE",
@@ -110,8 +110,8 @@
       "cat": "Speculativo",
       "currency": "GBP",
       "bond": false,
-      "price": 37.834999,
-      "valueEUR": 176356.5,
+      "price": 0.37835,
+      "valueEUR": 1763.56,
       "verified": true,
       "error": null,
       "dayChangePct": 0.01028,
@@ -127,12 +127,12 @@
       "currency": "USD",
       "bond": false,
       "price": 116.620003,
-      "valueEUR": 707.36,
+      "valueEUR": 707.44,
       "verified": true,
       "error": null,
       "dayChangePct": -0.058453,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86650002
+      "fxToEUR": 0.86659998
     },
     {
       "name": "ROCKET LAB",
@@ -143,12 +143,12 @@
       "currency": "USD",
       "bond": false,
       "price": 75.669998,
-      "valueEUR": 3802.95,
+      "valueEUR": 3803.39,
       "verified": true,
       "error": null,
       "dayChangePct": 0.011361,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86650002
+      "fxToEUR": 0.86659998
     },
     {
       "name": "SPACEX RG-A",
@@ -159,12 +159,12 @@
       "currency": "USD",
       "bond": false,
       "price": 114.919998,
-      "valueEUR": 2987.35,
+      "valueEUR": 2987.69,
       "verified": true,
       "error": null,
       "dayChangePct": 0.061421,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86650002
+      "fxToEUR": 0.86659998
     },
     {
       "name": "FIREFLY",
@@ -175,12 +175,12 @@
       "currency": "USD",
       "bond": false,
       "price": 24.059999,
-      "valueEUR": 5212.0,
+      "valueEUR": 5212.6,
       "verified": true,
       "error": null,
       "dayChangePct": 0.053415,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86650002
+      "fxToEUR": 0.86659998
     },
     {
       "name": "ENPHASE ENERGY",
@@ -191,12 +191,12 @@
       "currency": "USD",
       "bond": false,
       "price": 39.669998,
-      "valueEUR": 1031.22,
+      "valueEUR": 1031.34,
       "verified": true,
       "error": null,
       "dayChangePct": 0.018485,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86650002
+      "fxToEUR": 0.86659998
     },
     {
       "name": "ASML HOLD NY REG",
@@ -207,12 +207,12 @@
       "currency": "USD",
       "bond": false,
       "price": 1704.369995,
-      "valueEUR": 2953.67,
+      "valueEUR": 2954.01,
       "verified": true,
       "error": null,
       "dayChangePct": 0.015582,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86650002
+      "fxToEUR": 0.86659998
     },
     {
       "name": "OKLO INC",
@@ -223,12 +223,12 @@
       "currency": "USD",
       "bond": false,
       "price": 42.189999,
-      "valueEUR": 4386.92,
+      "valueEUR": 4387.42,
       "verified": true,
       "error": null,
       "dayChangePct": -0.018609,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86650002
+      "fxToEUR": 0.86659998
     },
     {
       "name": "KLARNA GRP",
@@ -239,12 +239,12 @@
       "currency": "USD",
       "bond": false,
       "price": 20.26,
-      "valueEUR": 877.76,
+      "valueEUR": 877.87,
       "verified": true,
       "error": null,
       "dayChangePct": -0.0054,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86650002
+      "fxToEUR": 0.86659998
     },
     {
       "name": "3x Long SK Hynix ETP",
@@ -254,11 +254,11 @@
       "cat": "Speculativo",
       "currency": "EUR",
       "bond": false,
-      "price": 0.6691,
-      "valueEUR": 334.55,
+      "price": 0.665,
+      "valueEUR": 332.5,
       "verified": true,
       "error": null,
-      "dayChangePct": -0.13553,
+      "dayChangePct": -0.140827,
       "feedCurrency": "EUR",
       "fxToEUR": 1.0
     },
@@ -286,11 +286,11 @@
       "cat": "Semicore",
       "currency": "EUR",
       "bond": false,
-      "price": 18.628,
-      "valueEUR": 14902.4,
+      "price": 18.596001,
+      "valueEUR": 14876.8,
       "verified": true,
       "error": null,
-      "dayChangePct": 0.005289,
+      "dayChangePct": 0.003562,
       "feedCurrency": "EUR",
       "fxToEUR": 1.0
     },
@@ -382,11 +382,11 @@
       "cat": "Core",
       "currency": "EUR",
       "bond": false,
-      "price": 128.490005,
-      "valueEUR": 181170.91,
+      "price": 128.449997,
+      "valueEUR": 181114.5,
       "verified": true,
       "error": null,
-      "dayChangePct": 0.003123,
+      "dayChangePct": 0.002811,
       "feedCurrency": "EUR",
       "fxToEUR": 1.0
     },
@@ -430,11 +430,11 @@
       "cat": "Semicore",
       "currency": "EUR",
       "bond": false,
-      "price": 69.769997,
-      "valueEUR": 5930.45,
+      "price": 69.739998,
+      "valueEUR": 5927.9,
       "verified": true,
       "error": null,
-      "dayChangePct": 0.001579,
+      "dayChangePct": 0.001148,
       "feedCurrency": "EUR",
       "fxToEUR": 1.0
     },
@@ -446,11 +446,11 @@
       "cat": "Semicore",
       "currency": "EUR",
       "bond": false,
-      "price": 100.699997,
-      "valueEUR": 5236.4,
+      "price": 100.730003,
+      "valueEUR": 5237.96,
       "verified": true,
       "error": null,
-      "dayChangePct": 0.000994,
+      "dayChangePct": 0.001292,
       "feedCurrency": "EUR",
       "fxToEUR": 1.0
     },
@@ -498,7 +498,9 @@
       "valueEUR": null,
       "verified": false,
       "error": "quotazione automatica non configurata",
-      "dayChangePct": null
+      "dayChangePct": null,
+      "feedCurrency": null,
+      "fxToEUR": null
     },
     {
       "name": "BTP-1ST38 2.95",
@@ -512,7 +514,9 @@
       "valueEUR": null,
       "verified": false,
       "error": "quotazione automatica non configurata",
-      "dayChangePct": null
+      "dayChangePct": null,
+      "feedCurrency": null,
+      "fxToEUR": null
     },
     {
       "name": "BTP-1AP28 3.4",
@@ -526,7 +530,9 @@
       "valueEUR": null,
       "verified": false,
       "error": "quotazione automatica non configurata",
-      "dayChangePct": null
+      "dayChangePct": null,
+      "feedCurrency": null,
+      "fxToEUR": null
     },
     {
       "name": "BTP-1AP31 0.9",
@@ -540,7 +546,9 @@
       "valueEUR": null,
       "verified": false,
       "error": "quotazione automatica non configurata",
-      "dayChangePct": null
+      "dayChangePct": null,
+      "feedCurrency": null,
+      "fxToEUR": null
     },
     {
       "name": "BTP-1ST49 3.85",
@@ -554,7 +562,9 @@
       "valueEUR": null,
       "verified": false,
       "error": "quotazione automatica non configurata",
-      "dayChangePct": null
+      "dayChangePct": null,
+      "feedCurrency": null,
+      "fxToEUR": null
     },
     {
       "name": "BTP-10MZ32 VAL CUM",
@@ -568,7 +578,9 @@
       "valueEUR": null,
       "verified": false,
       "error": "quotazione automatica non configurata",
-      "dayChangePct": null
+      "dayChangePct": null,
+      "feedCurrency": null,
+      "fxToEUR": null
     },
     {
       "name": "BTP-1ST52 2.15",
@@ -582,7 +594,9 @@
       "valueEUR": null,
       "verified": false,
       "error": "quotazione automatica non configurata",
-      "dayChangePct": null
+      "dayChangePct": null,
+      "feedCurrency": null,
+      "fxToEUR": null
     },
     {
       "name": "LEVA FISSA SPACEX LONG 3X",
@@ -596,7 +610,9 @@
       "valueEUR": null,
       "verified": false,
       "error": "quotazione automatica non configurata",
-      "dayChangePct": null
+      "dayChangePct": null,
+      "feedCurrency": null,
+      "fxToEUR": null
     }
   ],
   "verifiedCost": 425048.89,
@@ -605,7 +621,7 @@
   "history": [
     {
       "date": "2026-08-07",
-      "verifiedValue": 611271.28,
+      "verifiedValue": 436597.13,
       "verifiedCount": 30
     }
   ]
