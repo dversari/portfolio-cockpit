@@ -7,8 +7,27 @@ import yfinance as yf
 from bs4 import BeautifulSoup
 
 P = Path('portfolio.json')
+SYNC = Path('fineco_sync.json')
 data = json.loads(P.read_text(encoding='utf-8'))
+sync = json.loads(SYNC.read_text(encoding='utf-8')) if SYNC.exists() else {}
 UA = {'User-Agent':'Mozilla/5.0 PortfolioCockpit/1.0'}
+
+# Merge latest Fineco structural changes (qty/cost/new positions), without using Fineco as primary market feed.
+existing_isins={p.get('isin') for p in data.get('positions',[]) if p.get('isin')}
+for add in sync.get('additions',[]):
+    if add.get('isin') not in existing_isins:
+        p=dict(add)
+        p.setdefault('verified',False); p.setdefault('error',None); p.setdefault('dayChangePct',None)
+        p.setdefault('price',p.get('finecoPrice')); p.setdefault('valueEUR',p.get('finecoValueEUR'))
+        p.setdefault('feedCurrency',p.get('currency')); p.setdefault('fxToEUR',1.0)
+        p.setdefault('source','Fineco structural sync')
+        data.setdefault('positions',[]).append(p)
+        existing_isins.add(add.get('isin'))
+
+if sync:
+    data['totalCost']=sync.get('totalCost',data.get('totalCost'))
+    data['baselineValue']=sync.get('baselineValue',data.get('baselineValue'))
+    data['finecoSnapshot']={k:sync.get(k) for k in ('asOf','totalCost','baselineValue','profitLoss','profitLossPct','positions')}
 
 BTP_ISIN = {
     'BTP-23GN31 IT SI CUM': 'IT0005713547',
@@ -58,17 +77,16 @@ def borsa_btp(isin):
     return price, (num_it(vm.group(1))/100.0 if vm else None), 'Borsa Italiana MOT'
 
 def btp_fallback(isin):
-    # Secondary fallback that explicitly states Borsa Italiana as its source.
     url=f'https://btpanalisi.it/btp/{isin}'
     r=requests.get(url,headers=UA,timeout=20); r.raise_for_status()
     txt=' '.join(BeautifulSoup(r.text,'html.parser').stripped_strings)
-    patterns=[r'oggi quota\s*([0-9]+(?:[.,][0-9]+)?)',r'Ultimo prezzo\s*([0-9]+(?:[.,][0-9]+)?)',r'Prezzo\s*([0-9]+(?:[.,][0-9]+)?)']
-    for pat in patterns:
+    for pat in [r'oggi quota\s*([0-9]+(?:[.,][0-9]+)?)',r'Ultimo prezzo\s*([0-9]+(?:[.,][0-9]+)?)',r'Prezzo\s*([0-9]+(?:[.,][0-9]+)?)']:
         m=re.search(pat,txt,re.I)
         if m: return num_it(m.group(1)), None, 'BTP Analisi / Borsa Italiana'
     raise RuntimeError('fallback BTP: prezzo non trovato')
 
 def vorvel_cert(isin):
+    # Vorvel page can change markup; only accept a tight, plausible bid/ask pair.
     url='https://www.vorvel.eu/it/certificati/certificati-leva?order=ISINCODECERT&page=2&sort=asc'
     r=requests.get(url,headers=UA,timeout=20); r.raise_for_status()
     soup=BeautifulSoup(r.text,'html.parser')
@@ -77,8 +95,7 @@ def vorvel_cert(isin):
         if isin in tr.get_text(' ',strip=True): row=tr; break
     if row is None: raise RuntimeError('Vorvel: ISIN non trovato')
     txt=row.get_text(' ',strip=True)
-    # Bid/ask are the closest adjacent decimal-comma prices in the live row.
-    raw=re.findall(r'(?<!\d)(\d{1,3},\d{1,4})(?!\d)',txt)
+    raw=re.findall(r'(?<!\d)(\d{1,3}[,.]\d{1,4})(?!\d)',txt)
     vals=[]
     for s in raw:
         try:
@@ -88,7 +105,7 @@ def vorvel_cert(isin):
     pairs=[]
     for a,b in zip(vals,vals[1:]):
         rel=abs(a-b)/max(a,b)
-        if rel < 0.08 and min(a,b) > 0.05: pairs.append((rel,a,b))
+        if rel < 0.05 and min(a,b)>0.05: pairs.append((rel,a,b))
     if not pairs: raise RuntimeError('Vorvel: bid/ask non interpretabili')
     _,bid,ask=min(pairs,key=lambda x:x[0])
     return (bid+ask)/2.0, None, 'Vorvel mid bid/ask'
@@ -99,12 +116,22 @@ def apply_quote(p, price_native, cur='EUR', day_change=None, source=''):
     if not math.isfinite(val) or val<=0: raise RuntimeError('invalid value')
     c=float(p.get('cost') or 0)
     if c>0 and (val > c*8 or val < c/8): raise RuntimeError(f'quotazione incoerente con costo storico ({source})')
-    p.update({'price':round(float(price_native),6),'feedCurrency':cur,'fxToEUR':round(fx,8),'valueEUR':round(val,2),'dayChangePct':day_change,'source':source,'verified':True})
+    p.update({'price':round(float(price_native),6),'feedCurrency':cur,'fxToEUR':round(fx,8),'valueEUR':round(val,2),'dayChangePct':day_change,'source':source,'verified':True,'stale':False})
     return val
 
-verified_value=0.0; verified_cost=0.0; verified_count=0
+def apply_fineco_fallback(p, reason):
+    key=p.get('isin') or p.get('symbol')
+    fb=sync.get('fallbacks',{}).get(key)
+    if not fb and p.get('finecoValueEUR') is not None:
+        fb={'price':p.get('finecoPrice'),'valueEUR':p.get('finecoValueEUR'),'currency':p.get('currency','EUR'),'source':'Fineco snapshot fallback'}
+    if not fb: return None
+    p.update({'price':fb.get('price'),'feedCurrency':fb.get('currency','EUR'),'fxToEUR':1.0,'valueEUR':fb.get('valueEUR'),'dayChangePct':None,'source':fb.get('source','Fineco snapshot fallback'),'verified':False,'stale':True,'error':reason})
+    return float(p['valueEUR'])
+
+verified_value=0.0; verified_cost=0.0; verified_count=0; portfolio_value=0.0; valued_count=0; stale_count=0
 for p in data['positions']:
-    p.update({'verified':False,'error':None,'dayChangePct':None,'price':None,'valueEUR':None,'source':None})
+    p.update({'verified':False,'error':None,'dayChangePct':None,'price':None,'valueEUR':None,'source':None,'stale':False})
+    val=None
     try:
         if p['name'] in BTP_ISIN:
             isin=BTP_ISIN[p['name']]
@@ -113,13 +140,13 @@ for p in data['positions']:
             val=(float(p['qty'])/100.0)*price
             c=float(p.get('cost') or 0)
             if c>0 and (val>c*2 or val<c/2): raise RuntimeError('BTP quote incoerente')
-            p.update({'price':round(price,5),'feedCurrency':'EUR','fxToEUR':1.0,'valueEUR':round(val,2),'dayChangePct':chg,'source':source,'verified':True,'isin':isin})
+            p.update({'price':round(price,5),'feedCurrency':'EUR','fxToEUR':1.0,'valueEUR':round(val,2),'dayChangePct':chg,'source':source,'verified':True,'stale':False,'isin':isin})
         elif p['name'] in CERT_ISIN:
             price,chg,source=vorvel_cert(CERT_ISIN[p['name']])
             val=apply_quote(p,price,'EUR',chg,source); p['isin']=CERT_ISIN[p['name']]
         else:
             price,prev,feed_cur=last_close(p['symbol'])
-            cur=(feed_cur or p.get('currency') or 'EUR').upper()
+            cur=(feed_cur or p.get('feedPreferredCurrency') or p.get('currency') or 'EUR').upper()
             if p['symbol']=='SFR.L':
                 price/=100.0
                 if prev is not None: prev/=100.0
@@ -132,7 +159,12 @@ for p in data['positions']:
             val=apply_quote(p,price,cur,chg,'Yahoo Finance')
         verified_value += val; verified_cost += float(p['cost']); verified_count += 1
     except Exception as e:
-        p['error']=str(e)[:160]
+        reason=str(e)[:160]
+        p['error']=reason
+        val=apply_fineco_fallback(p,reason)
+        if val is not None: stale_count += 1
+    if val is not None:
+        portfolio_value += val; valued_count += 1
     time.sleep(0.08)
 
 # Benchmark / buy-the-dip metrics based on the core MSCI World ETF.
@@ -147,11 +179,17 @@ except Exception as e:
     data['benchmark']={'name':'MSCI World (SWDA)','error':str(e)[:120]}
 
 data['asOf']=datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
-data['verifiedValue']=round(verified_value,2); data['verifiedCost']=round(verified_cost,2)
-data['verifiedCount']=verified_count; data['unverifiedCount']=len(data['positions'])-verified_count
-data['liveValue']=round(verified_value,2) if verified_count==len(data['positions']) else None
+data['verifiedValue']=round(verified_value,2)
+data['verifiedCount']=verified_count
+data['unverifiedCount']=len(data['positions'])-verified_count
+data['staleCount']=stale_count
+data['valuedCount']=valued_count
+data['liveValue']=round(portfolio_value,2) if valued_count==len(data['positions']) else None
+# If every position has either a fresh quote or a Fineco fallback, P/L must be against the entire cost base.
+data['verifiedCost']=round(float(data.get('totalCost',verified_cost)),2) if data['liveValue'] is not None else round(verified_cost,2)
 data.setdefault('history',[])
-data['history'].append({'date':data['asOf'][:10],'value':round(verified_value,2),'coverage':verified_count})
+hist_value=data['liveValue'] if data['liveValue'] is not None else data['verifiedValue']
+data['history'].append({'date':data['asOf'][:10],'value':round(hist_value,2),'coverage':verified_count,'stale':stale_count})
 by_date={x['date']:x for x in data['history']}; data['history']=[by_date[k] for k in sorted(by_date)][-730:]
 P.write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf-8')
-print(f'priced {verified_count}/{len(data["positions"])}: EUR {verified_value:,.2f}')
+print(f'fresh {verified_count}/{len(data["positions"])}; valued {valued_count}/{len(data["positions"])}; EUR {portfolio_value:,.2f}; stale {stale_count}')
