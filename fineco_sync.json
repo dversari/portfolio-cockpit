@@ -1,8 +1,10 @@
 {
-  "syncVersion": 2,
-  "asOf": "2026-08-07T20:20:00+02:00",
+  "syncVersion": 3,
+  "asOf": "2026-08-07T20:54:23+02:00",
   "totalCost": 489646.7304092216,
   "baselineValue": 503554.36232726066,
+  "cashAvailable": 10254.01,
+  "patrimonyFineco": 513633.63,
   "profitLoss": 13907.631918039011,
   "profitLossPct": 0.0284034,
   "positions": 39,
