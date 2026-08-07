@@ -1,0 +1,39 @@
+{
+  "asOf": "2026-08-07T20:20:00+02:00",
+  "totalCost": 489646.7304092216,
+  "baselineValue": 503554.36232726066,
+  "profitLoss": 13907.631918039011,
+  "profitLossPct": 0.0284034,
+  "positions": 39,
+  "additions": [
+    {
+      "name": "HANetf KRC Cat Bond UCITS ETF Acc",
+      "isin": "IE000UWJUW87",
+      "symbol": "CATB.MI",
+      "finecoSymbol": "CATB.MI",
+      "qty": 300,
+      "cost": 2754.3,
+      "cat": "Semicore",
+      "currency": "EUR",
+      "bond": false,
+      "finecoPrice": 9.15,
+      "finecoValueEUR": 2745.0,
+      "finecoVarPct": -0.00337654,
+      "finecoRateo": 0.0
+    }
+  ],
+  "fallbacks": {
+    "IT0005710873": {
+      "price": 4.23,
+      "valueEUR": 211.5,
+      "currency": "EUR",
+      "source": "Fineco snapshot 2026-08-07 20:20"
+    },
+    "IT0005696320": {
+      "price": 99.0,
+      "valueEUR": 9900.0,
+      "currency": "EUR",
+      "source": "Fineco snapshot 2026-08-07 20:20"
+    }
+  }
+}
