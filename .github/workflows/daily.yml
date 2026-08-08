@@ -8,6 +8,7 @@ on:
     branches: [main]
     paths-ignore:
       - 'portfolio.json'
+      - 'analytics.json'
 
 permissions:
   contents: write
@@ -27,18 +28,20 @@ jobs:
         with:
           python-version: '3.12'
       - name: Install market data dependencies
-        run: pip install --quiet yfinance requests beautifulsoup4
+        run: pip install --quiet yfinance requests beautifulsoup4 pandas
       - name: Update market prices
         run: python scripts/update_prices.py
       - name: Update constant-FX history
         run: python scripts/update_fx_history.py
+      - name: Update portfolio analytics
+        run: python scripts/update_analytics.py
       - name: Enrich Rumor Radar technicals
         run: python scripts/update_trade_idea.py
       - name: Commit updated data
         run: |
           git config user.name "portfolio-bot"
           git config user.email "portfolio-bot@users.noreply.github.com"
-          git add portfolio.json trade_ideas.json
+          git add portfolio.json analytics.json trade_ideas.json
           git diff --cached --quiet || git commit -m "15-minute portfolio update"
           git push
       - name: Configure Pages
