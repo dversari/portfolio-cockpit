@@ -7,11 +7,14 @@
   Object.assign(bar.style,{position:'fixed',left:'50%',top:'calc(env(safe-area-inset-top) + 8px)',transform:'translate(-50%,-70px)',zIndex:'9999',padding:'8px 13px',borderRadius:'999px',background:'#243c33',color:'#fff',font:'700 12px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif',boxShadow:'0 6px 18px rgba(0,0,0,.14)',transition:'transform .18s ease,opacity .18s ease',opacity:'0',pointerEvents:'none'});
   document.body.appendChild(bar);
 
-  const stamp=document.createElement('div');
-  stamp.id='dataFreshness';
-  Object.assign(stamp.style,{position:'fixed',right:'12px',top:'calc(env(safe-area-inset-top) + 10px)',zIndex:'9998',padding:'6px 9px',borderRadius:'999px',background:'#dfe8e2',color:'#2f6652',font:'700 11px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif',boxShadow:'0 4px 14px rgba(0,0,0,.08)'});
-  stamp.textContent='Dati: —';
-  document.body.appendChild(stamp);
+  // Reuse the header badge instead of drawing a second fixed badge over it.
+  const stamp=document.getElementById('status');
+  if(stamp){
+    stamp.style.position='static';
+    stamp.style.flex='0 0 auto';
+    stamp.style.whiteSpace='nowrap';
+    stamp.style.zIndex='auto';
+  }
 
   function fmtAge(ms){
     const m=Math.max(0,Math.round(ms/60000));
@@ -21,6 +24,7 @@
     return r?`${h}h ${r}m fa`:`${h}h fa`;
   }
   async function updateStamp(){
+    if(!stamp)return;
     try{
       const r=await fetch('portfolio.json?stamp='+Date.now(),{cache:'no-store'});
       const d=await r.json();
