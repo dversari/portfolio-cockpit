@@ -1,0 +1,169 @@
+import json, math
+from datetime import datetime, timezone
+from pathlib import Path
+
+import yfinance as yf
+
+P=Path('portfolio.json')
+OUT=Path('analytics.json')
+data=json.loads(P.read_text(encoding='utf-8'))
+positions=data.get('positions',[])
+now=datetime.now(timezone.utc)
+
+
+def pct_change(series, days=None, ytd=False):
+    if series is None or len(series)<2: return None
+    s=series.dropna()
+    if len(s)<2: return None
+    end=float(s.iloc[-1])
+    if ytd:
+        year=s.index[-1].year
+        y=s[s.index.year==year]
+        if len(y)<2:return None
+        start=float(y.iloc[0])
+    else:
+        n=min(days or len(s)-1,len(s)-1)
+        start=float(s.iloc[-1-n])
+    return end/start-1 if start else None
+
+
+def hist(symbol,period='max'):
+    try:
+        h=yf.Ticker(symbol).history(period=period,interval='1d',auto_adjust=False)
+        if h is None or h.empty:return None
+        return h['Close'].dropna()
+    except Exception:
+        return None
+
+swda=hist('SWDA.MI','max')
+bench={"name":"MSCI World (SWDA)"}
+if swda is not None and len(swda):
+    cur=float(swda.iloc[-1]); ath=float(swda.max()); ath_date=swda.idxmax().date().isoformat()
+    bench.update({
+        'price':cur,'ath':ath,'athDate':ath_date,'drawdownATH':cur/ath-1 if ath else None,
+        'daysSinceATH':(swda.index[-1].date()-swda.idxmax().date()).days,
+        'returns':{'1w':pct_change(swda,5),'1m':pct_change(swda,21),'ytd':pct_change(swda,ytd=True),'1y':pct_change(swda,252)}
+    })
+
+# Current category weights and a pragmatic composite benchmark proxy.
+catvals={}
+for p in positions:
+    v=float(p.get('valueEUR') or 0)
+    if v>0:catvals[p.get('cat') or 'Altro']=catvals.get(p.get('cat') or 'Altro',0)+v
+ptot=sum(catvals.values()) or 1
+weights={k:v/ptot for k,v in catvals.items()}
+# Core/Semicore/Speculativo -> global equity proxy; bonds -> global EUR-hedged aggregate; commodities -> CMOD; liquidity -> XEON.
+proxy_map={'Core':'SWDA.MI','Semicore':'SWDA.MI','Speculativo':'SWDA.MI','Obbligazioni':'AGGH.MI','Commodities':'CMOD.MI','Liquidità':'XEON.MI'}
+proxy_w={}
+for cat,w in weights.items():
+    sym=proxy_map.get(cat)
+    if sym:proxy_w[sym]=proxy_w.get(sym,0)+w
+s=sum(proxy_w.values()) or 1
+proxy_w={k:v/s for k,v in proxy_w.items()}
+series={k:hist(k,'2y') for k in proxy_w}
+valid=[x for x in series.values() if x is not None and len(x)>2]
+composite={'name':'Benchmark composito proxy','weights':proxy_w,'returns':{}}
+if valid:
+    common=valid[0].index
+    for x in valid[1:]:common=common.intersection(x.index)
+    if len(common)>2:
+        vals=[]
+        for dt in common:
+            total=0;ws=0
+            for sym,w in proxy_w.items():
+                ser=series.get(sym)
+                if ser is not None and dt in ser.index:
+                    total += w*float(ser.loc[dt]); ws+=w
+            vals.append(total/ws if ws else None)
+        import pandas as pd
+        comp=pd.Series(vals,index=common).dropna()
+        # Convert weighted prices into a return index so unlike price levels remain comparable.
+        if len(comp)>1:
+            rets=[]
+            for i in range(1,len(comp)):
+                # weighted daily returns by proxy weights
+                rr=0;ww=0
+                for sym,w in proxy_w.items():
+                    ser=series.get(sym)
+                    if ser is not None and common[i] in ser.index and common[i-1] in ser.index:
+                        a=float(ser.loc[common[i-1]]); b=float(ser.loc[common[i]])
+                        if a: rr+=w*(b/a-1);ww+=w
+                rets.append(rr/ww if ww else 0)
+            idx=[100.0]
+            for r in rets: idx.append(idx[-1]*(1+r))
+            comp=pd.Series(idx,index=common[:len(idx)])
+            composite['returns']={'1w':pct_change(comp,5),'1m':pct_change(comp,21),'ytd':pct_change(comp,ytd=True),'1y':pct_change(comp,252)}
+
+# Portfolio-history returns. True TWR is only valid once external flows are imported.
+history=sorted(data.get('history',[]),key=lambda x:x.get('date',''))
+ph=[x for x in history if x.get('value')]
+periods={'today':None,'1w':None,'1m':None,'ytd':None,'1y':None,'sinceStart':None,'twr':None,'twrStatus':'in attesa flussi Fineco'}
+if len(ph)>=2:
+    vals=[float(x['value']) for x in ph]
+    periods['sinceStart']=vals[-1]/vals[0]-1 if vals[0] else None
+    def p_ret(n):
+        return vals[-1]/vals[-1-min(n,len(vals)-1)]-1
+    periods['1w']=p_ret(7) if len(vals)>=2 else None
+    periods['1m']=p_ret(30) if len(vals)>=2 else None
+    periods['1y']=p_ret(365) if len(vals)>=2 else None
+    y=str(now.year)
+    yh=[x for x in ph if str(x.get('date','')).startswith(y)]
+    if len(yh)>=2:periods['ytd']=float(yh[-1]['value'])/float(yh[0]['value'])-1
+# Current intraday estimate from position day changes
+num=den=0
+for p in positions:
+    v=p.get('valueEUR'); r=p.get('dayChangePct')
+    if v is not None and r is not None and 1+r!=0:
+        prev=float(v)/(1+float(r)); num+=float(v)-prev; den+=prev
+periods['today']=num/den if den else None
+
+# Risk metrics from actual portfolio history only, once enough daily points exist.
+risk={'vol30':None,'vol90':None,'betaWorld':None,'var95_1d':None,'status':'storico insufficiente'}
+if len(ph)>=30:
+    rets=[]
+    for a,b in zip(ph,ph[1:]):
+        av=float(a['value']);bv=float(b['value'])
+        if av:rets.append(bv/av-1)
+    if len(rets)>=20:
+        import statistics
+        r30=rets[-30:]; risk['vol30']=statistics.stdev(r30)*math.sqrt(252) if len(r30)>1 else None
+        risk['var95_1d']=1.645*statistics.stdev(r30) if len(r30)>1 else None
+        if len(rets)>=60:
+            r90=rets[-90:]; risk['vol90']=statistics.stdev(r90)*math.sqrt(252) if len(r90)>1 else None
+        risk['status']='parziale'
+
+# Concentration
+vals=sorted([(float(p.get('valueEUR') or 0),p.get('name')) for p in positions],reverse=True)
+concentration={'top5':sum(v for v,_ in vals[:5])/ptot,'top10':sum(v for v,_ in vals[:10])/ptot,'largest':{'name':vals[0][1],'weight':vals[0][0]/ptot} if vals else None}
+
+# Currency exposure: explicit trading/feed currency, NOT ETF look-through.
+curvals={}
+for p in positions:
+    v=float(p.get('valueEUR') or 0); c=(p.get('feedCurrency') or p.get('currency') or 'EUR').upper()
+    curvals[c]=curvals.get(c,0)+v
+currency={'explicit':{k:v/ptot for k,v in sorted(curvals.items(),key=lambda z:-z[1])},'lookThroughStatus':'ETF look-through non ancora disponibile'}
+
+# Data quality
+stale=[p for p in positions if p.get('stale') and p.get('valueEUR') is not None]
+stale_val=sum(float(p.get('valueEUR') or 0) for p in stale)
+data_quality={'freshPositions':len(positions)-len(stale),'totalPositions':len(positions),'freshValuePct':1-stale_val/ptot,'staleValuePct':stale_val/ptot,'stale':[]}
+for p in stale:
+    age=None
+    try:
+        dt=datetime.fromisoformat(str(p.get('lastGoodAsOf')).replace('Z','+00:00'));age=(now-dt).total_seconds()/3600
+    except Exception:pass
+    data_quality['stale'].append({'name':p.get('name'),'valueEUR':p.get('valueEUR'),'ageHours':age})
+
+# Attribution since the first constant-FX observation. Income and external flows remain separate once Movimenti are imported.
+attribution={'marketEUR':None,'fxEUR':data.get('fxEffectEUR'),'incomeEUR':None,'externalFlowsEUR':None,'status':'parziale: mercato/cambio attivi; income e flussi richiedono Movimenti Fineco'}
+fx_hist=[x for x in ph if x.get('constantFxValue') is not None]
+if fx_hist:
+    attribution['marketEUR']=float(data.get('constantFxValue') or fx_hist[-1]['constantFxValue'])-float(fx_hist[0]['constantFxValue'])
+
+# Income and calendar are data-driven placeholders until Fineco movements are imported.
+income={'ytd':None,'next12m':None,'status':'in attesa import Movimenti Fineco'}
+events={'items':[],'status':'in attesa dati completi; scadenze BTP verranno integrate dal file Fineco'}
+
+out={'asOf':now.strftime('%Y-%m-%dT%H:%M:%SZ'),'benchmark':bench,'compositeBenchmark':composite,'periodReturns':periods,'risk':risk,'concentration':concentration,'currencyExposure':currency,'dataQuality':data_quality,'attribution':attribution,'income':income,'events':events}
+OUT.write_text(json.dumps(out,ensure_ascii=False,indent=2),encoding='utf-8')
+print('analytics updated')
