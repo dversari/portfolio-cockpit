@@ -44,9 +44,9 @@
   }
 
   function show(y){
-    const dy=Math.min(95,Math.max(0,y));
-    bar.style.opacity=String(Math.min(1,dy/28));
-    bar.style.transform=`translate(-50%,${Math.min(18,dy-55)}px)`;
+    const dy=Math.min(110,Math.max(0,y));
+    bar.style.opacity=String(Math.min(1,dy/24));
+    bar.style.transform=`translate(-50%,${Math.min(20,dy-52)}px)`;
     bar.textContent=dy>=THRESHOLD?'↻ Rilascia per aggiornare':'↓ Tira per aggiornare';
   }
   function hide(){bar.style.opacity='0';bar.style.transform='translate(-50%,-70px)';}
@@ -57,26 +57,35 @@
       if('serviceWorker' in navigator){const reg=await navigator.serviceWorker.getRegistration();if(reg)await reg.update();}
       await Promise.allSettled([
         fetch('portfolio.json?refresh='+Date.now(),{cache:'no-store'}),
-        fetch('fineco_sync.json?refresh='+Date.now(),{cache:'no-store'})
+        fetch('fineco_sync.json?refresh='+Date.now(),{cache:'no-store'}),
+        fetch('trade_ideas.json?refresh='+Date.now(),{cache:'no-store'})
       ]);
     }catch(e){}
     location.reload();
   }
 
   addEventListener('touchstart',e=>{
-    if(refreshing||window.scrollY>0||!e.touches?.length)return;
+    if(refreshing||window.scrollY>1||!e.touches?.length)return;
     startY=e.touches[0].clientY;distance=0;pulling=true;
   },{passive:true});
+
   addEventListener('touchmove',e=>{
     if(!pulling||!e.touches?.length)return;
     distance=e.touches[0].clientY-startY;
-    if(distance<0){pulling=false;hide();return;}
-    show(distance);
-  },{passive:true});
+    if(distance<=0){pulling=false;hide();return;}
+    if(window.scrollY<=1){
+      e.preventDefault();
+      show(distance);
+    }
+  },{passive:false});
+
   addEventListener('touchend',()=>{
-    if(!pulling)return;pulling=false;
+    if(!pulling)return;
+    pulling=false;
     if(distance>=THRESHOLD)refresh();else hide();
   },{passive:true});
+
+  addEventListener('touchcancel',()=>{pulling=false;hide();},{passive:true});
 
   updateStamp();
   setInterval(updateStamp,60000);
