@@ -86,7 +86,6 @@ def btp_fallback(isin):
     raise RuntimeError('fallback BTP: prezzo non trovato')
 
 def vorvel_cert(isin):
-    # Vorvel page can change markup; only accept a tight, plausible bid/ask pair.
     url='https://www.vorvel.eu/it/certificati/certificati-leva?order=ISINCODECERT&page=2&sort=asc'
     r=requests.get(url,headers=UA,timeout=20); r.raise_for_status()
     soup=BeautifulSoup(r.text,'html.parser')
@@ -116,7 +115,30 @@ def apply_quote(p, price_native, cur='EUR', day_change=None, source=''):
     if not math.isfinite(val) or val<=0: raise RuntimeError('invalid value')
     c=float(p.get('cost') or 0)
     if c>0 and (val > c*8 or val < c/8): raise RuntimeError(f'quotazione incoerente con costo storico ({source})')
-    p.update({'price':round(float(price_native),6),'feedCurrency':cur,'fxToEUR':round(fx,8),'valueEUR':round(val,2),'dayChangePct':day_change,'source':source,'verified':True,'stale':False})
+    p.update({'price':round(float(price_native),6),'feedCurrency':cur,'fxToEUR':round(fx,8),'valueEUR':round(val,2),'dayChangePct':day_change,'source':source,'verified':True,'stale':False,'error':None,'lastGoodAsOf':datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')})
+    return val
+
+def apply_previous_quote(p, previous, reason):
+    if previous.get('valueEUR') is None or previous.get('price') is None:
+        return None
+    try:
+        val=float(previous['valueEUR'])
+        if not math.isfinite(val) or val<=0:
+            return None
+    except Exception:
+        return None
+    p.update({
+        'price': previous.get('price'),
+        'feedCurrency': previous.get('feedCurrency') or previous.get('currency') or p.get('currency','EUR'),
+        'fxToEUR': previous.get('fxToEUR',1.0),
+        'valueEUR': previous.get('valueEUR'),
+        'dayChangePct': None,
+        'source': (previous.get('source') or 'Ultimo prezzo valido') + ' · ultimo valido',
+        'verified': False,
+        'stale': True,
+        'error': reason,
+        'lastGoodAsOf': previous.get('lastGoodAsOf') or data.get('asOf')
+    })
     return val
 
 def apply_fineco_fallback(p, reason):
@@ -125,11 +147,12 @@ def apply_fineco_fallback(p, reason):
     if not fb and p.get('finecoValueEUR') is not None:
         fb={'price':p.get('finecoPrice'),'valueEUR':p.get('finecoValueEUR'),'currency':p.get('currency','EUR'),'source':'Fineco snapshot fallback'}
     if not fb: return None
-    p.update({'price':fb.get('price'),'feedCurrency':fb.get('currency','EUR'),'fxToEUR':1.0,'valueEUR':fb.get('valueEUR'),'dayChangePct':None,'source':fb.get('source','Fineco snapshot fallback'),'verified':False,'stale':True,'error':reason})
+    p.update({'price':fb.get('price'),'feedCurrency':fb.get('currency','EUR'),'fxToEUR':1.0,'valueEUR':fb.get('valueEUR'),'dayChangePct':None,'source':fb.get('source','Fineco snapshot fallback'),'verified':False,'stale':True,'error':reason,'lastGoodAsOf':sync.get('asOf')})
     return float(p['valueEUR'])
 
 verified_value=0.0; verified_cost=0.0; verified_count=0; portfolio_value=0.0; valued_count=0; stale_count=0
 for p in data['positions']:
+    previous=dict(p)
     p.update({'verified':False,'error':None,'dayChangePct':None,'price':None,'valueEUR':None,'source':None,'stale':False})
     val=None
     try:
@@ -140,7 +163,7 @@ for p in data['positions']:
             val=(float(p['qty'])/100.0)*price
             c=float(p.get('cost') or 0)
             if c>0 and (val>c*2 or val<c/2): raise RuntimeError('BTP quote incoerente')
-            p.update({'price':round(price,5),'feedCurrency':'EUR','fxToEUR':1.0,'valueEUR':round(val,2),'dayChangePct':chg,'source':source,'verified':True,'stale':False,'isin':isin})
+            p.update({'price':round(price,5),'feedCurrency':'EUR','fxToEUR':1.0,'valueEUR':round(val,2),'dayChangePct':chg,'source':source,'verified':True,'stale':False,'isin':isin,'lastGoodAsOf':datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')})
         elif p['name'] in CERT_ISIN:
             price,chg,source=vorvel_cert(CERT_ISIN[p['name']])
             val=apply_quote(p,price,'EUR',chg,source); p['isin']=CERT_ISIN[p['name']]
@@ -161,7 +184,11 @@ for p in data['positions']:
     except Exception as e:
         reason=str(e)[:160]
         p['error']=reason
-        val=apply_fineco_fallback(p,reason)
+        # First choice on a transient feed failure: preserve the last good market value.
+        val=apply_previous_quote(p, previous, reason)
+        # If we have never had a valid quote, fall back to the latest Fineco snapshot.
+        if val is None:
+            val=apply_fineco_fallback(p,reason)
         if val is not None: stale_count += 1
     if val is not None:
         portfolio_value += val; valued_count += 1
@@ -185,7 +212,7 @@ data['unverifiedCount']=len(data['positions'])-verified_count
 data['staleCount']=stale_count
 data['valuedCount']=valued_count
 data['liveValue']=round(portfolio_value,2) if valued_count==len(data['positions']) else None
-# If every position has either a fresh quote or a Fineco fallback, P/L must be against the entire cost base.
+# If every position has either a fresh quote or a stale/fallback value, P/L must be against the entire cost base.
 data['verifiedCost']=round(float(data.get('totalCost',verified_cost)),2) if data['liveValue'] is not None else round(verified_cost,2)
 data.setdefault('history',[])
 hist_value=data['liveValue'] if data['liveValue'] is not None else data['verifiedValue']
