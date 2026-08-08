@@ -30,11 +30,13 @@ jobs:
         run: pip install --quiet yfinance requests beautifulsoup4
       - name: Update market prices
         run: python scripts/update_prices.py
+      - name: Enrich Rumor Radar technicals
+        run: python scripts/update_trade_idea.py
       - name: Commit updated data
         run: |
           git config user.name "portfolio-bot"
           git config user.email "portfolio-bot@users.noreply.github.com"
-          git add portfolio.json
+          git add portfolio.json trade_ideas.json
           git diff --cached --quiet || git commit -m "Hourly portfolio update"
           git push
       - name: Configure Pages
