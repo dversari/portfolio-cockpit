@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-08T08:22:06Z",
+  "asOf": "2026-08-08T09:02:55Z",
   "benchmark": {
     "name": "MSCI World (SWDA)",
     "price": 128.6699981689453,
@@ -17,25 +17,25 @@
   "compositeBenchmark": {
     "name": "Benchmark composito proxy",
     "weights": {
-      "SWDA.MI": 0.6899651477217255,
-      "CMOD.MI": 0.024044593049331178,
-      "AGGH.MI": 0.24438118184838065,
-      "XEON.MI": 0.04160907738056278
+      "SWDA.MI": 0.6899777534106208,
+      "CMOD.MI": 0.02404361542163104,
+      "AGGH.MI": 0.24437124556822498,
+      "XEON.MI": 0.04160738559952323
     },
     "returns": {
-      "1w": 0.025831934032871873,
-      "1m": 0.016382963097141934,
-      "ytd": 0.11157580331141648,
-      "1y": 0.17924314156197307
+      "1w": 0.025832335658161787,
+      "1m": 0.0163832517706628,
+      "ytd": 0.11157757217888187,
+      "1y": 0.17924603416490315
     }
   },
   "periodReturns": {
-    "today": 0.008842256617819672,
-    "1w": 0.0015011980801398206,
-    "1m": 0.0015011980801398206,
-    "ytd": 0.0015011980801398206,
-    "1y": 0.0015011980801398206,
-    "sinceStart": 0.0015011980801398206,
+    "today": 0.008949366622926336,
+    "1w": 0.001541939578590057,
+    "1m": 0.001541939578590057,
+    "ytd": 0.001541939578590057,
+    "1y": 0.001541939578590057,
+    "sinceStart": 0.001541939578590057,
     "twr": null,
     "twrStatus": "in attesa flussi Fineco"
   },
@@ -47,37 +47,37 @@
     "status": "storico insufficiente"
   },
   "concentration": {
-    "top5": 0.5990113049147116,
-    "top10": 0.749437455714662,
+    "top5": 0.5989869497491581,
+    "top10": 0.749406984381056,
     "largest": {
       "name": "iShares Core MSCI World",
-      "weight": 0.35984566745694996
+      "weight": 0.35983103651303844
     }
   },
   "currencyExposure": {
     "explicit": {
-      "EUR": 0.925096619490063,
-      "USD": 0.0714365788738975,
-      "GBP": 0.00346680163603952
+      "EUR": 0.9249747131134846,
+      "USD": 0.07143367433822218,
+      "GBP": 0.0035916125482934012
     },
     "lookThroughStatus": "ETF look-through non ancora disponibile"
   },
   "dataQuality": {
     "freshPositions": 38,
     "totalPositions": 39,
-    "freshValuePct": 0.9995805016700199,
-    "staleValuePct": 0.0004194983299801235,
+    "freshValuePct": 0.9995805187263779,
+    "staleValuePct": 0.0004194812736221012,
     "stale": [
       {
         "name": "LEVA FISSA SPACEX LONG 3X",
         "valueEUR": 211.5,
-        "ageHours": 2.9684632274999996
+        "ageHours": 3.648756966111111
       }
     ]
   },
   "attribution": {
     "marketEUR": 0.0,
-    "fxEUR": -0.0,
+    "fxEUR": 0.01,
     "incomeEUR": null,
     "externalFlowsEUR": null,
     "status": "parziale: mercato/cambio attivi; income e flussi richiedono Movimenti Fineco"
