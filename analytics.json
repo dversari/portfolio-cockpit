@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-08T10:39:20Z",
+  "asOf": "2026-08-08T11:11:56Z",
   "benchmark": {
     "name": "MSCI World (SWDA)",
     "price": 128.6699981689453,
@@ -71,7 +71,7 @@
       {
         "name": "LEVA FISSA SPACEX LONG 3X",
         "valueEUR": 211.5,
-        "ageHours": 5.255752220555555
+        "ageHours": 5.799075139444445
       }
     ]
   },
