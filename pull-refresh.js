@@ -7,14 +7,8 @@
   Object.assign(bar.style,{position:'fixed',left:'50%',top:'calc(env(safe-area-inset-top) + 8px)',transform:'translate(-50%,-70px)',zIndex:'9999',padding:'8px 13px',borderRadius:'999px',background:'#243c33',color:'#fff',font:'700 12px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif',boxShadow:'0 6px 18px rgba(0,0,0,.14)',transition:'transform .18s ease,opacity .18s ease',opacity:'0',pointerEvents:'none'});
   document.body.appendChild(bar);
 
-  // Reuse the header badge instead of drawing a second fixed badge over it.
   const stamp=document.getElementById('status');
-  if(stamp){
-    stamp.style.position='static';
-    stamp.style.flex='0 0 auto';
-    stamp.style.whiteSpace='nowrap';
-    stamp.style.zIndex='auto';
-  }
+  if(stamp){stamp.textContent='Dati: —';}
 
   function fmtAge(ms){
     const m=Math.max(0,Math.round(ms/60000));
@@ -24,7 +18,6 @@
     return r?`${h}h ${r}m fa`:`${h}h fa`;
   }
   async function updateStamp(){
-    if(!stamp)return;
     try{
       const r=await fetch('portfolio.json?stamp='+Date.now(),{cache:'no-store'});
       const d=await r.json();
@@ -32,13 +25,21 @@
       if(isNaN(t))throw new Error('bad date');
       const age=Date.now()-t.getTime();
       const hh=t.toLocaleTimeString('it-IT',{hour:'2-digit',minute:'2-digit'});
-      stamp.textContent=`Dati ${hh} · ${fmtAge(age)}`;
-      const stale=age>60*60*1000;
-      stamp.style.background=stale?'#eadde0':'#dfe8e2';
-      stamp.style.color=stale?'#7b3f4a':'#2f6652';
+      if(stamp){
+        stamp.textContent=`Dati ${hh} · ${fmtAge(age)}`;
+        const staleAge=age>60*60*1000;
+        stamp.style.background=staleAge?'#eadde0':'#dfe8e2';
+        stamp.style.color=staleAge?'#7b3f4a':'#2f6652';
+      }
+      const cov=document.getElementById('coverage');
+      if(cov){
+        const valued=d.valuedCount ?? d.verifiedCount ?? 0;
+        const total=(d.positions||[]).length;
+        const stale=d.staleCount||0;
+        cov.textContent=`${valued}/${total}${stale?` · ${stale} stale`:''}`;
+      }
     }catch(e){
-      stamp.textContent='Dati non verificati';
-      stamp.style.background='#eadde0';stamp.style.color='#7b3f4a';
+      if(stamp){stamp.textContent='Dati non verificati';stamp.style.background='#eadde0';stamp.style.color='#7b3f4a';}
     }
   }
 
