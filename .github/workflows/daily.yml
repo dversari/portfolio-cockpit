@@ -30,6 +30,8 @@ jobs:
         run: pip install --quiet yfinance requests beautifulsoup4
       - name: Update market prices
         run: python scripts/update_prices.py
+      - name: Update constant-FX history
+        run: python scripts/update_fx_history.py
       - name: Enrich Rumor Radar technicals
         run: python scripts/update_trade_idea.py
       - name: Commit updated data
