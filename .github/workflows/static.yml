@@ -35,7 +35,7 @@ jobs:
           s=p.read_text(encoding='utf-8')
           tags=[
             '<script src="analytics-panel.js?v=14"></script>',
-            '<script src="buy-dip-reserve.js?v=1"></script>'
+            '<script src="buy-dip-reserve.js?v=2"></script>'
           ]
           for tag in tags:
               if tag not in s:
