@@ -30,6 +30,8 @@ jobs:
         run: python scripts/update_fx_history.py
       - name: Update portfolio analytics
         run: python scripts/update_analytics.py
+      - name: Update effective attribution
+        run: python scripts/update_attribution.py
       - name: Enrich Rumor Radar technicals
         run: python scripts/update_trade_idea.py
       - name: Commit updated data
