@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-09T05:11:14Z",
+  "asOf": "2026-08-09T07:11:02Z",
   "benchmark": {
     "name": "MSCI World (SWDA)",
     "price": 128.6699981689453,
@@ -60,7 +60,26 @@
       "USD": 0.07143367433822218,
       "GBP": 0.0035916125482934012
     },
-    "lookThroughStatus": "ETF look-through non ancora disponibile"
+    "effective": {
+      "USD": 0.43170007687911643,
+      "EUR": 0.3616058066442423,
+      "JPY": 0.03030635124002036,
+      "CNY": 0.026647621092938525,
+      "TWD": 0.024078258823079533,
+      "GBP": 0.021576189481297817,
+      "INR": 0.019985715819703893,
+      "CAD": 0.018111111128741003,
+      "OTHER": 0.017303851647303952,
+      "KRW": 0.011719902178950354,
+      "CHF": 0.010633503197795992,
+      "AUD": 0.009676848683723299,
+      "BRL": 0.0055515877276955256,
+      "SAR": 0.004441270182156421,
+      "ZAR": 0.0033309526366173156,
+      "MXN": 0.0033309526366173156
+    },
+    "lookThroughCoverage": 0.7806795017490685,
+    "lookThroughStatus": "Esposizione economica stimata: look-through proxy per ETF; hedged EUR trattati EUR. Da affinare con holdings issuer."
   },
   "dataQuality": {
     "freshPositions": 38,
@@ -71,7 +90,7 @@
       {
         "name": "LEVA FISSA SPACEX LONG 3X",
         "valueEUR": 211.5,
-        "ageHours": 23.787246413611108
+        "ageHours": 25.783967778333334
       }
     ]
   },
