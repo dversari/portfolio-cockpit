@@ -26,13 +26,12 @@ jobs:
         uses: actions/checkout@v4
       - name: Build deploy copy
         run: |
-          rm -rf _site
-          mkdir _site
-          cp -a . _site/
-          rm -rf _site/.git _site/_site
+          rm -rf /tmp/portfolio-site
+          mkdir -p /tmp/portfolio-site
+          rsync -a --exclude='.git' --exclude='_site' ./ /tmp/portfolio-site/
           python - <<'PY'
           from pathlib import Path
-          p=Path('_site/index.html')
+          p=Path('/tmp/portfolio-site/index.html')
           s=p.read_text(encoding='utf-8')
           tag='<script src="analytics-panel.js?v=14"></script>'
           if tag not in s:
@@ -44,7 +43,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '_site'
+          path: '/tmp/portfolio-site'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
