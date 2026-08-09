@@ -33,9 +33,13 @@ jobs:
           from pathlib import Path
           p=Path('/tmp/portfolio-site/index.html')
           s=p.read_text(encoding='utf-8')
-          tag='<script src="analytics-panel.js?v=14"></script>'
-          if tag not in s:
-              s=s.replace('</body>', tag+'\n</body>')
+          tags=[
+            '<script src="analytics-panel.js?v=14"></script>',
+            '<script src="buy-dip-reserve.js?v=1"></script>'
+          ]
+          for tag in tags:
+              if tag not in s:
+                  s=s.replace('</body>', tag+'\n</body>')
           p.write_text(s, encoding='utf-8')
           PY
       - name: Setup Pages
