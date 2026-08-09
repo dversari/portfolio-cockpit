@@ -3,12 +3,7 @@ name: Update portfolio and deploy
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/15 * * * *'
-  push:
-    branches: [main]
-    paths-ignore:
-      - 'portfolio.json'
-      - 'analytics.json'
+    - cron: '7,22,37,52 * * * *'
 
 permissions:
   contents: write
@@ -16,7 +11,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
+  group: portfolio-update
   cancel-in-progress: true
 
 jobs:
