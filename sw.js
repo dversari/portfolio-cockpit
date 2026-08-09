@@ -1,4 +1,4 @@
-const CACHE='portfolio-cockpit-v11';
+const CACHE='portfolio-cockpit-v12';
 const ASSETS=['./','./index.html','./manifest.webmanifest','./icon.svg','./pull-refresh.js','./rumor-radar.js','./fx-history.js','./analytics-panel.js'];
 self.addEventListener('install',e=>{self.skipWaiting();e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)))});
 self.addEventListener('activate',e=>e.waitUntil(Promise.all([caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))),self.clients.claim()])));
@@ -8,10 +8,10 @@ async function injectExtras(response){
     const type=response.headers.get('content-type')||'';
     if(!type.includes('text/html')) return response;
     let text=await response.text();
-    if(!text.includes('pull-refresh.js')) text=text.replace('</body>','<script src="pull-refresh.js?v=11"></script></body>');
-    if(!text.includes('rumor-radar.js')) text=text.replace('</body>','<script src="rumor-radar.js?v=11"></script></body>');
-    if(!text.includes('fx-history.js')) text=text.replace('</body>','<script src="fx-history.js?v=11"></script></body>');
-    if(!text.includes('analytics-panel.js')) text=text.replace('</body>','<script src="analytics-panel.js?v=11"></script></body>');
+    if(!text.includes('pull-refresh.js')) text=text.replace('</body>','<script src="pull-refresh.js?v=12"></script></body>');
+    if(!text.includes('rumor-radar.js')) text=text.replace('</body>','<script src="rumor-radar.js?v=12"></script></body>');
+    if(!text.includes('fx-history.js')) text=text.replace('</body>','<script src="fx-history.js?v=12"></script></body>');
+    if(!text.includes('analytics-panel.js')) text=text.replace('</body>','<script src="analytics-panel.js?v=12"></script></body>');
     const headers=new Headers(response.headers);headers.set('cache-control','no-store');
     return new Response(text,{status:response.status,statusText:response.statusText,headers});
   }catch(e){return response;}
