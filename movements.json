@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "updatedAt": "2026-08-10T18:01:00+02:00",
+  "source": "Fineco movements export 12/05/2026-10/08/2026",
+  "count": 37,
+  "deduplication": "sha256 normalized full movement row",
+  "note": "Canonical movements store. Future overlapping Fineco exports must be merged by id and never appended blindly."
+}
