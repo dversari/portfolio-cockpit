@@ -1,5 +1,5 @@
-const CACHE='portfolio-cockpit-v12';
-const ASSETS=['./','./index.html','./manifest.webmanifest','./icon.svg','./pull-refresh.js','./rumor-radar.js','./fx-history.js','./analytics-panel.js'];
+const CACHE='portfolio-cockpit-v13';
+const ASSETS=['./','./index.html','./manifest.webmanifest','./icon.svg','./pull-refresh.js','./rumor-radar.js','./fx-history.js','./analytics-panel.js','./ai-chat.js'];
 self.addEventListener('install',e=>{self.skipWaiting();e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)))});
 self.addEventListener('activate',e=>e.waitUntil(Promise.all([caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))),self.clients.claim()])));
 
@@ -8,10 +8,11 @@ async function injectExtras(response){
     const type=response.headers.get('content-type')||'';
     if(!type.includes('text/html')) return response;
     let text=await response.text();
-    if(!text.includes('pull-refresh.js')) text=text.replace('</body>','<script src="pull-refresh.js?v=12"></script></body>');
-    if(!text.includes('rumor-radar.js')) text=text.replace('</body>','<script src="rumor-radar.js?v=12"></script></body>');
-    if(!text.includes('fx-history.js')) text=text.replace('</body>','<script src="fx-history.js?v=12"></script></body>');
-    if(!text.includes('analytics-panel.js')) text=text.replace('</body>','<script src="analytics-panel.js?v=12"></script></body>');
+    if(!text.includes('pull-refresh.js')) text=text.replace('</body>','<script src="pull-refresh.js?v=13"></script></body>');
+    if(!text.includes('rumor-radar.js')) text=text.replace('</body>','<script src="rumor-radar.js?v=13"></script></body>');
+    if(!text.includes('fx-history.js')) text=text.replace('</body>','<script src="fx-history.js?v=13"></script></body>');
+    if(!text.includes('analytics-panel.js')) text=text.replace('</body>','<script src="analytics-panel.js?v=13"></script></body>');
+    if(!text.includes('ai-chat.js')) text=text.replace('</body>','<script src="ai-chat.js?v=13"></script></body>');
     const headers=new Headers(response.headers);headers.set('cache-control','no-store');
     return new Response(text,{status:response.status,statusText:response.statusText,headers});
   }catch(e){return response;}
@@ -32,7 +33,7 @@ self.addEventListener('fetch',e=>{
     })());
     return;
   }
-  if(u.pathname.endsWith('/portfolio.json')||u.pathname.endsWith('/fineco_sync.json')||u.pathname.endsWith('/trade_ideas.json')||u.pathname.endsWith('/analytics.json')||u.pathname.endsWith('/index.html')||u.pathname.endsWith('/rumor-radar.js')||u.pathname.endsWith('/fx-history.js')||u.pathname.endsWith('/pull-refresh.js')||u.pathname.endsWith('/analytics-panel.js')){
+  if(u.pathname.endsWith('/portfolio.json')||u.pathname.endsWith('/fineco_sync.json')||u.pathname.endsWith('/trade_ideas.json')||u.pathname.endsWith('/analytics.json')||u.pathname.endsWith('/index.html')||u.pathname.endsWith('/rumor-radar.js')||u.pathname.endsWith('/fx-history.js')||u.pathname.endsWith('/pull-refresh.js')||u.pathname.endsWith('/analytics-panel.js')||u.pathname.endsWith('/ai-chat.js')){
     e.respondWith(fetch(e.request,{cache:'no-store'}).then(r=>{const copy=r.clone();caches.open(CACHE).then(c=>c.put(e.request,copy));return r}).catch(()=>caches.match(e.request)));
     return;
   }
