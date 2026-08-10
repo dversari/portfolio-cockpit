@@ -1,10 +1,12 @@
 {
-  "syncVersion": 6,
+  "syncVersion": 7,
   "asOf": "2026-08-10T18:01:00+02:00",
   "totalCost": 483225.08940922166,
   "baselineValue": 495785.7728396159,
   "portfolioFineco": 495822.44,
   "cashAvailable": 17251.28,
+  "xeonMonetary": 20979.0,
+  "buyDipReserve": 38230.28,
   "patrimonyFineco": 513073.72,
   "profitLoss": 12597.35,
   "profitLossPct": 0.0261,
