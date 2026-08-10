@@ -1,13 +1,13 @@
 {
-  "syncVersion": 4,
-  "asOf": "2026-08-10T17:57:00+02:00",
-  "totalCost": 489646.7304092216,
-  "baselineValue": 503554.36232726066,
+  "syncVersion": 5,
+  "asOf": "2026-08-10T18:01:00+02:00",
+  "totalCost": 483225.08940922166,
+  "baselineValue": 495785.7728396159,
   "cashAvailable": 17251.28,
-  "patrimonyFineco": 513050.27,
-  "profitLoss": 12573.9,
-  "profitLossPct": 0.026,
-  "positions": 39,
+  "patrimonyFineco": 513073.72,
+  "profitLoss": 12597.35,
+  "profitLossPct": 0.0261,
+  "positions": 37,
   "additions": [
     {
       "name": "HANetf KRC Cat Bond UCITS ETF Acc",
@@ -27,16 +27,16 @@
   ],
   "fallbacks": {
     "IT0005710873": {
-      "price": 4.23,
-      "valueEUR": 211.5,
+      "price": 4.59,
+      "valueEUR": 229.5,
       "currency": "EUR",
-      "source": "Fineco snapshot 2026-08-07 20:20"
+      "source": "Fineco export 2026-08-10"
     },
     "IT0005696320": {
-      "price": 99.0,
-      "valueEUR": 9900.0,
+      "price": 98.81,
+      "valueEUR": 9881.0,
       "currency": "EUR",
-      "source": "Fineco snapshot 2026-08-07 20:20"
+      "source": "Fineco export 2026-08-10"
     }
   }
 }
