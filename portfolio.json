@@ -1,9 +1,9 @@
 {
-  "asOf": "2026-08-10T18:37:47Z",
+  "asOf": "2026-08-10T19:41:14Z",
   "baselineValue": 495785.7728396159,
   "totalCost": 483225.08940922166,
-  "liveValue": 502631.39,
-  "verifiedValue": 502631.39,
+  "liveValue": 502876.47,
+  "verifiedValue": 502876.47,
   "unverifiedValue": null,
   "positions": [
     {
@@ -23,7 +23,7 @@
       "fxToEUR": 1.0,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-10T18:37:26Z"
+      "lastGoodAsOf": "2026-08-10T19:40:57Z"
     },
     {
       "name": "UBER TECH",
@@ -33,16 +33,16 @@
       "cat": "Speculativo",
       "currency": "USD",
       "bond": false,
-      "price": 77.555,
-      "valueEUR": 3358.52,
+      "price": 77.760002,
+      "valueEUR": 3367.4,
       "verified": true,
       "error": null,
-      "dayChangePct": 0.033791,
+      "dayChangePct": 0.036524,
       "feedCurrency": "USD",
       "fxToEUR": 0.86610001,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-10T18:37:27Z"
+      "lastGoodAsOf": "2026-08-10T19:40:58Z"
     },
     {
       "name": "AST SPACEMOBILE RG-A",
@@ -52,16 +52,16 @@
       "cat": "Speculativo",
       "currency": "USD",
       "bond": false,
-      "price": 69.014999,
-      "valueEUR": 4781.91,
+      "price": 68.580002,
+      "valueEUR": 4751.77,
       "verified": true,
       "error": null,
-      "dayChangePct": -0.040659,
+      "dayChangePct": -0.046706,
       "feedCurrency": "USD",
       "fxToEUR": 0.86610001,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-10T18:37:27Z"
+      "lastGoodAsOf": "2026-08-10T19:40:58Z"
     },
     {
       "name": "UNITY SOFTWARE",
@@ -71,16 +71,16 @@
       "cat": "Speculativo",
       "currency": "USD",
       "bond": false,
-      "price": 42.775002,
-      "valueEUR": 3704.74,
+      "price": 43.119999,
+      "valueEUR": 3734.62,
       "verified": true,
       "error": null,
-      "dayChangePct": -0.005233,
+      "dayChangePct": 0.002791,
       "feedCurrency": "USD",
       "fxToEUR": 0.86610001,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-10T18:37:27Z"
+      "lastGoodAsOf": "2026-08-10T19:40:58Z"
     },
     {
       "name": "ERREDUE",
@@ -99,7 +99,7 @@
       "fxToEUR": 1.0,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-10T18:37:28Z"
+      "lastGoodAsOf": "2026-08-10T19:40:59Z"
     },
     {
       "name": "VOLKSWAGEN",
@@ -118,7 +118,7 @@
       "fxToEUR": 1.0,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-10T18:37:28Z"
+      "lastGoodAsOf": "2026-08-10T19:40:59Z"
     },
     {
       "name": "SEVERFIELD",
@@ -129,15 +129,15 @@
       "currency": "GBP",
       "bond": false,
       "price": 0.3825,
-      "valueEUR": 1789.95,
+      "valueEUR": 1789.64,
       "verified": true,
       "error": null,
       "dayChangePct": -0.014175,
       "feedCurrency": "GBP",
-      "fxToEUR": 1.16989994,
+      "fxToEUR": 1.16970003,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-10T18:37:29Z"
+      "lastGoodAsOf": "2026-08-10T19:41:00Z"
     },
     {
       "name": "WINGSTOP",
@@ -147,16 +147,16 @@
       "cat": "Speculativo",
       "currency": "USD",
       "bond": false,
-      "price": 116.419998,
-      "valueEUR": 705.82,
+      "price": 116.650002,
+      "valueEUR": 707.21,
       "verified": true,
       "error": null,
-      "dayChangePct": -0.003381,
+      "dayChangePct": -0.001412,
       "feedCurrency": "USD",
       "fxToEUR": 0.86610001,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-10T18:37:29Z"
+      "lastGoodAsOf": "2026-08-10T19:41:00Z"
     },
     {
       "name": "ROCKET LAB",
@@ -166,16 +166,16 @@
       "cat": "Speculativo",
       "currency": "USD",
       "bond": false,
-      "price": 80.199997,
-      "valueEUR": 4028.75,
+      "price": 79.959999,
+      "valueEUR": 4016.69,
       "verified": true,
       "error": null,
-      "dayChangePct": -0.031752,
+      "dayChangePct": -0.034649,
       "feedCurrency": "USD",
       "fxToEUR": 0.86610001,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-10T18:37:29Z"
+      "lastGoodAsOf": "2026-08-10T19:41:00Z"
     },
     {
       "name": "SPACEX RG-A",
@@ -185,16 +185,16 @@
       "cat": "Speculativo",
       "currency": "USD",
       "bond": false,
-      "price": 132.854996,
-      "valueEUR": 3451.97,
+      "price": 137.632095,
+      "valueEUR": 3576.09,
       "verified": true,
       "error": null,
-      "dayChangePct": -0.001916,
+      "dayChangePct": 0.033973,
       "feedCurrency": "USD",
       "fxToEUR": 0.86610001,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-10T18:37:29Z"
+      "lastGoodAsOf": "2026-08-10T19:41:00Z"
     },
     {
       "name": "FIREFLY",
@@ -204,16 +204,16 @@
       "cat": "Speculativo",
       "currency": "USD",
       "bond": false,
-      "price": 25.264999,
-      "valueEUR": 5470.5,
+      "price": 25.684999,
+      "valueEUR": 5561.44,
       "verified": true,
       "error": null,
-      "dayChangePct": -0.0541,
+      "dayChangePct": -0.038375,
       "feedCurrency": "USD",
       "fxToEUR": 0.86610001,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-10T18:37:30Z"
+      "lastGoodAsOf": "2026-08-10T19:41:01Z"
     },
     {
       "name": "ENPHASE ENERGY",
@@ -223,16 +223,16 @@
       "cat": "Speculativo",
       "currency": "USD",
       "bond": false,
-      "price": 41.380001,
-      "valueEUR": 1075.18,
+      "price": 41.365002,
+      "valueEUR": 1074.79,
       "verified": true,
       "error": null,
-      "dayChangePct": -0.011703,
+      "dayChangePct": -0.012061,
       "feedCurrency": "USD",
       "fxToEUR": 0.86610001,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-10T18:37:30Z"
+      "lastGoodAsOf": "2026-08-10T19:41:01Z"
     },
     {
       "name": "ASML HOLD NY REG",
@@ -242,16 +242,16 @@
       "cat": "Semicore",
       "currency": "USD",
       "bond": false,
-      "price": 1750.577026,
-      "valueEUR": 3032.35,
+      "price": 1748.52002,
+      "valueEUR": 3028.79,
       "verified": true,
       "error": null,
-      "dayChangePct": 0.005507,
+      "dayChangePct": 0.004325,
       "feedCurrency": "USD",
       "fxToEUR": 0.86610001,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-10T18:37:30Z"
+      "lastGoodAsOf": "2026-08-10T19:41:01Z"
     },
     {
       "name": "OKLO INC",
@@ -261,16 +261,16 @@
       "cat": "Speculativo",
       "currency": "USD",
       "bond": false,
-      "price": 44.805,
-      "valueEUR": 4656.67,
+      "price": 44.845001,
+      "valueEUR": 4660.83,
       "verified": true,
       "error": null,
-      "dayChangePct": -0.074659,
+      "dayChangePct": -0.073833,
       "feedCurrency": "USD",
       "fxToEUR": 0.86610001,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-10T18:37:31Z"
+      "lastGoodAsOf": "2026-08-10T19:41:02Z"
     },
     {
       "name": "KLARNA GRP",
@@ -280,16 +280,16 @@
       "cat": "Speculativo",
       "currency": "USD",
       "bond": false,
-      "price": 19.379999,
-      "valueEUR": 839.25,
+      "price": 19.58,
+      "valueEUR": 847.91,
       "verified": true,
       "error": null,
-      "dayChangePct": -0.026131,
+      "dayChangePct": -0.01608,
       "feedCurrency": "USD",
       "fxToEUR": 0.86610001,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-10T18:37:31Z"
+      "lastGoodAsOf": "2026-08-10T19:41:02Z"
     },
     {
       "name": "3x Long SK Hynix ETP",
@@ -308,7 +308,7 @@
       "fxToEUR": 1.0,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-10T18:37:31Z"
+      "lastGoodAsOf": "2026-08-10T19:41:02Z"
     },
     {
       "name": "Xtrackers Physical Gold ETC",
@@ -327,7 +327,7 @@
       "fxToEUR": 1.0,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-10T18:37:32Z"
+      "lastGoodAsOf": "2026-08-10T19:41:03Z"
     },
     {
       "name": "iShares Automation & Robotics",
@@ -346,7 +346,7 @@
       "fxToEUR": 1.0,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-10T18:37:32Z"
+      "lastGoodAsOf": "2026-08-10T19:41:03Z"
     },
     {
       "name": "Invesco Bloomberg Commodity",
@@ -365,7 +365,7 @@
       "fxToEUR": 1.0,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-10T18:37:32Z"
+      "lastGoodAsOf": "2026-08-10T19:41:03Z"
     },
     {
       "name": "Xtrackers MSCI Emerging Markets",
@@ -384,7 +384,7 @@
       "fxToEUR": 1.0,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-10T18:37:32Z"
+      "lastGoodAsOf": "2026-08-10T19:41:03Z"
     },
     {
       "name": "iShares Global Aggregate Bond EUR Hedged",
@@ -403,7 +403,7 @@
       "fxToEUR": 1.0,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-10T18:37:33Z"
+      "lastGoodAsOf": "2026-08-10T19:41:04Z"
     },
     {
       "name": "WisdomTree Uranium & Nuclear Energy",
@@ -422,7 +422,7 @@
       "fxToEUR": 1.0,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-10T18:37:33Z"
+      "lastGoodAsOf": "2026-08-10T19:41:04Z"
     },
     {
       "name": "HANetf AI & Power Infrastructure",
@@ -441,7 +441,7 @@
       "fxToEUR": 1.0,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-10T18:37:33Z"
+      "lastGoodAsOf": "2026-08-10T19:41:04Z"
     },
     {
       "name": "iShares Core MSCI World",
@@ -460,7 +460,7 @@
       "fxToEUR": 1.0,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-10T18:37:33Z"
+      "lastGoodAsOf": "2026-08-10T19:41:04Z"
     },
     {
       "name": "iShares EUR Corp Bond Large Cap",
@@ -479,7 +479,7 @@
       "fxToEUR": 1.0,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-10T18:37:34Z"
+      "lastGoodAsOf": "2026-08-10T19:41:05Z"
     },
     {
       "name": "iShares Core EUR Govt Bond",
@@ -498,7 +498,7 @@
       "fxToEUR": 1.0,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-10T18:37:34Z"
+      "lastGoodAsOf": "2026-08-10T19:41:05Z"
     },
     {
       "name": "iShares MSCI World Value Factor",
@@ -517,7 +517,7 @@
       "fxToEUR": 1.0,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-10T18:37:34Z"
+      "lastGoodAsOf": "2026-08-10T19:41:05Z"
     },
     {
       "name": "iShares MSCI World Momentum Factor",
@@ -536,7 +536,7 @@
       "fxToEUR": 1.0,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-10T18:37:34Z"
+      "lastGoodAsOf": "2026-08-10T19:41:06Z"
     },
     {
       "name": "Xtrackers II EUR Overnight Rate Swap",
@@ -555,7 +555,7 @@
       "fxToEUR": 1.0,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-10T18:37:35Z"
+      "lastGoodAsOf": "2026-08-10T19:41:06Z"
     },
     {
       "name": "SPDR MSCI World Small Cap",
@@ -574,7 +574,7 @@
       "fxToEUR": 1.0,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-10T18:37:35Z"
+      "lastGoodAsOf": "2026-08-10T19:41:06Z"
     },
     {
       "name": "BTP-23GN31 IT SI CUM",
@@ -594,7 +594,7 @@
       "source": "Borsa Italiana MOT",
       "isin": "IT0005713547",
       "stale": false,
-      "lastGoodAsOf": "2026-08-10T18:37:36Z"
+      "lastGoodAsOf": "2026-08-10T19:41:07Z"
     },
     {
       "name": "BTP-1ST38 2.95",
@@ -614,7 +614,7 @@
       "source": "Borsa Italiana MOT",
       "isin": "IT0005321325",
       "stale": false,
-      "lastGoodAsOf": "2026-08-10T18:37:36Z"
+      "lastGoodAsOf": "2026-08-10T19:41:07Z"
     },
     {
       "name": "BTP-1AP28 3.4",
@@ -634,7 +634,7 @@
       "source": "Borsa Italiana MOT",
       "isin": "IT0005521981",
       "stale": false,
-      "lastGoodAsOf": "2026-08-10T18:37:37Z"
+      "lastGoodAsOf": "2026-08-10T19:41:08Z"
     },
     {
       "name": "BTP-1AP31 0.9",
@@ -654,7 +654,7 @@
       "source": "Borsa Italiana MOT",
       "isin": "IT0005422891",
       "stale": false,
-      "lastGoodAsOf": "2026-08-10T18:37:38Z"
+      "lastGoodAsOf": "2026-08-10T19:41:08Z"
     },
     {
       "name": "BTP-1ST49 3.85",
@@ -674,7 +674,7 @@
       "source": "Borsa Italiana MOT",
       "isin": "IT0005363111",
       "stale": false,
-      "lastGoodAsOf": "2026-08-10T18:37:38Z"
+      "lastGoodAsOf": "2026-08-10T19:41:09Z"
     },
     {
       "name": "BTP-10MZ32 VAL CUM",
@@ -694,7 +694,7 @@
       "source": "BTP Analisi / Borsa Italiana",
       "isin": "IT0005696320",
       "stale": false,
-      "lastGoodAsOf": "2026-08-10T18:37:40Z"
+      "lastGoodAsOf": "2026-08-10T19:41:10Z"
     },
     {
       "name": "BTP-1ST52 2.15",
@@ -714,7 +714,7 @@
       "source": "Borsa Italiana MOT",
       "isin": "IT0005480980",
       "stale": false,
-      "lastGoodAsOf": "2026-08-10T18:37:41Z"
+      "lastGoodAsOf": "2026-08-10T19:41:11Z"
     },
     {
       "name": "LEVA FISSA SPACEX LONG 3X",
@@ -724,8 +724,8 @@
       "cat": "Speculativo",
       "currency": "EUR",
       "bond": false,
-      "price": 4.625,
-      "valueEUR": 231.25,
+      "price": 5.095,
+      "valueEUR": 254.75,
       "verified": true,
       "error": null,
       "dayChangePct": null,
@@ -734,7 +734,7 @@
       "source": "Vorvel mid bid/ask",
       "stale": false,
       "isin": "IT0005710873",
-      "lastGoodAsOf": "2026-08-10T18:37:47Z"
+      "lastGoodAsOf": "2026-08-10T19:41:14Z"
     },
     {
       "name": "HANetf KRC Cat Bond UCITS ETF Acc",
@@ -759,7 +759,7 @@
       "fxToEUR": 1.0,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-10T18:37:47Z"
+      "lastGoodAsOf": "2026-08-10T19:41:14Z"
     }
   ],
   "verifiedCost": 483225.09,
@@ -790,11 +790,11 @@
     },
     {
       "date": "2026-08-10",
-      "value": 502631.39,
+      "value": 502876.47,
       "coverage": 39,
       "stale": 0,
-      "constantFxValue": 502578.0,
-      "effectiveConstantFxValue": 502414.73,
+      "constantFxValue": 502823.07,
+      "effectiveConstantFxValue": 502663.82,
       "effectiveFxMethod": "lookthrough-v1"
     }
   ],
@@ -820,8 +820,8 @@
     "USD": 0.86489999,
     "GBP": 1.16680002
   },
-  "constantFxValue": 502578.0,
-  "fxEffectEUR": 53.39,
+  "constantFxValue": 502823.07,
+  "fxEffectEUR": 53.4,
   "fxBaseAsOf": "2026-08-08T06:41:58Z",
   "effectiveFxBase": {
     "CNY": 0.12809999287128448,
@@ -841,7 +841,7 @@
     "TWD": 0.026792999356985092,
     "CAD": 0.6205000281333923
   },
-  "effectiveConstantFxValue": 502414.73,
-  "effectiveFxEffectEUR": 216.66,
+  "effectiveConstantFxValue": 502663.82,
+  "effectiveFxEffectEUR": 212.65,
   "effectiveFxBaseAsOf": "2026-08-09T10:48:53Z"
 }
