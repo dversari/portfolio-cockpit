@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-10T22:17:46Z",
+  "asOf": "2026-08-10T23:01:15Z",
   "benchmark": {
     "name": "MSCI World (SWDA)",
     "price": 128.6699981689453,
@@ -17,25 +17,25 @@
   "compositeBenchmark": {
     "name": "Benchmark composito proxy",
     "weights": {
-      "SWDA.MI": 0.6898441466389839,
-      "CMOD.MI": 0.024084855364112215,
-      "AGGH.MI": 0.24439224683280866,
-      "XEON.MI": 0.04167875116409522
+      "SWDA.MI": 0.6898552379640028,
+      "CMOD.MI": 0.024083994077904066,
+      "AGGH.MI": 0.24438350724652536,
+      "XEON.MI": 0.04167726071156778
     },
     "returns": {
-      "1w": 0.025827463235860826,
-      "1m": 0.016381310963512474,
-      "ytd": 0.11156827393123003,
-      "1y": 0.1792288449040229
+      "1w": 0.025827816633690714,
+      "1m": 0.016381564918764635,
+      "ytd": 0.1115698299641723,
+      "1y": 0.17923138951647477
     }
   },
   "periodReturns": {
-    "today": 0.0009821053778928254,
-    "1w": -0.00017293782813565528,
-    "1m": -0.00017293782813565528,
-    "ytd": -0.00017293782813565528,
-    "1y": -0.00017293782813565528,
-    "sinceStart": -0.00017293782813565528,
+    "today": 0.0011626060698268475,
+    "1w": -0.00013726170370054191,
+    "1m": -0.00013726170370054191,
+    "ytd": -0.00013726170370054191,
+    "1y": -0.00013726170370054191,
+    "sinceStart": -0.00013726170370054191,
     "twr": null,
     "twrStatus": "in attesa flussi Fineco"
   },
@@ -47,60 +47,60 @@
     "status": "storico insufficiente"
   },
   "concentration": {
-    "top5": 0.6000143404689584,
-    "top10": 0.7505207211432037,
+    "top5": 0.5999928836626656,
+    "top10": 0.7504938821551226,
     "largest": {
       "name": "iShares Core MSCI World",
-      "weight": 0.36044822369510376
+      "weight": 0.36043533389032284
     }
   },
   "currencyExposure": {
     "explicit": {
-      "EUR": 0.9262490224620064,
-      "USD": 0.07019538362463082,
-      "GBP": 0.0035555939133629848
+      "EUR": 0.9262158993439185,
+      "USD": 0.07018484716026552,
+      "GBP": 0.003599253495816281
     },
     "effective": {
-      "USD": 0.43107972009343676,
-      "EUR": 0.3619138178345606,
-      "JPY": 0.030358333113795814,
-      "CNY": 0.026693327462045738,
-      "TWD": 0.024119558186403125,
-      "GBP": 0.02157101824203811,
-      "INR": 0.020019995596534303,
-      "CAD": 0.018142175557618344,
-      "OTHER": 0.01733353145352792,
-      "KRW": 0.011740004317637453,
-      "CHF": 0.010651741929890168,
-      "AUD": 0.0096934465487331,
-      "BRL": 0.005561109887926195,
-      "SAR": 0.004448887910340957,
-      "ZAR": 0.0033366659327557172,
-      "MXN": 0.0033366659327557172
+      "USD": 0.43105627822868436,
+      "EUR": 0.3619008756194164,
+      "JPY": 0.03035724748495487,
+      "CNY": 0.026692372895599517,
+      "TWD": 0.02411869565920508,
+      "GBP": 0.021614033584105748,
+      "INR": 0.020019279671699638,
+      "CAD": 0.018141526784546745,
+      "OTHER": 0.017332911597965003,
+      "KRW": 0.01173958448934081,
+      "CHF": 0.010651361018388799,
+      "AUD": 0.00969309990634328,
+      "BRL": 0.005560911019916566,
+      "SAR": 0.004448728815933253,
+      "ZAR": 0.0033365466119499396,
+      "MXN": 0.0033365466119499396
     },
-    "lookThroughCoverage": 0.7820185340528126,
+    "lookThroughCoverage": 0.7819905686875358,
     "lookThroughStatus": "Esposizione economica stimata: look-through proxy per ETF; hedged EUR trattati EUR. Da affinare con holdings issuer."
   },
   "dataQuality": {
     "freshPositions": 38,
     "totalPositions": 39,
-    "freshValuePct": 0.9994938716448954,
-    "staleValuePct": 0.0005061283551045017,
+    "freshValuePct": 0.999493889744293,
+    "staleValuePct": 0.0005061102557069668,
     "stale": [
       {
         "name": "LEVA FISSA SPACEX LONG 3X",
         "valueEUR": 254.75,
-        "ageHours": 2.6090929216666665
+        "ageHours": 3.3337438969444446
       }
     ]
   },
   "attribution": {
-    "marketEUR": -1065.88,
-    "fxEUR": 198.42,
+    "marketEUR": -1017.82,
+    "fxEUR": 168.32,
     "incomeEUR": null,
     "externalFlowsEUR": null,
     "status": "mercato/cambio calcolati con esposizione valutaria effettiva; income e flussi verranno separati dopo import Movimenti Fineco",
-    "totalChangeEUR": -867.46,
+    "totalChangeEUR": -849.5,
     "method": "effective-lookthrough-v1",
     "points": 2,
     "fromDate": "2026-08-09",
