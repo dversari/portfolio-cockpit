@@ -24,6 +24,23 @@ for add in sync.get('additions',[]):
         data.setdefault('positions',[]).append(p)
         existing_isins.add(add.get('isin'))
 
+# Apply full-sale removals declared by the latest Fineco structural sync.
+# Match by symbol first, then by exact normalized name. This makes a Fineco export authoritative
+# for positions that have been explicitly flagged as fully sold, while preserving historical
+# transactions in movements.json.
+removals = sync.get('removals', []) if sync else []
+if removals:
+    remove_symbols = {str(x.get('symbol') or '').strip().upper() for x in removals if x.get('symbol')}
+    remove_names = {str(x.get('name') or '').strip().upper() for x in removals if x.get('name')}
+    before = len(data.get('positions', []))
+    data['positions'] = [
+        p for p in data.get('positions', [])
+        if str(p.get('symbol') or '').strip().upper() not in remove_symbols
+        and str(p.get('name') or '').strip().upper() not in remove_names
+    ]
+    data['finecoRemovedPositions'] = removals
+    data['finecoRemovalCount'] = before - len(data['positions'])
+
 if sync:
     data['totalCost']=sync.get('totalCost',data.get('totalCost'))
     data['baselineValue']=sync.get('baselineValue',data.get('baselineValue'))
