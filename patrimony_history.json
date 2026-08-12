@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "note": "Historical Fineco snapshots only. No backward cash reconstruction.",
+  "points": [
+    {
+      "date": "2026-08-07",
+      "totalValue": 513633.63,
+      "cash": 10254.01,
+      "investedValue": 503379.62,
+      "source": "Fineco snapshot 2026-08-07 20:54"
+    },
+    {
+      "date": "2026-08-08",
+      "totalValue": 514067.97,
+      "cash": 10248.78,
+      "investedValue": 503819.19,
+      "source": "Fineco snapshot 2026-08-08 06:40"
+    },
+    {
+      "date": "2026-08-10",
+      "totalValue": 513073.72,
+      "cash": 17251.28,
+      "investedValue": 495822.44,
+      "source": "Fineco snapshot 2026-08-10 18:01"
+    },
+    {
+      "date": "2026-08-12",
+      "totalValue": 514112.38,
+      "cash": 17237.98,
+      "investedValue": 496874.40,
+      "source": "Fineco snapshot 2026-08-12 08:25"
+    }
+  ]
+}
