@@ -1,16 +1,20 @@
 {
-  "syncVersion": 7,
-  "asOf": "2026-08-10T18:01:00+02:00",
+  "syncVersion": 8,
+  "asOf": "2026-08-12T08:25:00+02:00",
   "totalCost": 483225.08940922166,
-  "baselineValue": 495785.7728396159,
-  "portfolioFineco": 495822.44,
-  "cashAvailable": 17251.28,
+  "baselineValue": 496874.40,
+  "portfolioFineco": 496874.40,
+  "cashAvailable": 17237.98,
   "xeonMonetary": 20979.0,
-  "buyDipReserve": 38230.28,
-  "patrimonyFineco": 513073.72,
-  "profitLoss": 12597.35,
-  "profitLossPct": 0.0261,
-  "positions": 37,
+  "buyDipReserve": 38216.98,
+  "patrimonyFineco": 514112.38,
+  "profitLoss": 13649.31,
+  "profitLossPct": 0.0282,
+  "positions": 36,
+  "removals": [
+    {"name":"UBER TECH","symbol":"UBER","reason":"vendita totale 50 qta contabilizzata 2026-08-12"},
+    {"name":"UNITY SOFTWARE","symbol":"U","reason":"vendita totale 100 qta contabilizzata 2026-08-12"}
+  ],
   "additions": [
     {
       "name": "HANetf KRC Cat Bond UCITS ETF Acc",
@@ -29,17 +33,7 @@
     }
   ],
   "fallbacks": {
-    "IT0005710873": {
-      "price": 4.59,
-      "valueEUR": 229.5,
-      "currency": "EUR",
-      "source": "Fineco export 2026-08-10"
-    },
-    "IT0005696320": {
-      "price": 98.81,
-      "valueEUR": 9881.0,
-      "currency": "EUR",
-      "source": "Fineco export 2026-08-10"
-    }
+    "IT0005710873": {"price":4.59,"valueEUR":229.5,"currency":"EUR","source":"Fineco export"},
+    "IT0005696320": {"price":98.81,"valueEUR":9881.0,"currency":"EUR","source":"Fineco export"}
   }
 }
