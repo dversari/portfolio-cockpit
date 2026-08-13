@@ -1,27 +1,27 @@
 {
-  "syncVersion": 10,
-  "asOf": "2026-08-13T08:08:00+02:00",
-  "source": "Fineco XLS import from chat",
-  "sourceFile": "portafoglio-export (2).xls",
-  "totalCost": 483225.09,
-  "baselineValue": 496874.40,
-  "portfolioFineco": 498770.88,
+  "syncVersion": 11,
+  "asOf": "2026-08-13T16:17:00+02:00",
+  "source": "Fineco XLSX import from chat",
+  "sourceFile": "portafoglio-export (3).xlsx",
+  "totalCost": 483225.08940922166,
+  "baselineValue": 496874.4,
+  "portfolioFineco": 501458.372775,
   "cashAvailable": 17237.98,
-  "xeonMonetary": 20982.038,
-  "buyDipReserve": 38220.018,
-  "patrimonyFineco": 516008.86,
-  "profitLoss": 15545.79,
-  "profitLossPct": 0.0322,
+  "xeonMonetary": 20986.084,
+  "buyDipReserve": 38224.064,
+  "patrimonyFineco": 518696.352775,
+  "profitLoss": 18233.28336577828,
+  "profitLossPct": 0.03773248,
   "positions": 37,
   "reconciliation": {
-    "xlsMarketValue": 498770.88,
-    "xlsCost": 483225.09,
-    "xlsProfitLoss": 15545.79,
-    "xlsProfitLossPct": 0.0322,
+    "xlsMarketValue": 501458.372775,
+    "xlsCost": 483225.08940922166,
+    "xlsProfitLoss": 18233.28336577828,
+    "xlsProfitLossPct": 0.03773248,
     "positionsMatched": 37,
     "quantityChanges": 0,
     "costChanges": 0,
-    "note": "Snapshot Fineco 13/08: nessun nuovo acquisto/vendita rispetto alla configurazione corrente; aggiornati valore titoli, P/L e patrimonio complessivo."
+    "note": "Snapshot Fineco 13/08 16:17; usato solo per riconciliazione."
   },
   "removals": [
     {"name":"UBER TECH","symbol":"UBER","reason":"vendita totale 50 qta contabilizzata 2026-08-12"},
@@ -38,14 +38,14 @@
       "cat": "Semicore",
       "currency": "EUR",
       "bond": false,
-      "finecoPrice": 9.225,
-      "finecoValueEUR": 2767.5,
-      "finecoVarPct": 0.00479251,
+      "finecoPrice": 9.234,
+      "finecoValueEUR": 2770.2,
+      "finecoVarPct": null,
       "finecoRateo": 0.0
     }
   ],
   "fallbacks": {
-    "IT0005710873": {"price":4.45,"valueEUR":222.5,"currency":"EUR","source":"Fineco XLS 2026-08-12"},
-    "IT0005696320": {"price":99.0,"valueEUR":9900.0,"currency":"EUR","source":"Fineco XLS 2026-08-12"}
+    "IT0005710873": {"price":5.4,"valueEUR":270.0,"currency":"EUR","source":"Fineco XLSX 2026-08-13 16:17"},
+    "IT0005696320": {"price":99.06,"valueEUR":9906.0,"currency":"EUR","source":"Fineco XLSX 2026-08-13 16:17"}
   }
 }
