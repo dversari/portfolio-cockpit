@@ -5,6 +5,9 @@ on:
   push:
     paths:
       - '.github/workflows/daily.yml'
+      - 'fineco_sync.json'
+      - 'fineco_movements.json'
+      - 'scripts/update_attribution.py'
   schedule:
     - cron: '7,22,37,52 * * * *'
 
@@ -35,7 +38,7 @@ jobs:
         run: python scripts/update_analytics.py
       - name: Update returns from total patrimony
         run: python scripts/update_period_returns.py
-      - name: Update effective attribution
+      - name: Update effective attribution, income and flows
         run: python scripts/update_attribution.py
       - name: Enrich Rumor Radar technicals
         run: python scripts/update_trade_idea.py
