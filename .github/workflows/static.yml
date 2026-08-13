@@ -38,6 +38,7 @@ jobs:
             '<script src="buy-dip-reserve.js?v=2"></script>',
             '<script src="fineco-import.js?v=2"></script>',
             '<script src="ai-chat.js?v=4"></script>',
+            '<script src="ai-chat-local-plus.js?v=1"></script>',
             '<script src="central-mode.js?v=2"></script>',
             '<script src="chart-dates.js?v=4"></script>',
             '<script src="movements-panel.js?v=1"></script>'
