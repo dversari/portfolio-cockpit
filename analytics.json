@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-14T16:28:46Z",
+  "asOf": "2026-08-14T17:34:40Z",
   "benchmark": {
     "name": "MSCI World (SWDA)",
     "price": 128.86000061035156,
@@ -17,26 +17,26 @@
   "compositeBenchmark": {
     "name": "Benchmark composito proxy",
     "weights": {
-      "SWDA.MI": 0.686964055398552,
-      "CMOD.MI": 0.024564122343018628,
-      "AGGH.MI": 0.24637312766951242,
-      "XEON.MI": 0.04209869458891704
+      "SWDA.MI": 0.6869800277756424,
+      "CMOD.MI": 0.024562868980803447,
+      "AGGH.MI": 0.2463605567026061,
+      "XEON.MI": 0.04209654654094816
     },
     "returns": {
-      "1w": 0.004496695852984844,
-      "1m": 0.013859719435259654,
-      "ytd": 0.11261294870208172,
-      "1y": 0.16990695888512142
+      "1w": 0.004496773139315291,
+      "1m": 0.013860051640473436,
+      "ytd": 0.11261520183807394,
+      "1y": 0.16991031556464975
     }
   },
   "periodReturns": {
-    "today": -0.001079696686395737,
+    "today": -0.0010304091746582422,
     "1w": null,
     "1m": null,
     "ytd": null,
     "1y": null,
-    "sinceStart": 0.002012882361638324,
-    "twr": 0.002012882361638324,
+    "sinceStart": 0.0020623224636531212,
+    "twr": 0.0020623224636531212,
     "twrStatus": "TWR su patrimonio totale; bonifici esterni neutralizzati da Movimenti Fineco"
   },
   "risk": {
@@ -47,38 +47,38 @@
     "status": "storico insufficiente"
   },
   "concentration": {
-    "top5": 0.6075073758557328,
-    "top10": 0.7603055737305869,
+    "top5": 0.6074763783391227,
+    "top10": 0.760266779823571,
     "largest": {
       "name": "iShares Core MSCI World",
-      "weight": 0.36443295202573306
+      "weight": 0.3644143571626373
     }
   },
   "currencyExposure": {
     "explicit": {
-      "EUR": 0.9385405829467837,
-      "USD": 0.05793959750160909,
-      "GBP": 0.0035198195516072616
+      "EUR": 0.9385127514017437,
+      "USD": 0.05796881204083701,
+      "GBP": 0.0035184365574192702
     },
     "effective": {
-      "USD": 0.42392612007373437,
-      "EUR": 0.36494534496568315,
-      "JPY": 0.030814531193471856,
-      "CNY": 0.027306487497685595,
-      "TWD": 0.024676168477897324,
-      "GBP": 0.021792465975528967,
-      "INR": 0.020479865623264197,
-      "CAD": 0.01840728671745843,
-      "OTHER": 0.01768248229023407,
-      "KRW": 0.012286415690839478,
-      "CHF": 0.010790943177454045,
-      "AUD": 0.00982533363069492,
-      "BRL": 0.005688851562017832,
-      "SAR": 0.004551081249614266,
-      "ZAR": 0.0034133109372106994,
-      "MXN": 0.0034133109372106994
+      "USD": 0.4239366604803289,
+      "EUR": 0.36494678060096636,
+      "JPY": 0.030812958909775454,
+      "CNY": 0.02730509420875872,
+      "TWD": 0.02467490939862904,
+      "GBP": 0.021790150636017202,
+      "INR": 0.020478820656569044,
+      "CAD": 0.018406347502234965,
+      "OTHER": 0.017681580057503598,
+      "KRW": 0.012285788787546463,
+      "CHF": 0.010790392579298903,
+      "AUD": 0.00982483230189708,
+      "BRL": 0.005688561293491401,
+      "SAR": 0.004550849034793121,
+      "ZAR": 0.00341313677609484,
+      "MXN": 0.00341313677609484
     },
-    "lookThroughCoverage": 0.7932997125395456,
+    "lookThroughCoverage": 0.793259235136318,
     "lookThroughStatus": "Esposizione economica stimata: look-through proxy per ETF; hedged EUR trattati EUR. Da affinare con holdings issuer."
   },
   "dataQuality": {
@@ -89,12 +89,12 @@
     "stale": []
   },
   "attribution": {
-    "marketEUR": 2128.96,
-    "fxEUR": -1092.8,
+    "marketEUR": 1916.01,
+    "fxEUR": -854.4,
     "incomeEUR": 2.84,
     "externalFlowsEUR": 0,
     "status": "patrimonio totale; compravendite interne neutralizzate; reddito cumulato da Movimenti Fineco",
-    "totalChangeEUR": 1036.16,
+    "totalChangeEUR": 1061.61,
     "method": "effective-lookthrough-total-v2",
     "points": 3,
     "fromDate": "2026-08-12",
