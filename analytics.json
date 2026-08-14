@@ -23,7 +23,7 @@
       "XEON.MI": 0.042040041296492844
     },
     "returns": {
-      "1w": 0.003563603316915298,
+      "1w": 0.0035636033169152985,
       "1m": 0.015161709835686654,
       "ytd": 0.11271661976963987,
       "1y": 0.17457553270902637
@@ -97,9 +97,9 @@
   "attribution": {
     "marketEUR": 1794.42,
     "fxEUR": -227.5,
-    "incomeEUR": 0,
+    "incomeEUR": 2.84,
     "externalFlowsEUR": 0,
-    "status": "patrimonio totale; compravendite interne neutralizzate; flussi esterni da Movimenti Fineco",
+    "status": "patrimonio totale; compravendite interne neutralizzate; reddito cumulato da Movimenti Fineco",
     "totalChangeEUR": 1566.92,
     "method": "effective-lookthrough-total-v2",
     "points": 3,
