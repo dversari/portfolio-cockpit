@@ -27,6 +27,12 @@ if not is_weekend or age_days < 0 or age_days > 3 or not snaps:
     print('Fineco snapshot override not applicable')
     raise SystemExit(0)
 
+def symbol_base(v):
+    s = str(v or '').strip().upper().split('.')[0]
+    if s.startswith('1') and len(s) > 2:
+        s = s[1:]
+    return s
+
 matched = 0
 value = 0.0
 verified_cost = 0.0
@@ -34,9 +40,9 @@ for pos in p.get('positions', []):
     key = pos.get('isin') or pos.get('symbol')
     snap = snaps.get(key)
     if snap is None:
-        # Some legacy positions did not carry ISIN in portfolio.json: try symbol match.
+        target = symbol_base(pos.get('symbol'))
         for candidate in snaps.values():
-            if candidate.get('symbol') == pos.get('symbol'):
+            if target and symbol_base(candidate.get('symbol')) == target:
                 snap = candidate
                 break
     if snap is None:
@@ -67,7 +73,8 @@ for pos in p.get('positions', []):
     verified_cost += float(pos.get('cost') or 0)
 
 if matched != len(p.get('positions', [])):
-    raise SystemExit(f'Fineco snapshot incomplete: matched {matched}/{len(p.get("positions", []))}')
+    missing = [pos.get('name') for pos in p.get('positions', []) if not any(symbol_base(c.get('symbol')) == symbol_base(pos.get('symbol')) for c in snaps.values()) and (pos.get('isin') not in snaps)]
+    raise SystemExit(f'Fineco snapshot incomplete: matched {matched}/{len(p.get("positions", []))}; missing={missing}')
 
 p['liveValue'] = round(value, 2)
 p['verifiedValue'] = round(value, 2)
