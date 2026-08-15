@@ -33,19 +33,37 @@ def symbol_base(v):
         s = s[1:]
     return s
 
+def norm_name(v):
+    return ' '.join(str(v or '').upper().replace(',', '.').split())
+
+def find_snapshot(pos):
+    # 1) exact ISIN/symbol key
+    for key in (pos.get('isin'), pos.get('symbol')):
+        if key and key in snaps:
+            return snaps[key]
+    # 2) same underlying symbol, regardless of venue/prefix
+    target = symbol_base(pos.get('symbol'))
+    if target:
+        for candidate in snaps.values():
+            if symbol_base(candidate.get('symbol')) == target:
+                return candidate
+    # 3) exact normalized Fineco name: important for MOT/BTP where legacy ISINs
+    #    or symbols may differ but the position name is stable.
+    target_name = norm_name(pos.get('name'))
+    if target_name:
+        for candidate in snaps.values():
+            if norm_name(candidate.get('name')) == target_name:
+                return candidate
+    return None
+
 matched = 0
 value = 0.0
 verified_cost = 0.0
+missing = []
 for pos in p.get('positions', []):
-    key = pos.get('isin') or pos.get('symbol')
-    snap = snaps.get(key)
+    snap = find_snapshot(pos)
     if snap is None:
-        target = symbol_base(pos.get('symbol'))
-        for candidate in snaps.values():
-            if target and symbol_base(candidate.get('symbol')) == target:
-                snap = candidate
-                break
-    if snap is None:
+        missing.append(pos.get('name'))
         continue
 
     px = float(snap['price'])
@@ -73,7 +91,6 @@ for pos in p.get('positions', []):
     verified_cost += float(pos.get('cost') or 0)
 
 if matched != len(p.get('positions', [])):
-    missing = [pos.get('name') for pos in p.get('positions', []) if not any(symbol_base(c.get('symbol')) == symbol_base(pos.get('symbol')) for c in snaps.values()) and (pos.get('isin') not in snaps)]
     raise SystemExit(f'Fineco snapshot incomplete: matched {matched}/{len(p.get("positions", []))}; missing={missing}')
 
 p['liveValue'] = round(value, 2)
