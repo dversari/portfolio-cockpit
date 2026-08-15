@@ -8,6 +8,7 @@ on:
       - 'fineco_sync.json'
       - 'fineco_movements.json'
       - 'scripts/update_attribution.py'
+      - 'scripts/apply_fineco_snapshot.py'
   schedule:
     - cron: '7,22,37,52 * * * *'
 
@@ -32,6 +33,8 @@ jobs:
         run: pip install --quiet yfinance requests beautifulsoup4 pandas
       - name: Update market prices
         run: python scripts/update_prices.py
+      - name: Reconcile recent Fineco weekend snapshot
+        run: python scripts/apply_fineco_snapshot.py
       - name: Update constant-FX history
         run: python scripts/update_fx_history.py
       - name: Update portfolio analytics
