@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-16T19:10:29Z",
+  "asOf": "2026-08-16T19:40:16Z",
   "benchmark": {
     "name": "MSCI World (SWDA)",
     "price": 128.86000061035156,
@@ -89,8 +89,8 @@
     "stale": []
   },
   "attribution": {
-    "marketEUR": 1728.75,
-    "fxEUR": -926.8,
+    "marketEUR": 1729.59,
+    "fxEUR": -927.64,
     "incomeEUR": 2.84,
     "externalFlowsEUR": 0,
     "status": "patrimonio totale; compravendite interne neutralizzate; reddito cumulato da Movimenti Fineco",
