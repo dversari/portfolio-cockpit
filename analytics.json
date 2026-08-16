@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-15T23:52:39Z",
+  "asOf": "2026-08-16T00:55:06Z",
   "benchmark": {
     "name": "MSCI World (SWDA)",
     "price": 128.86000061035156,
@@ -30,7 +30,7 @@
     }
   },
   "periodReturns": {
-    "today": -0.0026314571240907414,
+    "today": 0.0,
     "1w": null,
     "1m": null,
     "ytd": null,
@@ -96,9 +96,9 @@
     "status": "patrimonio totale; compravendite interne neutralizzate; reddito cumulato da Movimenti Fineco",
     "totalChangeEUR": 801.95,
     "method": "effective-lookthrough-total-v2",
-    "points": 4,
+    "points": 5,
     "fromDate": "2026-08-12",
-    "toDate": "2026-08-15",
+    "toDate": "2026-08-16",
     "reconciliationEUR": 0.0
   },
   "income": {
