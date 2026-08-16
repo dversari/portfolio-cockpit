@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-16T20:00:38Z",
+  "asOf": "2026-08-16T20:34:34Z",
   "baselineValue": 496874.4,
   "totalCost": 483225.08940922166,
   "liveValue": 498328.28,
@@ -851,10 +851,10 @@
       "stale": 0,
       "cashAvailable": 17237.98,
       "totalPatrimonyValue": 515566.26,
-      "effectiveConstantTotalValue": 515975.62,
+      "effectiveConstantTotalValue": 515974.66,
       "effectiveFxMethod": "lookthrough-total-v2",
       "constantFxValue": 498340.17,
-      "effectiveConstantFxValue": 498737.64
+      "effectiveConstantFxValue": 498736.68
     }
   ],
   "benchmark": {
@@ -901,8 +901,8 @@
     "TWD": 0.026792999356985092,
     "CAD": 0.6205000281333923
   },
-  "effectiveConstantFxValue": 498737.64,
-  "effectiveFxEffectEUR": -409.36,
+  "effectiveConstantFxValue": 498736.68,
+  "effectiveFxEffectEUR": -408.4,
   "effectiveFxBaseAsOf": "2026-08-09T10:48:53Z",
   "finecoRemovedPositions": [
     {
@@ -918,5 +918,5 @@
   ],
   "finecoRemovalCount": 0,
   "totalPatrimonyValue": 515566.26,
-  "effectiveConstantTotalValue": 515975.62
+  "effectiveConstantTotalValue": 515974.66
 }
