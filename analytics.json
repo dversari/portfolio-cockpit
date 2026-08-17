@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-17T04:22:49Z",
+  "asOf": "2026-08-17T05:19:19Z",
   "benchmark": {
     "name": "MSCI World (SWDA)",
     "price": 128.86000061035156,
@@ -17,26 +17,26 @@
   "compositeBenchmark": {
     "name": "Benchmark composito proxy",
     "weights": {
-      "SWDA.MI": 0.6868287082362808,
-      "CMOD.MI": 0.02457474311775758,
-      "AGGH.MI": 0.2464796518698958,
-      "XEON.MI": 0.0421168967760658
+      "SWDA.MI": 0.6868286139732351,
+      "CMOD.MI": 0.024574750514636524,
+      "AGGH.MI": 0.24647972605908008,
+      "XEON.MI": 0.04211690945304824
     },
     "returns": {
-      "1w": 0.0012409061494269569,
-      "1m": 0.014560515744582947,
-      "ytd": 0.11259501977370934,
-      "1y": 0.17039058659744355
+      "1w": 0.0012409060782441195,
+      "1m": 0.014560513946047626,
+      "ytd": 0.1125950064768495,
+      "1y": 0.17039056700090982
     }
   },
   "periodReturns": {
-    "today": 3.634838323196554e-05,
+    "today": 3.605744099699493e-05,
     "1w": null,
     "1m": null,
     "ytd": null,
     "1y": null,
-    "sinceStart": 0.0015943024488234148,
-    "twr": 0.0015943024488234148,
+    "sinceStart": 0.0015940110533303464,
+    "twr": 0.0015940110533303464,
     "twrStatus": "TWR su patrimonio totale; bonifici esterni neutralizzati da Movimenti Fineco"
   },
   "risk": {
@@ -47,60 +47,60 @@
     "status": "storico insufficiente"
   },
   "concentration": {
-    "top5": 0.6077700434528533,
-    "top10": 0.7603966208125414,
+    "top5": 0.6077702263886999,
+    "top10": 0.7603968496882503,
     "largest": {
       "name": "iShares Core MSCI World",
-      "weight": 0.3645905216810567
+      "weight": 0.36459063142104214
     }
   },
   "currencyExposure": {
     "explicit": {
-      "EUR": 0.9387322713397585,
-      "USD": 0.05774789222176948,
-      "GBP": 0.003519836438472131
+      "EUR": 0.9387325538936365,
+      "USD": 0.05774790960360602,
+      "GBP": 0.0035195365027576074
     },
     "effective": {
-      "USD": 0.42377856699133065,
-      "EUR": 0.3651053223916137,
-      "JPY": 0.03081834702252258,
-      "CNY": 0.027318293987189886,
-      "TWD": 0.024686837697955932,
-      "GBP": 0.021788499106506144,
-      "INR": 0.020488720490392416,
-      "CAD": 0.018358200877773883,
-      "OTHER": 0.017675866507639595,
-      "KRW": 0.012291727960969848,
-      "CHF": 0.010795608851037176,
-      "AUD": 0.009820074373074408,
-      "BRL": 0.005691311247331227,
-      "SAR": 0.004553048997864981,
-      "ZAR": 0.0034147867483987357,
-      "MXN": 0.0034147867483987357
+      "USD": 0.42377869454663175,
+      "EUR": 0.3651054322865517,
+      "JPY": 0.03081835629869613,
+      "CNY": 0.027318302209864385,
+      "TWD": 0.0246868451285748,
+      "GBP": 0.021788204669570814,
+      "INR": 0.02048872665739829,
+      "CAD": 0.018358206403503646,
+      "OTHER": 0.01767587182799001,
+      "KRW": 0.012291731660720574,
+      "CHF": 0.01079561210046328,
+      "AUD": 0.009820077328869347,
+      "BRL": 0.005691312960388414,
+      "SAR": 0.004553050368310731,
+      "ZAR": 0.003414787776233048,
+      "MXN": 0.003414787776233048
     },
-    "lookThroughCoverage": 0.793405025277366,
+    "lookThroughCoverage": 0.7934052640884451,
     "lookThroughStatus": "Esposizione economica stimata: look-through proxy per ETF; hedged EUR trattati EUR. Da affinare con holdings issuer."
   },
   "dataQuality": {
     "freshPositions": 36,
     "totalPositions": 37,
-    "freshValuePct": 0.999488308367932,
-    "staleValuePct": 0.0005116916320679514,
+    "freshValuePct": 0.9994883082139153,
+    "staleValuePct": 0.0005116917860846602,
     "stale": [
       {
         "name": "LEVA FISSA SPACEX LONG 3X",
         "valueEUR": 255.0,
-        "ageHours": 45.997012667777774
+        "ageHours": 46.93888802638889
       }
     ]
   },
   "attribution": {
-    "marketEUR": 2048.71,
-    "fxEUR": -1228.02,
+    "marketEUR": 2035.89,
+    "fxEUR": -1215.35,
     "incomeEUR": 2.84,
     "externalFlowsEUR": 0,
     "status": "patrimonio totale; compravendite interne neutralizzate; reddito cumulato da Movimenti Fineco",
-    "totalChangeEUR": 820.69,
+    "totalChangeEUR": 820.54,
     "method": "effective-lookthrough-total-v2",
     "points": 6,
     "fromDate": "2026-08-12",
