@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-17T21:13:32Z",
+  "asOf": "2026-08-17T21:46:32Z",
   "benchmark": {
     "name": "MSCI World (SWDA)",
     "price": 128.7100067138672,
@@ -90,13 +90,13 @@
       {
         "name": "LEVA FISSA SPACEX LONG 3X",
         "valueEUR": 285.25,
-        "ageHours": 1.5946220991666669
+        "ageHours": 2.1444933616666666
       }
     ]
   },
   "attribution": {
-    "marketEUR": 3307.36,
-    "fxEUR": -1107.46,
+    "marketEUR": 3280.19,
+    "fxEUR": -1080.29,
     "incomeEUR": 2.84,
     "externalFlowsEUR": 0,
     "status": "patrimonio totale; compravendite interne neutralizzate; reddito cumulato da Movimenti Fineco",
