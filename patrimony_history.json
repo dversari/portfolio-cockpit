@@ -29,6 +29,20 @@
       "cash": 17237.98,
       "investedValue": 496874.40,
       "source": "Fineco snapshot 2026-08-12 08:25"
+    },
+    {
+      "date": "2026-08-15",
+      "totalValue": 515566.26,
+      "cash": 17237.98,
+      "investedValue": 498328.28,
+      "source": "Fineco snapshot 2026-08-15 08:23"
+    },
+    {
+      "date": "2026-08-18",
+      "totalValue": 517318.75,
+      "cash": 17237.98,
+      "investedValue": 500080.77,
+      "source": "Fineco snapshot 2026-08-18 06:46"
     }
   ]
 }
