@@ -1,42 +1,42 @@
 {
-  "asOf": "2026-08-18T07:13:12Z",
+  "asOf": "2026-08-18T07:58:09Z",
   "benchmark": {
     "name": "MSCI World (SWDA)",
-    "price": 128.86000061035156,
+    "price": 127.83999633789062,
     "ath": 129.3800048828125,
     "athDate": "2026-08-13",
-    "drawdownATH": -0.004019201212211554,
-    "daysSinceATH": 1,
+    "drawdownATH": -0.01190298722215044,
+    "daysSinceATH": 5,
     "returns": {
-      "1w": 0.0014766646779365011,
-      "1m": 0.020511634086808783,
-      "ytd": 0.15725192973666702,
-      "1y": 0.23666031079020478
+      "1w": -0.007067989608616543,
+      "1m": 0.023866696403748167,
+      "ytd": 0.14809158589797367,
+      "1y": 0.22522523313014609
     }
   },
   "compositeBenchmark": {
     "name": "Benchmark composito proxy",
     "weights": {
-      "SWDA.MI": 0.6873036928392415,
-      "CMOD.MI": 0.02458708039494961,
-      "AGGH.MI": 0.24597118601165524,
-      "XEON.MI": 0.04213804075415357
+      "SWDA.MI": 0.6863041829306724,
+      "CMOD.MI": 0.02486983085165413,
+      "AGGH.MI": 0.24651935029376987,
+      "XEON.MI": 0.04230663592390368
     },
     "returns": {
-      "1w": 0.00124255897342751,
-      "1m": 0.014571439115274698,
-      "ytd": 0.1126786413723262,
-      "1y": 0.1705122752465107
+      "1w": -0.004809070158905082,
+      "1m": 0.01607602221187099,
+      "ytd": 0.10629418827327641,
+      "1y": 0.1615652963657972
     }
   },
   "periodReturns": {
-    "today": -0.000665550789770708,
+    "today": -0.004387775592198495,
     "1w": null,
     "1m": null,
     "ytd": null,
     "1y": null,
-    "sinceStart": 0.0011085267352741734,
-    "twr": 0.0011085267352741734,
+    "sinceStart": -0.002620305980420734,
+    "twr": -0.002620305980420734,
     "twrStatus": "TWR su patrimonio totale; bonifici esterni neutralizzati da Movimenti Fineco"
   },
   "risk": {
@@ -47,60 +47,60 @@
     "status": "storico insufficiente"
   },
   "concentration": {
-    "top5": 0.6080751627153075,
-    "top10": 0.7605856297536929,
+    "top5": 0.6068691186871279,
+    "top10": 0.7597172487554252,
     "largest": {
       "name": "iShares Core MSCI World",
-      "weight": 0.36477355734112493
+      "weight": 0.3632861168951078
     }
   },
   "currencyExposure": {
     "explicit": {
-      "EUR": 0.938632068744206,
-      "USD": 0.0578505437977377,
-      "GBP": 0.003517387458056359
+      "EUR": 0.9384142343582381,
+      "USD": 0.05805416642448183,
+      "GBP": 0.003531599217280075
     },
     "effective": {
-      "USD": 0.4240649772285299,
-      "EUR": 0.36471714141760664,
-      "JPY": 0.030833818780985935,
-      "CNY": 0.027332008611335428,
-      "TWD": 0.024699231250076288,
-      "GBP": 0.021795221556863146,
-      "INR": 0.020499006458501574,
-      "CAD": 0.01836741725948297,
-      "OTHER": 0.017684740336499943,
-      "KRW": 0.012297898786613755,
-      "CHF": 0.010801028578853403,
-      "AUD": 0.009825004352566214,
-      "BRL": 0.005694168460694881,
-      "SAR": 0.004555334768555905,
-      "ZAR": 0.0034165010764169285,
-      "MXN": 0.0034165010764169285
+      "USD": 0.4236367948420392,
+      "EUR": 0.3652619485068125,
+      "JPY": 0.030755883257740764,
+      "CNY": 0.027343224041526434,
+      "TWD": 0.024700516436175223,
+      "GBP": 0.02177422169583352,
+      "INR": 0.020507418031144822,
+      "CAD": 0.018354201706212058,
+      "OTHER": 0.017678806583482993,
+      "KRW": 0.012326043092483764,
+      "CHF": 0.010764231984087632,
+      "AUD": 0.009807194796507091,
+      "BRL": 0.005696505008651341,
+      "SAR": 0.004557204006921073,
+      "ZAR": 0.0034179030051908043,
+      "MXN": 0.0034179030051908043
     },
-    "lookThroughCoverage": 0.793803339012549,
+    "lookThroughCoverage": 0.7932830002683717,
     "lookThroughStatus": "Esposizione economica stimata: look-through proxy per ETF; hedged EUR trattati EUR. Da affinare con holdings issuer."
   },
   "dataQuality": {
     "freshPositions": 36,
     "totalPositions": 37,
-    "freshValuePct": 0.9994273203353821,
-    "staleValuePct": 0.0005726796646179089,
+    "freshValuePct": 0.9994251049039953,
+    "staleValuePct": 0.0005748950960047602,
     "stale": [
       {
         "name": "LEVA FISSA SPACEX LONG 3X",
         "valueEUR": 285.25,
-        "ageHours": 11.589134002222222
+        "ageHours": 12.338142491388888
       }
     ]
   },
   "attribution": {
-    "marketEUR": 1574.27,
-    "fxEUR": -1003.64,
+    "marketEUR": -293.23,
+    "fxEUR": -1055.61,
     "incomeEUR": 2.84,
     "externalFlowsEUR": 0,
     "status": "patrimonio totale; compravendite interne neutralizzate; reddito cumulato da Movimenti Fineco",
-    "totalChangeEUR": 570.63,
+    "totalChangeEUR": -1348.84,
     "method": "effective-lookthrough-total-v2",
     "points": 7,
     "fromDate": "2026-08-12",
