@@ -1,9 +1,9 @@
 {
-  "asOf": "2026-08-18T23:32:26Z",
+  "asOf": "2026-08-18T23:54:14Z",
   "baselineValue": 496874.4,
   "totalCost": 483225.08940922166,
-  "liveValue": 498352.98,
-  "verifiedValue": 498082.23,
+  "liveValue": 498356.33,
+  "verifiedValue": 498085.58,
   "unverifiedValue": null,
   "positions": [
     {
@@ -23,7 +23,7 @@
       "fxToEUR": 1.0,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-18T23:32:11Z",
+      "lastGoodAsOf": "2026-08-18T23:53:53Z",
       "isin": "NL0011585146"
     },
     {
@@ -35,15 +35,15 @@
       "currency": "USD",
       "bond": false,
       "price": 67.07,
-      "valueEUR": 4633.73,
+      "valueEUR": 4634.27,
       "verified": true,
       "error": null,
       "dayChangePct": -0.057211,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86360002,
+      "fxToEUR": 0.86369997,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-18T23:32:12Z",
+      "lastGoodAsOf": "2026-08-18T23:53:54Z",
       "isin": "US00217D1000"
     },
     {
@@ -63,7 +63,7 @@
       "fxToEUR": 1.0,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-18T23:32:12Z",
+      "lastGoodAsOf": "2026-08-18T23:53:54Z",
       "isin": "IT0005521247"
     },
     {
@@ -83,7 +83,7 @@
       "fxToEUR": 1.0,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-18T23:32:12Z",
+      "lastGoodAsOf": "2026-08-18T23:53:55Z",
       "isin": "DE0007664039"
     },
     {
@@ -95,15 +95,15 @@
       "currency": "GBP",
       "bond": false,
       "price": 0.375,
-      "valueEUR": 1753.05,
+      "valueEUR": 1753.2,
       "verified": true,
       "error": null,
       "dayChangePct": 0.0,
       "feedCurrency": "GBP",
-      "fxToEUR": 1.16869998,
+      "fxToEUR": 1.1688,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-18T23:32:13Z",
+      "lastGoodAsOf": "2026-08-18T23:53:55Z",
       "isin": "GB00B27YGJ97"
     },
     {
@@ -115,15 +115,15 @@
       "currency": "USD",
       "bond": false,
       "price": 114.550003,
-      "valueEUR": 692.48,
+      "valueEUR": 692.56,
       "verified": true,
       "error": null,
       "dayChangePct": -0.010111,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86360002,
+      "fxToEUR": 0.86369997,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-18T23:32:13Z",
+      "lastGoodAsOf": "2026-08-18T23:53:56Z",
       "isin": "US9741551033"
     },
     {
@@ -135,15 +135,15 @@
       "currency": "USD",
       "bond": false,
       "price": 79.160004,
-      "valueEUR": 3965.03,
+      "valueEUR": 3965.49,
       "verified": true,
       "error": null,
       "dayChangePct": -0.035575,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86360002,
+      "fxToEUR": 0.86369997,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-18T23:32:13Z",
+      "lastGoodAsOf": "2026-08-18T23:53:56Z",
       "isin": "US7731211089"
     },
     {
@@ -155,15 +155,15 @@
       "currency": "USD",
       "bond": false,
       "price": 143.339996,
-      "valueEUR": 3713.65,
+      "valueEUR": 3714.08,
       "verified": true,
       "error": null,
       "dayChangePct": -0.019763,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86360002,
+      "fxToEUR": 0.86369997,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-18T23:32:13Z",
+      "lastGoodAsOf": "2026-08-18T23:53:57Z",
       "isin": "US84615Q1031"
     },
     {
@@ -175,15 +175,15 @@
       "currency": "USD",
       "bond": false,
       "price": 26.139999,
-      "valueEUR": 5643.63,
+      "valueEUR": 5644.28,
       "verified": true,
       "error": null,
       "dayChangePct": -0.038263,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86360002,
+      "fxToEUR": 0.86369997,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-18T23:32:14Z",
+      "lastGoodAsOf": "2026-08-18T23:53:57Z",
       "isin": "US31816X1063"
     },
     {
@@ -195,15 +195,15 @@
       "currency": "USD",
       "bond": false,
       "price": 37.580002,
-      "valueEUR": 973.62,
+      "valueEUR": 973.74,
       "verified": true,
       "error": null,
       "dayChangePct": -0.027684,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86360002,
+      "fxToEUR": 0.86369997,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-18T23:32:14Z",
+      "lastGoodAsOf": "2026-08-18T23:53:57Z",
       "isin": "US29355A1079"
     },
     {
@@ -215,15 +215,15 @@
       "currency": "USD",
       "bond": false,
       "price": 1802.97998,
-      "valueEUR": 3114.11,
+      "valueEUR": 3114.47,
       "verified": true,
       "error": null,
       "dayChangePct": -0.042557,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86360002,
+      "fxToEUR": 0.86369997,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-18T23:32:14Z",
+      "lastGoodAsOf": "2026-08-18T23:53:58Z",
       "isin": "USN070592100"
     },
     {
@@ -235,15 +235,15 @@
       "currency": "USD",
       "bond": false,
       "price": 41.360001,
-      "valueEUR": 4286.22,
+      "valueEUR": 4286.72,
       "verified": true,
       "error": null,
       "dayChangePct": -0.057429,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86360002,
+      "fxToEUR": 0.86369997,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-18T23:32:15Z",
+      "lastGoodAsOf": "2026-08-18T23:53:58Z",
       "isin": "US02156V1098"
     },
     {
@@ -255,15 +255,15 @@
       "currency": "USD",
       "bond": false,
       "price": 15.06,
-      "valueEUR": 650.29,
+      "valueEUR": 650.37,
       "verified": true,
       "error": null,
       "dayChangePct": -0.228088,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86360002,
+      "fxToEUR": 0.86369997,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-18T23:32:15Z",
+      "lastGoodAsOf": "2026-08-18T23:53:59Z",
       "isin": "GB00BMHVL512"
     },
     {
@@ -283,7 +283,7 @@
       "fxToEUR": 1.0,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-18T23:32:16Z",
+      "lastGoodAsOf": "2026-08-18T23:53:59Z",
       "isin": "XS3388190996"
     },
     {
@@ -303,7 +303,7 @@
       "fxToEUR": 1.0,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-18T23:32:16Z",
+      "lastGoodAsOf": "2026-08-18T23:53:59Z",
       "isin": "DE000A1E0HR8"
     },
     {
@@ -323,7 +323,7 @@
       "fxToEUR": 1.0,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-18T23:32:16Z",
+      "lastGoodAsOf": "2026-08-18T23:54:00Z",
       "isin": "IE00BYZK4552"
     },
     {
@@ -343,7 +343,7 @@
       "fxToEUR": 1.0,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-18T23:32:17Z",
+      "lastGoodAsOf": "2026-08-18T23:54:00Z",
       "isin": "IE00BD6FTQ80"
     },
     {
@@ -363,7 +363,7 @@
       "fxToEUR": 1.0,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-18T23:32:17Z",
+      "lastGoodAsOf": "2026-08-18T23:54:00Z",
       "isin": "IE00BTJRMP35"
     },
     {
@@ -383,7 +383,7 @@
       "fxToEUR": 1.0,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-18T23:32:17Z",
+      "lastGoodAsOf": "2026-08-18T23:54:01Z",
       "isin": "IE00BDBRDM35"
     },
     {
@@ -403,7 +403,7 @@
       "fxToEUR": 1.0,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-18T23:32:17Z",
+      "lastGoodAsOf": "2026-08-18T23:54:01Z",
       "isin": "IE0003BJ2JS4"
     },
     {
@@ -423,7 +423,7 @@
       "fxToEUR": 1.0,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-18T23:32:17Z",
+      "lastGoodAsOf": "2026-08-18T23:54:01Z",
       "isin": "IE000WUTBLT5"
     },
     {
@@ -443,7 +443,7 @@
       "fxToEUR": 1.0,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-18T23:32:18Z",
+      "lastGoodAsOf": "2026-08-18T23:54:02Z",
       "isin": "IE00B4L5Y983"
     },
     {
@@ -463,7 +463,7 @@
       "fxToEUR": 1.0,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-18T23:32:18Z",
+      "lastGoodAsOf": "2026-08-18T23:54:02Z",
       "isin": "IE0032523478"
     },
     {
@@ -483,7 +483,7 @@
       "fxToEUR": 1.0,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-18T23:32:18Z",
+      "lastGoodAsOf": "2026-08-18T23:54:02Z",
       "isin": "IE00B4WXJJ64"
     },
     {
@@ -503,7 +503,7 @@
       "fxToEUR": 1.0,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-18T23:32:19Z",
+      "lastGoodAsOf": "2026-08-18T23:54:03Z",
       "isin": "IE00BP3QZB59"
     },
     {
@@ -523,7 +523,7 @@
       "fxToEUR": 1.0,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-18T23:32:19Z",
+      "lastGoodAsOf": "2026-08-18T23:54:03Z",
       "isin": "IE00BP3QZ825"
     },
     {
@@ -543,7 +543,7 @@
       "fxToEUR": 1.0,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-18T23:32:19Z",
+      "lastGoodAsOf": "2026-08-18T23:54:03Z",
       "isin": "LU0290358497"
     },
     {
@@ -563,7 +563,7 @@
       "fxToEUR": 1.0,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-18T23:32:19Z",
+      "lastGoodAsOf": "2026-08-18T23:54:04Z",
       "isin": "IE000SU1VJ03"
     },
     {
@@ -584,7 +584,7 @@
       "source": "Borsa Italiana MOT",
       "isin": "IT0005713547",
       "stale": false,
-      "lastGoodAsOf": "2026-08-18T23:32:20Z"
+      "lastGoodAsOf": "2026-08-18T23:54:05Z"
     },
     {
       "name": "BTP-1ST38 2.95",
@@ -604,7 +604,7 @@
       "source": "Borsa Italiana MOT",
       "isin": "IT0005321325",
       "stale": false,
-      "lastGoodAsOf": "2026-08-18T23:32:20Z"
+      "lastGoodAsOf": "2026-08-18T23:54:05Z"
     },
     {
       "name": "BTP-1AP28 3.4",
@@ -624,7 +624,7 @@
       "source": "Borsa Italiana MOT",
       "isin": "IT0005521981",
       "stale": false,
-      "lastGoodAsOf": "2026-08-18T23:32:21Z"
+      "lastGoodAsOf": "2026-08-18T23:54:06Z"
     },
     {
       "name": "BTP-1AP31 0.9",
@@ -644,7 +644,7 @@
       "source": "Borsa Italiana MOT",
       "isin": "IT0005422891",
       "stale": false,
-      "lastGoodAsOf": "2026-08-18T23:32:21Z"
+      "lastGoodAsOf": "2026-08-18T23:54:06Z"
     },
     {
       "name": "BTP-1ST49 3.85",
@@ -664,7 +664,7 @@
       "source": "Borsa Italiana MOT",
       "isin": "IT0005363111",
       "stale": false,
-      "lastGoodAsOf": "2026-08-18T23:32:21Z"
+      "lastGoodAsOf": "2026-08-18T23:54:07Z"
     },
     {
       "name": "BTP-10MZ32 VAL CUM",
@@ -684,7 +684,7 @@
       "source": "BTP Analisi / Borsa Italiana",
       "isin": "IT0005696320",
       "stale": false,
-      "lastGoodAsOf": "2026-08-18T23:32:22Z"
+      "lastGoodAsOf": "2026-08-18T23:54:09Z"
     },
     {
       "name": "BTP-1ST52 2.15",
@@ -704,7 +704,7 @@
       "source": "Borsa Italiana MOT",
       "isin": "IT0005480980",
       "stale": false,
-      "lastGoodAsOf": "2026-08-18T23:32:22Z"
+      "lastGoodAsOf": "2026-08-18T23:54:09Z"
     },
     {
       "name": "LEVA FISSA SPACEX LONG 3X",
@@ -721,7 +721,7 @@
       "dayChangePct": null,
       "feedCurrency": "EUR",
       "fxToEUR": 1.0,
-      "source": "Vorvel mid bid/ask · ultimo valido · ultimo valido · ultimo valido · ultimo valido · ultimo valido · ultimo valido · ultimo valido · ultimo valido",
+      "source": "Vorvel mid bid/ask · ultimo valido · ultimo valido · ultimo valido · ultimo valido · ultimo valido · ultimo valido · ultimo valido · ultimo valido · ultimo valido",
       "stale": true,
       "isin": "IT0005710873",
       "lastGoodAsOf": "2026-08-18T19:36:04Z"
@@ -749,7 +749,7 @@
       "fxToEUR": 1.0,
       "source": "Yahoo Finance",
       "stale": false,
-      "lastGoodAsOf": "2026-08-18T23:32:26Z"
+      "lastGoodAsOf": "2026-08-18T23:54:14Z"
     }
   ],
   "verifiedCost": 483225.09,
@@ -870,15 +870,15 @@
     },
     {
       "date": "2026-08-18",
-      "value": 498352.98,
+      "value": 498356.33,
       "coverage": 36,
       "stale": 1,
       "cashAvailable": 17237.98,
-      "totalPatrimonyValue": 515590.96,
-      "effectiveConstantTotalValue": 516190.2,
+      "totalPatrimonyValue": 515594.31,
+      "effectiveConstantTotalValue": 516161.11,
       "effectiveFxMethod": "lookthrough-total-v2",
-      "constantFxValue": 498391.79,
-      "effectiveConstantFxValue": 498952.22
+      "constantFxValue": 498391.8,
+      "effectiveConstantFxValue": 498923.13
     }
   ],
   "benchmark": {
@@ -903,8 +903,8 @@
     "USD": 0.86489999,
     "GBP": 1.16680002
   },
-  "constantFxValue": 498391.79,
-  "fxEffectEUR": -38.81,
+  "constantFxValue": 498391.8,
+  "fxEffectEUR": -35.47,
   "fxBaseAsOf": "2026-08-08T06:41:58Z",
   "effectiveFxBase": {
     "CNY": 0.12809999287128448,
@@ -924,8 +924,8 @@
     "TWD": 0.026792999356985092,
     "CAD": 0.6205000281333923
   },
-  "effectiveConstantFxValue": 498952.22,
-  "effectiveFxEffectEUR": -599.24,
+  "effectiveConstantFxValue": 498923.13,
+  "effectiveFxEffectEUR": -566.8,
   "effectiveFxBaseAsOf": "2026-08-09T10:48:53Z",
   "finecoRemovedPositions": [
     {
@@ -940,6 +940,6 @@
     }
   ],
   "finecoRemovalCount": 0,
-  "totalPatrimonyValue": 515590.96,
-  "effectiveConstantTotalValue": 516190.2
+  "totalPatrimonyValue": 515594.31,
+  "effectiveConstantTotalValue": 516161.11
 }
