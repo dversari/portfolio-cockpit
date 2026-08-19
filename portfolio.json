@@ -1,9 +1,9 @@
 {
-  "asOf": "2026-08-19T04:58:38Z",
+  "asOf": "2026-08-19T05:24:37Z",
   "baselineValue": 496874.4,
   "totalCost": 483225.08940922166,
-  "liveValue": 498476.09,
-  "verifiedValue": 498205.34,
+  "liveValue": 492604.19,
+  "verifiedValue": 492604.19,
   "unverifiedValue": null,
   "positions": [
     {
@@ -15,16 +15,24 @@
       "currency": "EUR",
       "bond": false,
       "price": 361.649994,
-      "valueEUR": 3616.5,
+      "valueEUR": 3574.0,
       "verified": true,
       "error": null,
       "dayChangePct": 0.013593,
       "feedCurrency": "EUR",
       "fxToEUR": 1.0,
-      "source": "Yahoo Finance",
+      "source": "Yahoo Finance · ancorato Fineco",
       "stale": false,
-      "lastGoodAsOf": "2026-08-19T04:58:22Z",
-      "isin": "NL0011585146"
+      "lastGoodAsOf": "2026-08-19T05:24:23Z",
+      "isin": "NL0011585146",
+      "finecoAnchor": {
+        "syncAsOf": "2026-08-19T07:15:00+02:00",
+        "finecoValueEUR": 3574.0,
+        "finecoPrice": 357.4,
+        "feedPrice": 361.649994,
+        "feedFxToEUR": 1.0,
+        "lastEstimatedValueEUR": 3574.0
+      }
     },
     {
       "name": "AST SPACEMOBILE RG-A",
@@ -34,17 +42,25 @@
       "cat": "Speculativo",
       "currency": "USD",
       "bond": false,
-      "price": 67.07,
-      "valueEUR": 4629.98,
+      "price": 71.139999,
+      "valueEUR": 4640.0,
       "verified": true,
       "error": null,
-      "dayChangePct": -0.057211,
+      "dayChangePct": 0.002254,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86290002,
-      "source": "Yahoo Finance",
+      "fxToEUR": 0.8628,
+      "source": "Yahoo Finance · ancorato Fineco",
       "stale": false,
-      "lastGoodAsOf": "2026-08-19T04:58:23Z",
-      "isin": "US00217D1000"
+      "lastGoodAsOf": "2026-08-19T05:24:24Z",
+      "isin": "US00217D1000",
+      "finecoAnchor": {
+        "syncAsOf": "2026-08-19T07:15:00+02:00",
+        "finecoValueEUR": 4640.0,
+        "finecoPrice": 58.0,
+        "feedPrice": 71.139999,
+        "feedFxToEUR": 0.8628,
+        "lastEstimatedValueEUR": 4640.0
+      }
     },
     {
       "name": "ERREDUE",
@@ -55,16 +71,24 @@
       "currency": "EUR",
       "bond": false,
       "price": 10.15,
-      "valueEUR": 4060.0,
+      "valueEUR": 4320.0,
       "verified": true,
       "error": null,
       "dayChangePct": -0.014563,
       "feedCurrency": "EUR",
       "fxToEUR": 1.0,
-      "source": "Yahoo Finance",
+      "source": "Yahoo Finance · ancorato Fineco",
       "stale": false,
-      "lastGoodAsOf": "2026-08-19T04:58:23Z",
-      "isin": "IT0005521247"
+      "lastGoodAsOf": "2026-08-19T05:24:24Z",
+      "isin": "IT0005521247",
+      "finecoAnchor": {
+        "syncAsOf": "2026-08-19T07:15:00+02:00",
+        "finecoValueEUR": 4320.0,
+        "finecoPrice": 10.8,
+        "feedPrice": 10.15,
+        "feedFxToEUR": 1.0,
+        "lastEstimatedValueEUR": 4320.0
+      }
     },
     {
       "name": "VOLKSWAGEN",
@@ -75,16 +99,24 @@
       "currency": "EUR",
       "bond": false,
       "price": 73.220001,
-      "valueEUR": 3661.0,
+      "valueEUR": 3650.0,
       "verified": true,
       "error": null,
       "dayChangePct": -0.006782,
       "feedCurrency": "EUR",
       "fxToEUR": 1.0,
-      "source": "Yahoo Finance",
+      "source": "Yahoo Finance · ancorato Fineco",
       "stale": false,
-      "lastGoodAsOf": "2026-08-19T04:58:24Z",
-      "isin": "DE0007664039"
+      "lastGoodAsOf": "2026-08-19T05:24:24Z",
+      "isin": "DE0007664039",
+      "finecoAnchor": {
+        "syncAsOf": "2026-08-19T07:15:00+02:00",
+        "finecoValueEUR": 3650.0,
+        "finecoPrice": 73.0,
+        "feedPrice": 73.220001,
+        "feedFxToEUR": 1.0,
+        "lastEstimatedValueEUR": 3650.0
+      }
     },
     {
       "name": "SEVERFIELD",
@@ -95,16 +127,24 @@
       "currency": "GBP",
       "bond": false,
       "price": 0.375,
-      "valueEUR": 1752.45,
+      "valueEUR": 1753.05,
       "verified": true,
       "error": null,
       "dayChangePct": 0.0,
       "feedCurrency": "GBP",
-      "fxToEUR": 1.16830003,
-      "source": "Yahoo Finance",
+      "fxToEUR": 1.16820002,
+      "source": "Yahoo Finance · ancorato Fineco",
       "stale": false,
-      "lastGoodAsOf": "2026-08-19T04:58:24Z",
-      "isin": "GB00B27YGJ97"
+      "lastGoodAsOf": "2026-08-19T05:24:25Z",
+      "isin": "GB00B27YGJ97",
+      "finecoAnchor": {
+        "syncAsOf": "2026-08-19T07:15:00+02:00",
+        "finecoValueEUR": 1753.0532343825,
+        "finecoPrice": 0.375,
+        "feedPrice": 0.375,
+        "feedFxToEUR": 1.16820002,
+        "lastEstimatedValueEUR": 1753.05
+      }
     },
     {
       "name": "WINGSTOP",
@@ -115,16 +155,24 @@
       "currency": "USD",
       "bond": false,
       "price": 114.550003,
-      "valueEUR": 691.92,
+      "valueEUR": 692.03,
       "verified": true,
       "error": null,
       "dayChangePct": -0.010111,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86290002,
-      "source": "Yahoo Finance",
+      "fxToEUR": 0.8628,
+      "source": "Yahoo Finance · ancorato Fineco",
       "stale": false,
-      "lastGoodAsOf": "2026-08-19T04:58:24Z",
-      "isin": "US9741551033"
+      "lastGoodAsOf": "2026-08-19T05:24:25Z",
+      "isin": "US9741551033",
+      "finecoAnchor": {
+        "syncAsOf": "2026-08-19T07:15:00+02:00",
+        "finecoValueEUR": 692.0255458702477,
+        "finecoPrice": 114.55,
+        "feedPrice": 114.550003,
+        "feedFxToEUR": 0.8628,
+        "lastEstimatedValueEUR": 692.03
+      }
     },
     {
       "name": "ROCKET LAB",
@@ -134,17 +182,25 @@
       "cat": "Speculativo",
       "currency": "USD",
       "bond": false,
-      "price": 82.080002,
-      "valueEUR": 4107.96,
+      "price": 79.160004,
+      "valueEUR": 3962.44,
       "verified": true,
       "error": null,
-      "dayChangePct": 0.022804,
+      "dayChangePct": -0.035575,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86290002,
-      "source": "Yahoo Finance",
+      "fxToEUR": 0.8628,
+      "source": "Yahoo Finance · ancorato Fineco",
       "stale": false,
-      "lastGoodAsOf": "2026-08-19T04:58:25Z",
-      "isin": "US7731211089"
+      "lastGoodAsOf": "2026-08-19T05:24:25Z",
+      "isin": "US7731211089",
+      "finecoAnchor": {
+        "syncAsOf": "2026-08-19T07:15:00+02:00",
+        "finecoValueEUR": 3962.440666263205,
+        "finecoPrice": 79.16,
+        "feedPrice": 79.160004,
+        "feedFxToEUR": 0.8628,
+        "lastEstimatedValueEUR": 3962.44
+      }
     },
     {
       "name": "SPACEX RG-A",
@@ -155,16 +211,24 @@
       "currency": "USD",
       "bond": false,
       "price": 143.339996,
-      "valueEUR": 3710.64,
+      "valueEUR": 3711.23,
       "verified": true,
       "error": null,
       "dayChangePct": -0.019763,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86290002,
-      "source": "Yahoo Finance",
+      "fxToEUR": 0.8628,
+      "source": "Yahoo Finance · ancorato Fineco",
       "stale": false,
-      "lastGoodAsOf": "2026-08-19T04:58:25Z",
-      "isin": "US84615Q1031"
+      "lastGoodAsOf": "2026-08-19T05:24:25Z",
+      "isin": "US84615Q1031",
+      "finecoAnchor": {
+        "syncAsOf": "2026-08-19T07:15:00+02:00",
+        "finecoValueEUR": 3711.228100456743,
+        "finecoPrice": 143.34,
+        "feedPrice": 143.339996,
+        "feedFxToEUR": 0.8628,
+        "lastEstimatedValueEUR": 3711.23
+      }
     },
     {
       "name": "FIREFLY",
@@ -175,16 +239,24 @@
       "currency": "USD",
       "bond": false,
       "price": 26.139999,
-      "valueEUR": 5639.05,
+      "valueEUR": 5639.94,
       "verified": true,
       "error": null,
       "dayChangePct": -0.038263,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86290002,
-      "source": "Yahoo Finance",
+      "fxToEUR": 0.8628,
+      "source": "Yahoo Finance · ancorato Fineco",
       "stale": false,
-      "lastGoodAsOf": "2026-08-19T04:58:25Z",
-      "isin": "US31816X1063"
+      "lastGoodAsOf": "2026-08-19T05:24:26Z",
+      "isin": "US31816X1063",
+      "finecoAnchor": {
+        "syncAsOf": "2026-08-19T07:15:00+02:00",
+        "finecoValueEUR": 5639.941313540025,
+        "finecoPrice": 26.14,
+        "feedPrice": 26.139999,
+        "feedFxToEUR": 0.8628,
+        "lastEstimatedValueEUR": 5639.94
+      }
     },
     {
       "name": "ENPHASE ENERGY",
@@ -195,16 +267,24 @@
       "currency": "USD",
       "bond": false,
       "price": 37.580002,
-      "valueEUR": 972.83,
+      "valueEUR": 972.99,
       "verified": true,
       "error": null,
       "dayChangePct": -0.027684,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86290002,
-      "source": "Yahoo Finance",
+      "fxToEUR": 0.8628,
+      "source": "Yahoo Finance · ancorato Fineco",
       "stale": false,
-      "lastGoodAsOf": "2026-08-19T04:58:26Z",
-      "isin": "US29355A1079"
+      "lastGoodAsOf": "2026-08-19T05:24:26Z",
+      "isin": "US29355A1079",
+      "finecoAnchor": {
+        "syncAsOf": "2026-08-19T07:15:00+02:00",
+        "finecoValueEUR": 972.986968153791,
+        "finecoPrice": 37.58,
+        "feedPrice": 37.580002,
+        "feedFxToEUR": 0.8628,
+        "lastEstimatedValueEUR": 972.99
+      }
     },
     {
       "name": "ASML HOLD NY REG",
@@ -214,17 +294,25 @@
       "cat": "Semicore",
       "currency": "USD",
       "bond": false,
-      "price": 1802.97998,
-      "valueEUR": 3111.58,
+      "price": 1883.119995,
+      "valueEUR": 3112.07,
       "verified": true,
       "error": null,
-      "dayChangePct": -0.042557,
+      "dayChangePct": 0.02117,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86290002,
-      "source": "Yahoo Finance",
+      "fxToEUR": 0.8628,
+      "source": "Yahoo Finance · ancorato Fineco",
       "stale": false,
-      "lastGoodAsOf": "2026-08-19T04:58:26Z",
-      "isin": "USN070592100"
+      "lastGoodAsOf": "2026-08-19T05:24:26Z",
+      "isin": "USN070592100",
+      "finecoAnchor": {
+        "syncAsOf": "2026-08-19T07:15:00+02:00",
+        "finecoValueEUR": 3112.0738758948414,
+        "finecoPrice": 1802.98,
+        "feedPrice": 1883.119995,
+        "feedFxToEUR": 0.8628,
+        "lastEstimatedValueEUR": 3112.07
+      }
     },
     {
       "name": "OKLO INC",
@@ -234,17 +322,25 @@
       "cat": "Speculativo",
       "currency": "USD",
       "bond": false,
-      "price": 41.360001,
-      "valueEUR": 4282.75,
+      "price": 43.880001,
+      "valueEUR": 4286.01,
       "verified": true,
       "error": null,
-      "dayChangePct": -0.057429,
+      "dayChangePct": -0.011266,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86290002,
-      "source": "Yahoo Finance",
+      "fxToEUR": 0.8628,
+      "source": "Yahoo Finance · ancorato Fineco",
       "stale": false,
-      "lastGoodAsOf": "2026-08-19T04:58:26Z",
-      "isin": "US02156V1098"
+      "lastGoodAsOf": "2026-08-19T05:24:27Z",
+      "isin": "US02156V1098",
+      "finecoAnchor": {
+        "syncAsOf": "2026-08-19T07:15:00+02:00",
+        "finecoValueEUR": 4286.010183825933,
+        "finecoPrice": 41.385,
+        "feedPrice": 43.880001,
+        "feedFxToEUR": 0.8628,
+        "lastEstimatedValueEUR": 4286.01
+      }
     },
     {
       "name": "KLARNA GRP",
@@ -254,17 +350,25 @@
       "cat": "Speculativo",
       "currency": "USD",
       "bond": false,
-      "price": 15.06,
-      "valueEUR": 649.76,
+      "price": 19.51,
+      "valueEUR": 650.3,
       "verified": true,
       "error": null,
-      "dayChangePct": -0.228088,
+      "dayChangePct": -0.061568,
       "feedCurrency": "USD",
-      "fxToEUR": 0.86290002,
-      "source": "Yahoo Finance",
+      "fxToEUR": 0.8628,
+      "source": "Yahoo Finance · ancorato Fineco",
       "stale": false,
-      "lastGoodAsOf": "2026-08-19T04:58:27Z",
-      "isin": "GB00BMHVL512"
+      "lastGoodAsOf": "2026-08-19T05:24:27Z",
+      "isin": "GB00BMHVL512",
+      "finecoAnchor": {
+        "syncAsOf": "2026-08-19T07:15:00+02:00",
+        "finecoValueEUR": 650.2977474755025,
+        "finecoPrice": 15.07,
+        "feedPrice": 19.51,
+        "feedFxToEUR": 0.8628,
+        "lastEstimatedValueEUR": 650.3
+      }
     },
     {
       "name": "3x Long SK Hynix ETP",
@@ -275,16 +379,24 @@
       "currency": "EUR",
       "bond": false,
       "price": 1.111,
-      "valueEUR": 555.5,
+      "valueEUR": 401.2,
       "verified": true,
       "error": null,
       "dayChangePct": 0.226134,
       "feedCurrency": "EUR",
       "fxToEUR": 1.0,
-      "source": "Yahoo Finance",
+      "source": "Yahoo Finance · ancorato Fineco",
       "stale": false,
-      "lastGoodAsOf": "2026-08-19T04:58:27Z",
-      "isin": "XS3388190996"
+      "lastGoodAsOf": "2026-08-19T05:24:27Z",
+      "isin": "XS3388190996",
+      "finecoAnchor": {
+        "syncAsOf": "2026-08-19T07:15:00+02:00",
+        "finecoValueEUR": 401.2,
+        "finecoPrice": 0.8024,
+        "feedPrice": 1.111,
+        "feedFxToEUR": 1.0,
+        "lastEstimatedValueEUR": 401.2
+      }
     },
     {
       "name": "Xtrackers Physical Gold ETC",
@@ -295,16 +407,24 @@
       "currency": "EUR",
       "bond": false,
       "price": 365.720001,
-      "valueEUR": 9143.0,
+      "valueEUR": 9014.0,
       "verified": true,
       "error": null,
       "dayChangePct": 0.007993,
       "feedCurrency": "EUR",
       "fxToEUR": 1.0,
-      "source": "Yahoo Finance",
+      "source": "Yahoo Finance · ancorato Fineco",
       "stale": false,
-      "lastGoodAsOf": "2026-08-19T04:58:27Z",
-      "isin": "DE000A1E0HR8"
+      "lastGoodAsOf": "2026-08-19T05:24:27Z",
+      "isin": "DE000A1E0HR8",
+      "finecoAnchor": {
+        "syncAsOf": "2026-08-19T07:15:00+02:00",
+        "finecoValueEUR": 9014.0,
+        "finecoPrice": 360.56,
+        "feedPrice": 365.720001,
+        "feedFxToEUR": 1.0,
+        "lastEstimatedValueEUR": 9014.0
+      }
     },
     {
       "name": "iShares Automation & Robotics",
@@ -315,16 +435,24 @@
       "currency": "EUR",
       "bond": false,
       "price": 19.25,
-      "valueEUR": 15400.0,
+      "valueEUR": 14772.8,
       "verified": true,
       "error": null,
       "dayChangePct": 0.012199,
       "feedCurrency": "EUR",
       "fxToEUR": 1.0,
-      "source": "Yahoo Finance",
+      "source": "Yahoo Finance · ancorato Fineco",
       "stale": false,
-      "lastGoodAsOf": "2026-08-19T04:58:27Z",
-      "isin": "IE00BYZK4552"
+      "lastGoodAsOf": "2026-08-19T05:24:28Z",
+      "isin": "IE00BYZK4552",
+      "finecoAnchor": {
+        "syncAsOf": "2026-08-19T07:15:00+02:00",
+        "finecoValueEUR": 14772.8,
+        "finecoPrice": 18.466,
+        "feedPrice": 19.25,
+        "feedFxToEUR": 1.0,
+        "lastEstimatedValueEUR": 14772.8
+      }
     },
     {
       "name": "Invesco Bloomberg Commodity",
@@ -335,16 +463,24 @@
       "currency": "EUR",
       "bond": false,
       "price": 29.174999,
-      "valueEUR": 3209.25,
+      "valueEUR": 3229.05,
       "verified": true,
       "error": null,
       "dayChangePct": 0.01039,
       "feedCurrency": "EUR",
       "fxToEUR": 1.0,
-      "source": "Yahoo Finance",
+      "source": "Yahoo Finance · ancorato Fineco",
       "stale": false,
-      "lastGoodAsOf": "2026-08-19T04:58:27Z",
-      "isin": "IE00BD6FTQ80"
+      "lastGoodAsOf": "2026-08-19T05:24:28Z",
+      "isin": "IE00BD6FTQ80",
+      "finecoAnchor": {
+        "syncAsOf": "2026-08-19T07:15:00+02:00",
+        "finecoValueEUR": 3229.05,
+        "finecoPrice": 29.355,
+        "feedPrice": 29.174999,
+        "feedFxToEUR": 1.0,
+        "lastEstimatedValueEUR": 3229.05
+      }
     },
     {
       "name": "Xtrackers MSCI Emerging Markets",
@@ -355,16 +491,24 @@
       "currency": "EUR",
       "bond": false,
       "price": 81.543999,
-      "valueEUR": 57733.15,
+      "valueEUR": 55746.5,
       "verified": true,
       "error": null,
       "dayChangePct": 0.017773,
       "feedCurrency": "EUR",
       "fxToEUR": 1.0,
-      "source": "Yahoo Finance",
+      "source": "Yahoo Finance · ancorato Fineco",
       "stale": false,
-      "lastGoodAsOf": "2026-08-19T04:58:28Z",
-      "isin": "IE00BTJRMP35"
+      "lastGoodAsOf": "2026-08-19T05:24:28Z",
+      "isin": "IE00BTJRMP35",
+      "finecoAnchor": {
+        "syncAsOf": "2026-08-19T07:15:00+02:00",
+        "finecoValueEUR": 55746.504,
+        "finecoPrice": 78.738,
+        "feedPrice": 81.543999,
+        "feedFxToEUR": 1.0,
+        "lastEstimatedValueEUR": 55746.5
+      }
     },
     {
       "name": "iShares Global Aggregate Bond EUR Hedged",
@@ -375,16 +519,24 @@
       "currency": "EUR",
       "bond": false,
       "price": 4.89,
-      "valueEUR": 22005.0,
+      "valueEUR": 21982.5,
       "verified": true,
       "error": null,
       "dayChangePct": -0.001225,
       "feedCurrency": "EUR",
       "fxToEUR": 1.0,
-      "source": "Yahoo Finance",
+      "source": "Yahoo Finance · ancorato Fineco",
       "stale": false,
-      "lastGoodAsOf": "2026-08-19T04:58:28Z",
-      "isin": "IE00BDBRDM35"
+      "lastGoodAsOf": "2026-08-19T05:24:28Z",
+      "isin": "IE00BDBRDM35",
+      "finecoAnchor": {
+        "syncAsOf": "2026-08-19T07:15:00+02:00",
+        "finecoValueEUR": 21982.5,
+        "finecoPrice": 4.885,
+        "feedPrice": 4.89,
+        "feedFxToEUR": 1.0,
+        "lastEstimatedValueEUR": 21982.5
+      }
     },
     {
       "name": "WisdomTree Uranium & Nuclear Energy",
@@ -395,16 +547,24 @@
       "currency": "EUR",
       "bond": false,
       "price": 47.200001,
-      "valueEUR": 10856.0,
+      "valueEUR": 10348.85,
       "verified": true,
       "error": null,
       "dayChangePct": 0.023861,
       "feedCurrency": "EUR",
       "fxToEUR": 1.0,
-      "source": "Yahoo Finance",
+      "source": "Yahoo Finance · ancorato Fineco",
       "stale": false,
-      "lastGoodAsOf": "2026-08-19T04:58:28Z",
-      "isin": "IE0003BJ2JS4"
+      "lastGoodAsOf": "2026-08-19T05:24:28Z",
+      "isin": "IE0003BJ2JS4",
+      "finecoAnchor": {
+        "syncAsOf": "2026-08-19T07:15:00+02:00",
+        "finecoValueEUR": 10348.85,
+        "finecoPrice": 44.995,
+        "feedPrice": 47.200001,
+        "feedFxToEUR": 1.0,
+        "lastEstimatedValueEUR": 10348.85
+      }
     },
     {
       "name": "HANetf AI & Power Infrastructure",
@@ -415,16 +575,24 @@
       "currency": "EUR",
       "bond": false,
       "price": 7.955,
-      "valueEUR": 3977.5,
+      "valueEUR": 3875.0,
       "verified": true,
       "error": null,
       "dayChangePct": 0.01003,
       "feedCurrency": "EUR",
       "fxToEUR": 1.0,
-      "source": "Yahoo Finance",
+      "source": "Yahoo Finance · ancorato Fineco",
       "stale": false,
-      "lastGoodAsOf": "2026-08-19T04:58:28Z",
-      "isin": "IE000WUTBLT5"
+      "lastGoodAsOf": "2026-08-19T05:24:29Z",
+      "isin": "IE000WUTBLT5",
+      "finecoAnchor": {
+        "syncAsOf": "2026-08-19T07:15:00+02:00",
+        "finecoValueEUR": 3875.0,
+        "finecoPrice": 7.75,
+        "feedPrice": 7.955,
+        "feedFxToEUR": 1.0,
+        "lastEstimatedValueEUR": 3875.0
+      }
     },
     {
       "name": "iShares Core MSCI World",
@@ -435,16 +603,24 @@
       "currency": "EUR",
       "bond": false,
       "price": 128.710007,
-      "valueEUR": 181481.11,
+      "valueEUR": 179690.4,
       "verified": true,
       "error": null,
       "dayChangePct": -0.001164,
       "feedCurrency": "EUR",
       "fxToEUR": 1.0,
-      "source": "Yahoo Finance",
+      "source": "Yahoo Finance · ancorato Fineco",
       "stale": false,
-      "lastGoodAsOf": "2026-08-19T04:58:29Z",
-      "isin": "IE00B4L5Y983"
+      "lastGoodAsOf": "2026-08-19T05:24:29Z",
+      "isin": "IE00B4L5Y983",
+      "finecoAnchor": {
+        "syncAsOf": "2026-08-19T07:15:00+02:00",
+        "finecoValueEUR": 179690.4,
+        "finecoPrice": 127.44,
+        "feedPrice": 128.710007,
+        "feedFxToEUR": 1.0,
+        "lastEstimatedValueEUR": 179690.4
+      }
     },
     {
       "name": "iShares EUR Corp Bond Large Cap",
@@ -455,16 +631,24 @@
       "currency": "EUR",
       "bond": false,
       "price": 123.699997,
-      "valueEUR": 18555.0,
+      "valueEUR": 18499.5,
       "verified": true,
       "error": null,
       "dayChangePct": -0.000485,
       "feedCurrency": "EUR",
       "fxToEUR": 1.0,
-      "source": "Yahoo Finance",
+      "source": "Yahoo Finance · ancorato Fineco",
       "stale": false,
-      "lastGoodAsOf": "2026-08-19T04:58:29Z",
-      "isin": "IE0032523478"
+      "lastGoodAsOf": "2026-08-19T05:24:29Z",
+      "isin": "IE0032523478",
+      "finecoAnchor": {
+        "syncAsOf": "2026-08-19T07:15:00+02:00",
+        "finecoValueEUR": 18499.5,
+        "finecoPrice": 123.33,
+        "feedPrice": 123.699997,
+        "feedFxToEUR": 1.0,
+        "lastEstimatedValueEUR": 18499.5
+      }
     },
     {
       "name": "iShares Core EUR Govt Bond",
@@ -475,16 +659,24 @@
       "currency": "EUR",
       "bond": false,
       "price": 107.029999,
-      "valueEUR": 21406.0,
+      "valueEUR": 21338.0,
       "verified": true,
       "error": null,
       "dayChangePct": -0.001679,
       "feedCurrency": "EUR",
       "fxToEUR": 1.0,
-      "source": "Yahoo Finance",
+      "source": "Yahoo Finance · ancorato Fineco",
       "stale": false,
-      "lastGoodAsOf": "2026-08-19T04:58:29Z",
-      "isin": "IE00B4WXJJ64"
+      "lastGoodAsOf": "2026-08-19T05:24:30Z",
+      "isin": "IE00B4WXJJ64",
+      "finecoAnchor": {
+        "syncAsOf": "2026-08-19T07:15:00+02:00",
+        "finecoValueEUR": 21338.0,
+        "finecoPrice": 106.69,
+        "feedPrice": 107.029999,
+        "feedFxToEUR": 1.0,
+        "lastEstimatedValueEUR": 21338.0
+      }
     },
     {
       "name": "iShares MSCI World Value Factor",
@@ -495,16 +687,24 @@
       "currency": "EUR",
       "bond": false,
       "price": 71.290001,
-      "valueEUR": 6059.65,
+      "valueEUR": 5940.65,
       "verified": true,
       "error": null,
       "dayChangePct": 0.007775,
       "feedCurrency": "EUR",
       "fxToEUR": 1.0,
-      "source": "Yahoo Finance",
+      "source": "Yahoo Finance · ancorato Fineco",
       "stale": false,
-      "lastGoodAsOf": "2026-08-19T04:58:30Z",
-      "isin": "IE00BP3QZB59"
+      "lastGoodAsOf": "2026-08-19T05:24:30Z",
+      "isin": "IE00BP3QZB59",
+      "finecoAnchor": {
+        "syncAsOf": "2026-08-19T07:15:00+02:00",
+        "finecoValueEUR": 5940.65,
+        "finecoPrice": 69.89,
+        "feedPrice": 71.290001,
+        "feedFxToEUR": 1.0,
+        "lastEstimatedValueEUR": 5940.65
+      }
     },
     {
       "name": "iShares MSCI World Momentum Factor",
@@ -515,16 +715,24 @@
       "currency": "EUR",
       "bond": false,
       "price": 104.230003,
-      "valueEUR": 5419.96,
+      "valueEUR": 5246.8,
       "verified": true,
       "error": null,
       "dayChangePct": 0.019663,
       "feedCurrency": "EUR",
       "fxToEUR": 1.0,
-      "source": "Yahoo Finance",
+      "source": "Yahoo Finance · ancorato Fineco",
       "stale": false,
-      "lastGoodAsOf": "2026-08-19T04:58:30Z",
-      "isin": "IE00BP3QZ825"
+      "lastGoodAsOf": "2026-08-19T05:24:30Z",
+      "isin": "IE00BP3QZ825",
+      "finecoAnchor": {
+        "syncAsOf": "2026-08-19T07:15:00+02:00",
+        "finecoValueEUR": 5246.8,
+        "finecoPrice": 100.9,
+        "feedPrice": 104.230003,
+        "feedFxToEUR": 1.0,
+        "lastEstimatedValueEUR": 5246.8
+      }
     },
     {
       "name": "Xtrackers II EUR Overnight Rate Swap",
@@ -535,16 +743,24 @@
       "currency": "EUR",
       "bond": false,
       "price": 149.934998,
-      "valueEUR": 20990.9,
+      "valueEUR": 20990.48,
       "verified": true,
       "error": null,
       "dayChangePct": 9.9e-05,
       "feedCurrency": "EUR",
       "fxToEUR": 1.0,
-      "source": "Yahoo Finance",
+      "source": "Yahoo Finance · ancorato Fineco",
       "stale": false,
-      "lastGoodAsOf": "2026-08-19T04:58:30Z",
-      "isin": "LU0290358497"
+      "lastGoodAsOf": "2026-08-19T05:24:30Z",
+      "isin": "LU0290358497",
+      "finecoAnchor": {
+        "syncAsOf": "2026-08-19T07:15:00+02:00",
+        "finecoValueEUR": 20990.48,
+        "finecoPrice": 149.932,
+        "feedPrice": 149.934998,
+        "feedFxToEUR": 1.0,
+        "lastEstimatedValueEUR": 20990.48
+      }
     },
     {
       "name": "SPDR MSCI World Small Cap",
@@ -555,16 +771,24 @@
       "currency": "EUR",
       "bond": false,
       "price": 12.442,
-      "valueEUR": 17418.8,
+      "valueEUR": 17192.0,
       "verified": true,
       "error": null,
       "dayChangePct": 0.000643,
       "feedCurrency": "EUR",
       "fxToEUR": 1.0,
-      "source": "Yahoo Finance",
+      "source": "Yahoo Finance · ancorato Fineco",
       "stale": false,
-      "lastGoodAsOf": "2026-08-19T04:58:30Z",
-      "isin": "IE000SU1VJ03"
+      "lastGoodAsOf": "2026-08-19T05:24:31Z",
+      "isin": "IE000SU1VJ03",
+      "finecoAnchor": {
+        "syncAsOf": "2026-08-19T07:15:00+02:00",
+        "finecoValueEUR": 17192.0,
+        "finecoPrice": 12.28,
+        "feedPrice": 12.442,
+        "feedFxToEUR": 1.0,
+        "lastEstimatedValueEUR": 17192.0
+      }
     },
     {
       "name": "BTP-23GN31 IT SI CUM",
@@ -581,10 +805,18 @@
       "dayChangePct": null,
       "feedCurrency": "EUR",
       "fxToEUR": 1.0,
-      "source": "BTP Analisi / Borsa Italiana",
-      "isin": "IT0005713547",
+      "source": "BTP Analisi / Borsa Italiana · ancorato Fineco",
+      "isin": "IT0005713539",
       "stale": false,
-      "lastGoodAsOf": "2026-08-19T04:58:31Z"
+      "lastGoodAsOf": "2026-08-19T05:24:32Z",
+      "finecoAnchor": {
+        "syncAsOf": "2026-08-19T07:15:00+02:00",
+        "finecoValueEUR": 10165.0,
+        "finecoPrice": 101.65,
+        "feedPrice": 101.65,
+        "feedFxToEUR": 1.0,
+        "lastEstimatedValueEUR": 10165.0
+      }
     },
     {
       "name": "BTP-1ST38 2.95",
@@ -601,10 +833,18 @@
       "dayChangePct": null,
       "feedCurrency": "EUR",
       "fxToEUR": 1.0,
-      "source": "BTP Analisi / Borsa Italiana",
+      "source": "BTP Analisi / Borsa Italiana · ancorato Fineco",
       "isin": "IT0005321325",
       "stale": false,
-      "lastGoodAsOf": "2026-08-19T04:58:32Z"
+      "lastGoodAsOf": "2026-08-19T05:24:32Z",
+      "finecoAnchor": {
+        "syncAsOf": "2026-08-19T07:15:00+02:00",
+        "finecoValueEUR": 14155.2,
+        "finecoPrice": 88.47,
+        "feedPrice": 88.47,
+        "feedFxToEUR": 1.0,
+        "lastEstimatedValueEUR": 14155.2
+      }
     },
     {
       "name": "BTP-1AP28 3.4",
@@ -621,10 +861,18 @@
       "dayChangePct": null,
       "feedCurrency": "EUR",
       "fxToEUR": 1.0,
-      "source": "BTP Analisi / Borsa Italiana",
+      "source": "BTP Analisi / Borsa Italiana · ancorato Fineco",
       "isin": "IT0005521981",
       "stale": false,
-      "lastGoodAsOf": "2026-08-19T04:58:32Z"
+      "lastGoodAsOf": "2026-08-19T05:24:33Z",
+      "finecoAnchor": {
+        "syncAsOf": "2026-08-19T07:15:00+02:00",
+        "finecoValueEUR": 5033.0,
+        "finecoPrice": 100.66,
+        "feedPrice": 100.66,
+        "feedFxToEUR": 1.0,
+        "lastEstimatedValueEUR": 5033.0
+      }
     },
     {
       "name": "BTP-1AP31 0.9",
@@ -641,10 +889,18 @@
       "dayChangePct": null,
       "feedCurrency": "EUR",
       "fxToEUR": 1.0,
-      "source": "BTP Analisi / Borsa Italiana",
+      "source": "BTP Analisi / Borsa Italiana · ancorato Fineco",
       "isin": "IT0005422891",
       "stale": false,
-      "lastGoodAsOf": "2026-08-19T04:58:33Z"
+      "lastGoodAsOf": "2026-08-19T05:24:34Z",
+      "finecoAnchor": {
+        "syncAsOf": "2026-08-19T07:15:00+02:00",
+        "finecoValueEUR": 8955.0,
+        "finecoPrice": 89.55,
+        "feedPrice": 89.55,
+        "feedFxToEUR": 1.0,
+        "lastEstimatedValueEUR": 8955.0
+      }
     },
     {
       "name": "BTP-1ST49 3.85",
@@ -661,10 +917,18 @@
       "dayChangePct": null,
       "feedCurrency": "EUR",
       "fxToEUR": 1.0,
-      "source": "BTP Analisi / Borsa Italiana",
+      "source": "BTP Analisi / Borsa Italiana · ancorato Fineco",
       "isin": "IT0005363111",
       "stale": false,
-      "lastGoodAsOf": "2026-08-19T04:58:33Z"
+      "lastGoodAsOf": "2026-08-19T05:24:34Z",
+      "finecoAnchor": {
+        "syncAsOf": "2026-08-19T07:15:00+02:00",
+        "finecoValueEUR": 9755.9,
+        "finecoPrice": 88.69,
+        "feedPrice": 88.69,
+        "feedFxToEUR": 1.0,
+        "lastEstimatedValueEUR": 9755.9
+      }
     },
     {
       "name": "BTP-10MZ32 VAL CUM",
@@ -681,10 +945,18 @@
       "dayChangePct": null,
       "feedCurrency": "EUR",
       "fxToEUR": 1.0,
-      "source": "BTP Analisi / Borsa Italiana",
+      "source": "BTP Analisi / Borsa Italiana · ancorato Fineco",
       "isin": "IT0005696320",
       "stale": false,
-      "lastGoodAsOf": "2026-08-19T04:58:34Z"
+      "lastGoodAsOf": "2026-08-19T05:24:35Z",
+      "finecoAnchor": {
+        "syncAsOf": "2026-08-19T07:15:00+02:00",
+        "finecoValueEUR": 9828.0,
+        "finecoPrice": 98.28,
+        "feedPrice": 98.28,
+        "feedFxToEUR": 1.0,
+        "lastEstimatedValueEUR": 9828.0
+      }
     },
     {
       "name": "BTP-1ST52 2.15",
@@ -701,10 +973,18 @@
       "dayChangePct": null,
       "feedCurrency": "EUR",
       "fxToEUR": 1.0,
-      "source": "BTP Analisi / Borsa Italiana",
+      "source": "BTP Analisi / Borsa Italiana · ancorato Fineco",
       "isin": "IT0005480980",
       "stale": false,
-      "lastGoodAsOf": "2026-08-19T04:58:35Z"
+      "lastGoodAsOf": "2026-08-19T05:24:36Z",
+      "finecoAnchor": {
+        "syncAsOf": "2026-08-19T07:15:00+02:00",
+        "finecoValueEUR": 2466.8,
+        "finecoPrice": 61.67,
+        "feedPrice": 61.67,
+        "feedFxToEUR": 1.0,
+        "lastEstimatedValueEUR": 2466.8
+      }
     },
     {
       "name": "LEVA FISSA SPACEX LONG 3X",
@@ -715,16 +995,24 @@
       "currency": "EUR",
       "bond": false,
       "price": 5.415,
-      "valueEUR": 270.75,
+      "valueEUR": 268.5,
       "verified": false,
       "error": "Vorvel: bid/ask non interpretabili",
       "dayChangePct": null,
       "feedCurrency": "EUR",
       "fxToEUR": 1.0,
-      "source": "Vorvel mid bid/ask · ultimo valido · ultimo valido · ultimo valido · ultimo valido · ultimo valido · ultimo valido · ultimo valido · ultimo valido · ultimo valido · ultimo valido · ultimo valido · ultimo valido · ultimo valido · ultimo valido",
+      "source": "Vorvel mid bid/ask · ultimo valido · ultimo valido · ultimo valido · ultimo valido · ultimo valido · ultimo valido · ultimo valido · ultimo valido · ultimo valido · ultimo valido · ultimo valido · ultimo valido · ultimo valido · ultimo valido · ultimo valido · ancorato Fineco",
       "stale": true,
       "isin": "IT0005710873",
-      "lastGoodAsOf": "2026-08-18T19:36:04Z"
+      "lastGoodAsOf": "2026-08-18T19:36:04Z",
+      "finecoAnchor": {
+        "syncAsOf": "2026-08-19T07:15:00+02:00",
+        "finecoValueEUR": 268.5,
+        "finecoPrice": 5.37,
+        "feedPrice": 5.415,
+        "feedFxToEUR": 1.0,
+        "lastEstimatedValueEUR": 268.5
+      }
     },
     {
       "name": "HANetf KRC Cat Bond UCITS ETF Acc",
@@ -744,17 +1032,25 @@
       "error": null,
       "dayChangePct": -0.002286,
       "price": 9.164,
-      "valueEUR": 2749.2,
+      "valueEUR": 2745.0,
       "feedCurrency": "EUR",
       "fxToEUR": 1.0,
-      "source": "Yahoo Finance",
+      "source": "Yahoo Finance · ancorato Fineco",
       "stale": false,
-      "lastGoodAsOf": "2026-08-19T04:58:38Z"
+      "lastGoodAsOf": "2026-08-19T05:24:37Z",
+      "finecoAnchor": {
+        "syncAsOf": "2026-08-19T07:15:00+02:00",
+        "finecoValueEUR": 2745.0,
+        "finecoPrice": 9.15,
+        "feedPrice": 9.164,
+        "feedFxToEUR": 1.0,
+        "lastEstimatedValueEUR": 2745.0
+      }
     }
   ],
   "verifiedCost": 483225.09,
-  "verifiedCount": 36,
-  "unverifiedCount": 1,
+  "verifiedCount": 37,
+  "unverifiedCount": 0,
   "history": [
     {
       "date": "2026-08-07",
@@ -882,15 +1178,15 @@
     },
     {
       "date": "2026-08-19",
-      "value": 498476.09,
-      "coverage": 36,
+      "value": 492604.19,
+      "coverage": 37,
       "stale": 1,
       "cashAvailable": 17237.98,
-      "totalPatrimonyValue": 515714.07,
-      "effectiveConstantTotalValue": 516447.17,
+      "totalPatrimonyValue": 509842.17,
+      "effectiveConstantTotalValue": 510587.19,
       "effectiveFxMethod": "lookthrough-total-v2",
-      "constantFxValue": 498538.26,
-      "effectiveConstantFxValue": 499209.19
+      "constantFxValue": 492669.43,
+      "effectiveConstantFxValue": 493349.21
     }
   ],
   "benchmark": {
@@ -901,11 +1197,12 @@
     "dayChange": -0.001164
   },
   "finecoSnapshot": {
-    "asOf": "2026-08-15T08:23:00+02:00",
+    "asOf": "2026-08-19T07:15:00+02:00",
     "totalCost": 483225.08940922166,
     "baselineValue": 496874.4,
-    "profitLoss": 15103.19251062983,
-    "profitLossPct": 0.03125498415054276,
+    "portfolioFineco": 492604.1916358628,
+    "profitLoss": 9379.102226641155,
+    "profitLossPct": 0.019409385878758487,
     "positions": 37
   },
   "staleCount": 1,
@@ -915,8 +1212,8 @@
     "USD": 0.86489999,
     "GBP": 1.16680002
   },
-  "constantFxValue": 498538.26,
-  "fxEffectEUR": -62.17,
+  "constantFxValue": 492669.43,
+  "fxEffectEUR": -65.24,
   "fxBaseAsOf": "2026-08-08T06:41:58Z",
   "effectiveFxBase": {
     "CNY": 0.12809999287128448,
@@ -936,8 +1233,8 @@
     "TWD": 0.026792999356985092,
     "CAD": 0.6205000281333923
   },
-  "effectiveConstantFxValue": 499209.19,
-  "effectiveFxEffectEUR": -733.1,
+  "effectiveConstantFxValue": 493349.21,
+  "effectiveFxEffectEUR": -745.02,
   "effectiveFxBaseAsOf": "2026-08-09T10:48:53Z",
   "finecoRemovedPositions": [
     {
@@ -952,6 +1249,8 @@
     }
   ],
   "finecoRemovalCount": 0,
-  "totalPatrimonyValue": 515714.07,
-  "effectiveConstantTotalValue": 516447.17
+  "totalPatrimonyValue": 509842.17,
+  "effectiveConstantTotalValue": 510587.19,
+  "valuationMode": "relative-to-latest-fineco-checkpoint",
+  "finecoAnchorAsOf": "2026-08-19T07:15:00+02:00"
 }
