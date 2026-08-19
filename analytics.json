@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-19T17:58:21Z",
+  "asOf": "2026-08-19T18:50:13Z",
   "benchmark": {
     "name": "MSCI World (SWDA)",
     "price": 126.98999786376953,
@@ -90,13 +90,13 @@
       {
         "name": "WisdomTree Uranium & Nuclear Energy",
         "valueEUR": 10351.15,
-        "ageHours": 8.289376857222223
+        "ageHours": 9.153665949166667
       }
     ]
   },
   "attribution": {
-    "marketEUR": -2858.97,
-    "fxEUR": -2819.95,
+    "marketEUR": -2586.25,
+    "fxEUR": -3092.67,
     "incomeEUR": 2.84,
     "externalFlowsEUR": 0,
     "status": "patrimonio totale; compravendite interne neutralizzate; reddito cumulato da Movimenti Fineco",
