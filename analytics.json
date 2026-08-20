@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-20T22:50:04Z",
+  "asOf": "2026-08-20T23:13:43Z",
   "benchmark": {
     "name": "MSCI World (SWDA)",
     "price": 126.98999786376953,
@@ -90,18 +90,18 @@
       {
         "name": "3x Long SK Hynix ETP",
         "valueEUR": 429.8,
-        "ageHours": 37.15125994583333
+        "ageHours": 37.545472823888886
       },
       {
         "name": "WisdomTree Uranium & Nuclear Energy",
         "valueEUR": 10351.15,
-        "ageHours": 37.15125994583333
+        "ageHours": 37.545472823888886
       }
     ]
   },
   "attribution": {
-    "marketEUR": -2265.02,
-    "fxEUR": -3413.9,
+    "marketEUR": -2243.65,
+    "fxEUR": -3435.27,
     "incomeEUR": 2.84,
     "externalFlowsEUR": 0,
     "status": "patrimonio totale; compravendite interne neutralizzate; reddito cumulato da Movimenti Fineco",
