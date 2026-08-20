@@ -1,17 +1,17 @@
 {
-  "asOf": "2026-08-20T08:29:40Z",
+  "asOf": "2026-08-20T09:08:57Z",
   "benchmark": {
     "name": "MSCI World (SWDA)",
-    "price": 126.44999694824219,
+    "price": 126.30000305175781,
     "ath": 129.3800048828125,
     "athDate": "2026-08-13",
-    "drawdownATH": -0.022646528242321495,
+    "drawdownATH": -0.02380585650653233,
     "daysSinceATH": 7,
     "returns": {
-      "1w": -0.018245388570148457,
-      "1m": 0.005646565106847579,
-      "ytd": 0.13560843000487766,
-      "1y": 0.2071598754008801
+      "1w": -0.019409937428304103,
+      "1m": 0.004453675819169334,
+      "ytd": 0.1342613810732225,
+      "1y": 0.2057279527614111
     }
   },
   "compositeBenchmark": {
@@ -23,10 +23,10 @@
       "XEON.MI": 0.042679375757602875
     },
     "returns": {
-      "1w": -0.012457605265801308,
-      "1m": 0.004766694961010565,
-      "ytd": 0.09853848391685105,
-      "1y": 0.15192303048123224
+      "1w": -0.013178582916589243,
+      "1m": 0.004033142320449823,
+      "ytd": 0.0977364710618509,
+      "1y": 0.1510820430311406
     }
   },
   "periodReturns": {
@@ -82,26 +82,21 @@
     "lookThroughStatus": "Esposizione economica stimata: look-through proxy per ETF; hedged EUR trattati EUR. Da affinare con holdings issuer."
   },
   "dataQuality": {
-    "freshPositions": 35,
+    "freshPositions": 36,
     "totalPositions": 37,
-    "freshValuePct": 0.9717246650078866,
-    "staleValuePct": 0.028275334992113405,
+    "freshValuePct": 0.9789545497241624,
+    "staleValuePct": 0.021045450275837586,
     "stale": [
-      {
-        "name": "FERRARI",
-        "valueEUR": 3556.0,
-        "ageHours": 22.811203665
-      },
       {
         "name": "WisdomTree Uranium & Nuclear Energy",
         "valueEUR": 10351.15,
-        "ageHours": 22.811203665
+        "ageHours": 23.465983529166667
       }
     ]
   },
   "attribution": {
-    "marketEUR": -2122.74,
-    "fxEUR": -3556.18,
+    "marketEUR": -1952.91,
+    "fxEUR": -3726.01,
     "incomeEUR": 2.84,
     "externalFlowsEUR": 0,
     "status": "patrimonio totale; compravendite interne neutralizzate; reddito cumulato da Movimenti Fineco",
