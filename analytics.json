@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-20T16:03:19Z",
+  "asOf": "2026-08-20T16:48:32Z",
   "benchmark": {
     "name": "MSCI World (SWDA)",
     "price": 126.18000030517578,
@@ -82,21 +82,26 @@
     "lookThroughStatus": "Esposizione economica stimata: look-through proxy per ETF; hedged EUR trattati EUR. Da affinare con holdings issuer."
   },
   "dataQuality": {
-    "freshPositions": 36,
+    "freshPositions": 35,
     "totalPositions": 37,
-    "freshValuePct": 0.9789545497241624,
-    "staleValuePct": 0.021045450275837586,
+    "freshValuePct": 0.9780807014533369,
+    "staleValuePct": 0.02191929854666305,
     "stale": [
+      {
+        "name": "3x Long SK Hynix ETP",
+        "valueEUR": 429.8,
+        "ageHours": 31.125766138333336
+      },
       {
         "name": "WisdomTree Uranium & Nuclear Energy",
         "valueEUR": 10351.15,
-        "ageHours": 30.372161590833333
+        "ageHours": 31.125766138333336
       }
     ]
   },
   "attribution": {
-    "marketEUR": -2388.04,
-    "fxEUR": -3290.88,
+    "marketEUR": -2503.82,
+    "fxEUR": -3175.1,
     "incomeEUR": 2.84,
     "externalFlowsEUR": 0,
     "status": "patrimonio totale; compravendite interne neutralizzate; reddito cumulato da Movimenti Fineco",
