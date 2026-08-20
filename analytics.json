@@ -1,17 +1,17 @@
 {
-  "asOf": "2026-08-20T13:17:57Z",
+  "asOf": "2026-08-20T14:05:15Z",
   "benchmark": {
     "name": "MSCI World (SWDA)",
-    "price": 126.0199966430664,
+    "price": 126.37000274658203,
     "ath": 129.3800048828125,
     "athDate": "2026-08-13",
-    "drawdownATH": -0.02597007352712244,
+    "drawdownATH": -0.02326481699360594,
     "daysSinceATH": 7,
     "returns": {
-      "1w": -0.021583900177193915,
-      "1m": 0.0022268075716069813,
-      "ytd": 0.13174672986057367,
-      "1y": 0.2030548605543332
+      "1w": -0.01886646154968874,
+      "1m": 0.005010377712071135,
+      "ytd": 0.13489002674707495,
+      "1y": 0.20639620760460176
     }
   },
   "compositeBenchmark": {
@@ -23,10 +23,10 @@
       "XEON.MI": 0.042679375757602875
     },
     "returns": {
-      "1w": -0.014952810803156358,
-      "1m": 0.0022279690952806686,
-      "ytd": 0.09576282656514334,
-      "1y": 0.14901248735965078
+      "1w": -0.013014623995931118,
+      "1m": 0.004199960943829906,
+      "ytd": 0.09791885835487735,
+      "1y": 0.1512732936121446
     }
   },
   "periodReturns": {
@@ -90,13 +90,13 @@
       {
         "name": "WisdomTree Uranium & Nuclear Energy",
         "valueEUR": 10351.15,
-        "ageHours": 27.616030654166668
+        "ageHours": 28.404250740555558
       }
     ]
   },
   "attribution": {
-    "marketEUR": -2159.83,
-    "fxEUR": -3519.09,
+    "marketEUR": -2444.52,
+    "fxEUR": -3234.4,
     "incomeEUR": 2.84,
     "externalFlowsEUR": 0,
     "status": "patrimonio totale; compravendite interne neutralizzate; reddito cumulato da Movimenti Fineco",
