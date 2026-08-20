@@ -1,17 +1,17 @@
 {
-  "asOf": "2026-08-20T10:42:02Z",
+  "asOf": "2026-08-20T11:13:25Z",
   "benchmark": {
     "name": "MSCI World (SWDA)",
-    "price": 126.33000183105469,
+    "price": 126.43000030517578,
     "ath": 129.3800048828125,
     "athDate": "2026-08-13",
-    "drawdownATH": -0.023573990853690163,
+    "drawdownATH": -0.022801085687921607,
     "daysSinceATH": 7,
     "returns": {
-      "1w": -0.01917702765667295,
-      "1m": 0.004692253676705116,
-      "ytd": 0.13453079085955366,
-      "1y": 0.20601433728930485
+      "1w": -0.018400642006426438,
+      "1m": 0.005487533427142477,
+      "ytd": 0.13542884631973684,
+      "1y": 0.20696897666038927
     }
   },
   "compositeBenchmark": {
@@ -23,10 +23,10 @@
       "XEON.MI": 0.042679375757602875
     },
     "returns": {
-      "1w": -0.013029659837594743,
-      "1m": 0.00418466285332264,
-      "ytd": 0.09790213254057933,
-      "1y": 0.1512557549906257
+      "1w": -0.012618746501633749,
+      "1m": 0.004602743167333001,
+      "ytd": 0.09835923100593624,
+      "1y": 0.15173506660068847
     }
   },
   "periodReturns": {
@@ -82,21 +82,26 @@
     "lookThroughStatus": "Esposizione economica stimata: look-through proxy per ETF; hedged EUR trattati EUR. Da affinare con holdings issuer."
   },
   "dataQuality": {
-    "freshPositions": 36,
+    "freshPositions": 35,
     "totalPositions": 37,
-    "freshValuePct": 0.9789545497241624,
-    "staleValuePct": 0.021045450275837586,
+    "freshValuePct": 0.9780807014533369,
+    "staleValuePct": 0.02191929854666305,
     "stale": [
+      {
+        "name": "3x Long SK Hynix ETP",
+        "valueEUR": 429.8,
+        "ageHours": 25.540371963611108
+      },
       {
         "name": "WisdomTree Uranium & Nuclear Energy",
         "valueEUR": 10351.15,
-        "ageHours": 25.01733943444444
+        "ageHours": 25.540371963611108
       }
     ]
   },
   "attribution": {
-    "marketEUR": -1830.75,
-    "fxEUR": -3848.17,
+    "marketEUR": -2083.41,
+    "fxEUR": -3595.51,
     "incomeEUR": 2.84,
     "externalFlowsEUR": 0,
     "status": "patrimonio totale; compravendite interne neutralizzate; reddito cumulato da Movimenti Fineco",
