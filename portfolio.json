@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-21T20:59:04Z",
+  "asOf": "2026-08-21T21:35:21Z",
   "baselineValue": 496874.4,
   "totalCost": 490180.08985922165,
   "liveValue": 498885.94,
@@ -46,7 +46,7 @@
       "error": null,
       "dayChangePct": 0.05518,
       "feedCurrency": "USD",
-      "fxToEUR": 0.85610002,
+      "fxToEUR": 0.8563,
       "source": "Yahoo 5m · variazione da checkpoint Fineco · ancorato Fineco",
       "stale": false,
       "lastGoodAsOf": "2026-08-21T19:55:00Z",
@@ -154,7 +154,7 @@
       "error": null,
       "dayChangePct": 0.015841,
       "feedCurrency": "USD",
-      "fxToEUR": 0.85610002,
+      "fxToEUR": 0.8563,
       "source": "Yahoo 5m · variazione da checkpoint Fineco · ancorato Fineco",
       "stale": false,
       "lastGoodAsOf": "2026-08-21T19:55:00Z",
@@ -184,7 +184,7 @@
       "error": null,
       "dayChangePct": -0.005209,
       "feedCurrency": "USD",
-      "fxToEUR": 0.85610002,
+      "fxToEUR": 0.8563,
       "source": "Yahoo 5m · variazione da checkpoint Fineco · ancorato Fineco",
       "stale": false,
       "lastGoodAsOf": "2026-08-21T19:55:00Z",
@@ -214,7 +214,7 @@
       "error": null,
       "dayChangePct": 0.022164,
       "feedCurrency": "USD",
-      "fxToEUR": 0.85610002,
+      "fxToEUR": 0.8563,
       "source": "Yahoo 5m · variazione da checkpoint Fineco · ancorato Fineco",
       "stale": false,
       "lastGoodAsOf": "2026-08-21T19:55:00Z",
@@ -244,7 +244,7 @@
       "error": null,
       "dayChangePct": 0.034702,
       "feedCurrency": "USD",
-      "fxToEUR": 0.85610002,
+      "fxToEUR": 0.8563,
       "source": "Yahoo 5m · variazione da checkpoint Fineco · ancorato Fineco",
       "stale": false,
       "lastGoodAsOf": "2026-08-21T19:55:00Z",
@@ -274,7 +274,7 @@
       "error": null,
       "dayChangePct": 0.006517,
       "feedCurrency": "USD",
-      "fxToEUR": 0.85610002,
+      "fxToEUR": 0.8563,
       "source": "Yahoo 5m · variazione da checkpoint Fineco · ancorato Fineco",
       "stale": false,
       "lastGoodAsOf": "2026-08-21T19:55:00Z",
@@ -304,7 +304,7 @@
       "error": null,
       "dayChangePct": 0.007684,
       "feedCurrency": "USD",
-      "fxToEUR": 0.85610002,
+      "fxToEUR": 0.8563,
       "source": "Yahoo 5m · variazione da checkpoint Fineco · ancorato Fineco",
       "stale": false,
       "lastGoodAsOf": "2026-08-21T19:55:00Z",
@@ -334,7 +334,7 @@
       "error": null,
       "dayChangePct": 0.010322,
       "feedCurrency": "USD",
-      "fxToEUR": 0.85610002,
+      "fxToEUR": 0.8563,
       "source": "Yahoo 5m · variazione da checkpoint Fineco · ancorato Fineco",
       "stale": false,
       "lastGoodAsOf": "2026-08-21T19:55:00Z",
@@ -364,7 +364,7 @@
       "error": null,
       "dayChangePct": 0.023571,
       "feedCurrency": "USD",
-      "fxToEUR": 0.85610002,
+      "fxToEUR": 0.8563,
       "source": "Yahoo 5m · variazione da checkpoint Fineco · ancorato Fineco",
       "stale": false,
       "lastGoodAsOf": "2026-08-21T19:55:00Z",
@@ -1169,10 +1169,10 @@
       "stale": 1,
       "cashAvailable": 10269.77,
       "totalPatrimonyValue": 509155.71,
-      "effectiveConstantTotalValue": 511793.59,
+      "effectiveConstantTotalValue": 511771.93,
       "effectiveFxMethod": "lookthrough-total-v2",
-      "constantFxValue": 499160.63,
-      "effectiveConstantFxValue": 501523.82
+      "constantFxValue": 499154.3,
+      "effectiveConstantFxValue": 501502.16
     }
   ],
   "benchmark": {
@@ -1198,8 +1198,8 @@
     "USD": 0.86489999,
     "GBP": 1.16680002
   },
-  "constantFxValue": 499160.63,
-  "fxEffectEUR": -274.69,
+  "constantFxValue": 499154.3,
+  "fxEffectEUR": -268.36,
   "fxBaseAsOf": "2026-08-08T06:41:58Z",
   "effectiveFxBase": {
     "CNY": 0.12809999287128448,
@@ -1219,8 +1219,8 @@
     "TWD": 0.026792999356985092,
     "CAD": 0.6205000281333923
   },
-  "effectiveConstantFxValue": 501523.82,
-  "effectiveFxEffectEUR": -2637.88,
+  "effectiveConstantFxValue": 501502.16,
+  "effectiveFxEffectEUR": -2616.22,
   "effectiveFxBaseAsOf": "2026-08-09T10:48:53Z",
   "finecoRemovedPositions": [
     {
@@ -1236,7 +1236,7 @@
   ],
   "finecoRemovalCount": 0,
   "totalPatrimonyValue": 509155.71,
-  "effectiveConstantTotalValue": 511793.59,
+  "effectiveConstantTotalValue": 511771.93,
   "valuationMode": "relative-to-latest-fineco-checkpoint",
   "finecoAnchorAsOf": "2026-08-21T18:25:00+02:00"
 }
