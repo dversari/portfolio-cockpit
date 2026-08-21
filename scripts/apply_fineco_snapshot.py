@@ -15,6 +15,22 @@ if not snaps:
     print('No Fineco market snapshot')
     raise SystemExit(0)
 
+# Fineco is authoritative not only for valuations but also for structure.
+# Apply explicit quantity/cost changes from the newest export before anchoring prices.
+updates = s.get('positionUpdates') or []
+if updates:
+    by_isin = {str(x.get('isin') or ''): x for x in p.get('positions', [])}
+    for u in updates:
+        pos = by_isin.get(str(u.get('isin') or ''))
+        if not pos:
+            continue
+        if u.get('qty') is not None:
+            pos['qty'] = u['qty']
+        if u.get('cost') is not None:
+            pos['cost'] = u['cost']
+        if u.get('name'):
+            pos['name'] = u['name']
+
 try:
     sync_dt = datetime.fromisoformat(str(s.get('asOf')).replace('Z', '+00:00'))
 except Exception:
@@ -138,6 +154,7 @@ if matched != len(p.get('positions', [])):
 # On the first run of a new checkpoint the ratio is exactly 1 for every usable feed,
 # so the portfolio equals Fineco cent-for-cent. Later runs evolve only by relative
 # market/FX moves from that checkpoint.
+p['totalCost'] = float(s.get('totalCost') or p.get('totalCost') or verified_cost)
 p['liveValue'] = round(portfolio_value, 2)
 p['verifiedValue'] = round(portfolio_value, 2)
 p['verifiedCount'] = matched
@@ -157,4 +174,4 @@ by_date[today] = point
 p['history'] = [by_date[k] for k in sorted(by_date)][-730:]
 
 P.write_text(json.dumps(p, ensure_ascii=False, indent=2), encoding='utf-8')
-print(f'Fineco-relative valuation: {matched} positions, EUR {portfolio_value:,.2f}; new_anchor={new_anchor}; checkpoint={sync_id}')
+print(f'Fineco-relative valuation: {matched} positions, EUR {portfolio_value:,.2f}; new_anchor={new_anchor}; checkpoint={sync_id}; structural_updates={len(updates)}')
