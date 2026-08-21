@@ -1,17 +1,17 @@
 {
-  "asOf": "2026-08-21T10:16:19Z",
+  "asOf": "2026-08-21T10:53:44Z",
   "benchmark": {
     "name": "MSCI World (SWDA)",
-    "price": 126.0199966430664,
+    "price": 125.98999786376953,
     "ath": 129.3800048828125,
     "athDate": "2026-08-13",
-    "drawdownATH": -0.02597007352712244,
+    "drawdownATH": -0.026201939179964495,
     "daysSinceATH": 8,
     "returns": {
-      "1w": -0.02597007352712244,
-      "1m": 0.0,
-      "ytd": 0.13174672986057367,
-      "1y": 0.2032845660624465
+      "1w": -0.026201939179964495,
+      "1m": -0.00023804777095692842,
+      "ytd": 0.1314773200742425,
+      "1y": 0.20299812685366847
     }
   },
   "compositeBenchmark": {
@@ -23,10 +23,10 @@
       "XEON.MI": 0.042679375757602875
     },
     "returns": {
-      "1w": -0.01811555395023301,
-      "1m": 0.0007433807498697931,
-      "ytd": 0.09601503990119875,
-      "1y": 0.1491294843513895
+      "1w": -0.018300189568730363,
+      "1m": 0.0005551988575858147,
+      "ytd": 0.09580894292554265,
+      "1y": 0.1489133996237717
     }
   },
   "periodReturns": {
@@ -90,18 +90,18 @@
       {
         "name": "3x Long SK Hynix ETP",
         "valueEUR": 429.8,
-        "ageHours": 48.58865180916667
+        "ageHours": 49.21225508194444
       },
       {
         "name": "WisdomTree Uranium & Nuclear Energy",
         "valueEUR": 10351.15,
-        "ageHours": 48.58865180916667
+        "ageHours": 49.21225508194444
       }
     ]
   },
   "attribution": {
-    "marketEUR": -1929.28,
-    "fxEUR": -3749.64,
+    "marketEUR": -1914.32,
+    "fxEUR": -3764.6,
     "incomeEUR": 2.84,
     "externalFlowsEUR": 0,
     "status": "patrimonio totale; compravendite interne neutralizzate; reddito cumulato da Movimenti Fineco",
