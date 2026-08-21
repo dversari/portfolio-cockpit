@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-21T03:26:13Z",
+  "asOf": "2026-08-21T04:20:19Z",
   "baselineValue": 496874.4,
   "totalCost": 483225.08940922166,
   "liveValue": 491847.41,
@@ -140,7 +140,7 @@
       "error": null,
       "dayChangePct": 0.02,
       "feedCurrency": "GBP",
-      "fxToEUR": 1.16639996,
+      "fxToEUR": 1.16620004,
       "source": "Yahoo 5m · variazione da checkpoint Fineco · ancorato Fineco",
       "stale": false,
       "lastGoodAsOf": "2026-08-20T15:25:00Z",
@@ -318,7 +318,7 @@
       "valueEUR": 3107.11,
       "verified": true,
       "error": null,
-      "dayChangePct": -0.000811,
+      "dayChangePct": -0.028425,
       "feedCurrency": "USD",
       "fxToEUR": 0.85479999,
       "source": "Yahoo 5m · variazione da checkpoint Fineco · ancorato Fineco",
@@ -1241,10 +1241,10 @@
       "stale": 2,
       "cashAvailable": 17237.98,
       "totalPatrimonyValue": 509085.39,
-      "effectiveConstantTotalValue": 512174.62,
+      "effectiveConstantTotalValue": 512175.04,
       "effectiveFxMethod": "lookthrough-total-v2",
-      "constantFxValue": 492173.31,
-      "effectiveConstantFxValue": 494936.64
+      "constantFxValue": 492173.62,
+      "effectiveConstantFxValue": 494937.06
     }
   ],
   "benchmark": {
@@ -1270,8 +1270,8 @@
     "USD": 0.86489999,
     "GBP": 1.16680002
   },
-  "constantFxValue": 492173.31,
-  "fxEffectEUR": -325.9,
+  "constantFxValue": 492173.62,
+  "fxEffectEUR": -326.21,
   "fxBaseAsOf": "2026-08-08T06:41:58Z",
   "effectiveFxBase": {
     "CNY": 0.12809999287128448,
@@ -1291,8 +1291,8 @@
     "TWD": 0.026792999356985092,
     "CAD": 0.6205000281333923
   },
-  "effectiveConstantFxValue": 494936.64,
-  "effectiveFxEffectEUR": -3089.23,
+  "effectiveConstantFxValue": 494937.06,
+  "effectiveFxEffectEUR": -3089.65,
   "effectiveFxBaseAsOf": "2026-08-09T10:48:53Z",
   "finecoRemovedPositions": [
     {
@@ -1308,7 +1308,7 @@
   ],
   "finecoRemovalCount": 0,
   "totalPatrimonyValue": 509085.39,
-  "effectiveConstantTotalValue": 512174.62,
+  "effectiveConstantTotalValue": 512175.04,
   "valuationMode": "relative-to-latest-fineco-checkpoint",
   "finecoAnchorAsOf": "2026-08-19T11:41:00+02:00"
 }
