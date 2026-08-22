@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-21T23:56:43Z",
+  "asOf": "2026-08-22T01:46:42Z",
   "baselineValue": 496874.4,
   "totalCost": 490180.08985922165,
   "liveValue": 498885.94,
@@ -1164,6 +1164,18 @@
     },
     {
       "date": "2026-08-21",
+      "value": 498885.94,
+      "coverage": 37,
+      "stale": 1,
+      "cashAvailable": 10269.77,
+      "totalPatrimonyValue": 509155.71,
+      "effectiveConstantTotalValue": 511769.35,
+      "effectiveFxMethod": "lookthrough-total-v2",
+      "constantFxValue": 499154.3,
+      "effectiveConstantFxValue": 501499.58
+    },
+    {
+      "date": "2026-08-22",
       "value": 498885.94,
       "coverage": 37,
       "stale": 1,
